@@ -1,0 +1,138 @@
+@charset "shift_jis";
+
+/**** default ****/
+
+/* font size
+px  %
+10 	77
+11 	85
+12 	92
+13 	100
+14 	107
+15 	114
+16 	122
+17 	129
+18 	136
+19 	144
+20 	152
+21 	159
+22 	167
+23 	174
+24 	182
+25 	189
+26 	197
+*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+.hidden {
+	display: none;
+}
+
+.clear {
+	clear: both;
+	height: 1px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+img {
+	border: none;
+}
+
+span.red {
+	color: #FF0000;
+}
+
+span.blue {
+	color: #0000FF;
+}
+
+/* font */
+
+html {
+	font-family: Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS PGothic,sans-serif ;
+	font-size: 62.5%;
+	line-height: 1.5;
+	color: #333;
+	scroll-padding-top: 120px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+	margin:0;
+	padding:0;
+}
+
+/* list */
+
+dl, dt, dd, ul, ol, li {
+	margin:0;
+	padding:0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* table */
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	margin: 0;
+	padding: 0;
+}
+
+th, td {
+	margin:0;
+	padding:0;
+}
+
+th {
+	font-weight: normal;
+}
+.f_left{
+	float:left;
+	margin:0 10px 10px 0;
+}
+.f_right{
+	float:right;
+	margin:0 0 10px 10px;
+}
+.ma10{
+	margin:10px;
+}
+
+/* clearfix */
+
+.clearfix:after{
+
+	content:".";
+
+	display:block;
+
+	height: 0;
+
+	clear:both;
+
+	visibility:hidden;
+
+}
+
+
+/*clearfix*/
+.clearfix{ display:inline-block;}
+
+/* Hides from IE-mac \*/
+
+*html.clearfix{height:1%;}
+
+.clearfix{display:block;}
+
+/* End hide from IE-mac */
