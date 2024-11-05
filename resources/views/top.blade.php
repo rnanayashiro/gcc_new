@@ -11,8 +11,8 @@
         <div class="carousel-visual-item">
             <div class="home-mainvisual">
                 <div class="home-mainvisual-item">
-                    <div class="home-mainvisual-pict"><img src="/images/mainvisual_img01_202311.jpg" alt=""
-                            class="pc-content" /><img src="/images/mainvisual_img01_sp_202311.jpg" alt=""
+                    <div class="home-mainvisual-pict"><img src="../images/mainvisual_img01_202311.jpg" alt=""
+                            class="pc-content" /><img src="../images/mainvisual_img01_sp_202311.jpg" alt=""
                             class="sp-content" /></div>
                     <p class="home-mainvisual-lead"><i>電通は、顧客企業と社会の持続的成長にコミットする<br class="sp-content">パートナーをめざしています。</i>
                     </p>
@@ -25,8 +25,8 @@
         <div class="carousel-visual-item">
             <div class="home-mainvisual">
                 <div class="home-mainvisual-item -ad">
-                    <div class="home-mainvisual-pict"><img src="/images/mainvisual_img01_240801.jpg" alt=""
-                            class="pc-content" /><img src="/images/mainvisual_img01_sp_240801.jpg" alt=""
+                    <div class="home-mainvisual-pict"><img src="../images/mainvisual_img01_240801.jpg" alt=""
+                            class="pc-content" /><img src="../images/mainvisual_img01_sp_240801.jpg" alt=""
                             class="sp-content" /></div>
                     <div class="home-mainvisual-button -ai"><a href="/labo/ai_for_growth/"
                             class="button -outline">詳しくみる</a></div>
@@ -55,8 +55,8 @@
         <div class="carousel-visual-item">
             <div class="home-mainvisual">
                 <div class="home-mainvisual-item -ad">
-                    <div class="home-mainvisual-pict"><img src="/images/mainvisual_img01_240806.jpg" alt="日本の広告費2023"
-                            class="pc-content" /><img src="/images/mainvisual_img01_sp_240806.jpg" alt="日本の広告費2023"
+                    <div class="home-mainvisual-pict"><img src="../images/mainvisual_img01_240806.jpg" alt="日本の広告費2023"
+                            class="pc-content" /><img src="../images/mainvisual_img01_sp_240806.jpg" alt="日本の広告費2023"
                             class="sp-content" /></div>
                     <div class="home-mainvisual-button -ai"><a href="/knowledge/ad_cost/2023/"
                             class="button -outline">詳しくみる</a></div>
@@ -71,9 +71,9 @@
     <div class="home-content home-service">
         <div class="content-inner">
             <p class="home-content-lead">電通は４つのTransformationでビジネスを支援します</p>
-            <figure class="home-service-pict"><img src="/images/service_img.png"
+            <figure class="home-service-pict"><img src="../images/service_img.png"
                     alt="高度化された広告コミュニケーション マーケティング基盤の変革 お客様体験の変革" class="pc-content" /><img
-                    src="/images/service_img_sp.png" alt="高度化された広告コミュニケーション マーケティング基盤の変革 お客様体験の変革" class="sp-content" />
+                    src="../images/service_img_sp.png" alt="高度化された広告コミュニケーション マーケティング基盤の変革 お客様体験の変革" class="sp-content" />
                 <ul class="home-service-link">
                     <li class="ax"><a href="/capabilities/?tab-capabilities=ax"></a></li>
                     <li class="bx"><a href="/capabilities/?tab-capabilities=bx"></a></li>

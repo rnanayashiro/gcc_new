@@ -3,7 +3,7 @@
 /**** layout ****/
 
 body {
-/*	background: url(../images/bg.png) repeat-x top #f5f5f5;*/
+/*	background: url(images/bg.png) repeat-x top #f5f5f5;*/
 	font-size: 1.5rem;
 	background-color: #f5f5f5;
 }
@@ -44,7 +44,7 @@ body {
 	float: left;
 	width: 82px;
 	height: 29px;
-	background: url(../images/header_home_btn.gif);
+	background: url(images/header_home_btn.gif);
 	text-indent: -9999px;
 }
 
@@ -58,7 +58,7 @@ body {
 	float: left;
 	width: 81px;
 	height: 29px;
-	background: url(../images/header_sitemap_btn.gif);
+	background: url(images/header_sitemap_btn.gif);
 	text-indent: -9999px;
 }
 
@@ -72,7 +72,7 @@ body {
 	float: left;
 	width: 83px;
 	height: 29px;
-	background: url(../images/header_english_btn.gif);
+	background: url(images/header_english_btn.gif);
 	text-indent: -9999px;
 }
 
@@ -86,7 +86,7 @@ body {
 	width: 83px;
 	height: 29px;
 	text-indent: -9999px;
-	background-image: url(../images/header_chinese_btn.gif);
+	background-image: url(images/header_chinese_btn.gif);
 }
 
 #header_index #headermenu #headermenu4 a {
@@ -218,7 +218,7 @@ body {
 
 #header h1 a {
 	display: block;
-	background: url(../images/GCC_logo202209.svg) no-repeat;
+	background: url(images/GCC_logo202209.svg) no-repeat;
 	width: 123px;
 	height: 56px;
 	text-indent: -9999px;
@@ -231,7 +231,7 @@ body {
 }
 
 #header #copy_text {
-	background: url(../images/header_copy.gif) no-repeat;
+	background: url(images/header_copy.gif) no-repeat;
 	width: 246px;
 	height: 38px;
 	text-indent: -9999px;
@@ -241,7 +241,7 @@ body {
 	top: 38px;
 }
 #header #copy_text2 {
-	background: url(../images/header_copy2.gif) no-repeat;
+	background: url(images/header_copy2.gif) no-repeat;
 	width: 246px;
 	height: 38px;
 	text-indent: -9999px;
@@ -264,7 +264,7 @@ body {
 	float: left;
 	width: 82px;
 	height: 29px;
-	background: url(../images/header_home_btn.gif);
+	background: url(images/header_home_btn.gif);
 	text-indent: -9999px;
 }
 
@@ -278,7 +278,7 @@ body {
 	float: left;
 	width: 81px;
 	height: 29px;
-	background: url(../images/header_sitemap_btn.gif);
+	background: url(images/header_sitemap_btn.gif);
 	text-indent: -9999px;
 }
 
@@ -292,7 +292,7 @@ body {
 	float: left;
 	width: 83px;
 	height: 29px;
-	background: url(../images/header_english_btn.gif);
+	background: url(images/header_english_btn.gif);
 	text-indent: -9999px;
 }
 
@@ -306,7 +306,7 @@ body {
 	width: 83px;
 	height: 29px;
 	text-indent: -9999px;
-	background-image: url(../images/header_chinese_btn.gif);
+	background-image: url(images/header_chinese_btn.gif);
 }
 
 #header #headermenu #headermenu4 a {
@@ -328,7 +328,7 @@ body {
 	position: absolute;
 	left: 0;
 	top: 78px;
-	/*background: url(../images/menu.png) repeat-x;*/
+	/*background: url(images/menu.png) repeat-x;*/
 	box-shadow:0 0 2px #aaa, 0 0 2px #aaa, 0 0 2px #aaa;
 	-webkit-box-shadow:0 0 2px #aaa, 0 0 2px #aaa, 0 0 2px #aaa;
 	-moz-box-shadow:0 0 2px #aaa, 0 0 2px #aaa, 0 0 2px #aaa;
@@ -380,7 +380,7 @@ body {
 	text-align: center;
 }
 #header #gnavi A:hover {
-	background: url(../images/menu_on.png) repeat-x;
+	background: url(images/menu_on.png) repeat-x;
 }
 #header #gnavi A SPAN {
 	font-size: 1.1rem;
@@ -479,7 +479,7 @@ body {
 
 .pagetop {
 	float: right;
-	background: url(../images/top.gif);
+	background: url(images/top.gif);
 	width: 89px;
 	height: 24px;
 	margin: 20px 0 0 0;
@@ -542,7 +542,7 @@ div.more_w a {
 }
 
 #sub .sub_fixed #side_info li#info {
-	background: url(../images/sub_info.gif);
+	background: url(images/sub_info.gif);
 	/*width: 220px;*/
 	width: 100%;
 	height: 170px;
@@ -551,7 +551,7 @@ div.more_w a {
 }
 
 #sub .sub_fixed #side_info li#toi {
-	background: url(../images/sub_toi.gif);
+	background: url(images/sub_toi.gif);
 	/*width: 220px;*/
 	width: 100%;
 	height: 50px;
@@ -576,7 +576,7 @@ div.more_w a {
 	clear: both;
 	width: 100%;
 	height: 112px;
-	background: url(../images/foot_bg.gif) repeat-x 0 20px;
+	background: url(images/foot_bg.gif) repeat-x 0 20px;
 	padding: 20px 0 0 0;
 	font-size: 1.1rem;
 }
@@ -669,7 +669,7 @@ div.more_w a {
 }
 
 #index_top li {
-	background: url(../images/bullet.gif) no-repeat 0 2px;
+	background: url(images/bullet.gif) no-repeat 0 2px;
 	text-indent: 16px;
 }
 
@@ -677,7 +677,7 @@ div.more_w a {
 	clear: both;
 	height: 2px;
 	width: 243px;
-	background: url(../images/hr_bg.gif) repeat-x;
+	background: url(images/hr_bg.gif) repeat-x;
 	border: none;
 	position: absolute;
 	bottom: 0;
@@ -704,7 +704,7 @@ div.index #index_tm2 hr {
 	clear: both;
 	height: 2px;
 	width: 243px;
-	background: url(../images/hr_bg.gif) repeat-x;
+	background: url(images/hr_bg.gif) repeat-x;
 	border: none;
 	position: absolute;
 	bottom: 0;
@@ -721,7 +721,7 @@ div.index #index_tm3 hr {
 	clear: both;
 	height: 2px;
 	width: 243px;
-	background: url(../images/hr_bg.gif) repeat-x;
+	background: url(images/hr_bg.gif) repeat-x;
 	border: none;
 	position: absolute;
 	bottom: 0;
@@ -755,7 +755,7 @@ div#index_top_2 .top_news .top_news_list {
 }
 
 div#index_top_2 .top_news .top_news_list li {
-	background: url(../images/bullet.gif) no-repeat 0 5px;
+	background: url(images/bullet.gif) no-repeat 0 5px;
 	text-indent: 16px;
 	border-bottom: dotted 1px #666;
 	padding: 2px 0;
@@ -777,14 +777,14 @@ div#index_top_2 a:hover {
 div#index_top_2 #top_info h2 {
 	width: 243px;
 	height: 37px;
-	background: url(../images/top_info.gif) no-repeat top;
+	background: url(images/top_info.gif) no-repeat top;
 	padding: 4px 0 0 0;
 	text-indent: -9999px;
 }
 div#index_top_2 #top_info2 h2 {
 	width: 243px;
 	height: 37px;
-	background: url(../images/top_info2.gif) no-repeat top;
+	background: url(images/top_info2.gif) no-repeat top;
 	padding: 4px 0 0 0;
 	text-indent: -9999px;
 }
@@ -902,7 +902,7 @@ div.service div.ser_index_box h4#ser_top_9 {
 /**** service sidemenu define ****/
 
 ul#ser_menu {
-	background: url(../images/menu.gif) no-repeat 0 0;
+	background: url(images/menu.gif) no-repeat 0 0;
 	width: 218px;
 	padding: 36px 0 0 0;
 	margin: 0 0 20px 0;
@@ -1085,7 +1085,7 @@ div.company h4#com_h4_01 {
 /**** company sidemenu define ****/
 
 ul#com_menu {
-	background: url(../images/menu.gif) no-repeat 0 0;
+	background: url(images/menu.gif) no-repeat 0 0;
 	width: 218px;
 	padding: 36px 0 0 0;
 	margin: 0 0 20px 0;
@@ -1159,7 +1159,7 @@ ul#com_menu a:hover, ul#com_menu li.current a {
 /**** company_group sidemenu define ****/
 
 ul#com_group_menu {
-	background: url(../images/menu.gif) no-repeat 0 0;
+	background: url(images/menu.gif) no-repeat 0 0;
 	width: 218px;
 	padding: 36px 0 0 0;
 	margin: 0 0 20px 0;
@@ -1344,7 +1344,7 @@ DL#outline_list DD P.gothic {
 	height: 14px;
 	line-height: 14px;
 	font-size: 0.8rem;
-	background:url(../images/group_t.png) no-repeat right top;
+	background:url(images/group_t.png) no-repeat right top;
 }
 
 DL#member_list DD.dd_text,
@@ -1653,7 +1653,7 @@ div#pagenavi a:hover{
 /**** NEWS sidemenu define ****/
 
 div.news #sub #cate ul {
-	background: url(../images/sub_cate.gif) no-repeat top;
+	background: url(images/sub_cate.gif) no-repeat top;
 	margin: 0 0 30px 0;
 	padding: 40px 0 0 0;
 	font-size: 114%;
@@ -1678,7 +1678,7 @@ div.news #sub #cate li a:hover {
 }
 
 div.news #sub #arch ul {
-	background: url(../images/sub_arch.gif) no-repeat top;
+	background: url(images/sub_arch.gif) no-repeat top;
 	margin: 0 0 30px 0;
 	padding: 40px 0 0 0;
 	font-size: 114%;
@@ -1946,7 +1946,7 @@ text-align: right;
 
 #top_info2 .detail a {
 	text-decoration: none;
-	background: url(../images/bullet.gif) no-repeat 0px 2px;
+	background: url(images/bullet.gif) no-repeat 0px 2px;
 	margin: 0px;
 	padding: 0px 0px 0px 15px;
 	color: #444444;
@@ -1988,7 +1988,7 @@ HR {
 	padding-bottom: 30px;
 }
 #contents .h3 SPAN {
-	background: url(../images/h3_icon.png) no-repeat;
+	background: url(images/h3_icon.png) no-repeat;
 	padding-left: 14px;
 	padding-top: 4px;
 	/*font-size: 0.8rem;*/
@@ -1997,7 +1997,7 @@ HR {
 	color: #358;
 }
 #contents .h3 H3 {
-	background: url(../images/h3.png) repeat-x bottom;
+	background: url(images/h3.png) repeat-x bottom;
 	font-size: 2.4rem;
 	padding-top: 4px;
 	padding-bottom: 2px;
@@ -2013,7 +2013,7 @@ HR {
 }
 #midashi01 SPAN,
 #midashi02 SPAN {
-	/*background: url(../images/midashi01.png) repeat-x;*/
+	/*background: url(images/midashi01.png) repeat-x;*/
 	background-image:linear-gradient(#003a6b 0%, #081e3c 65%);
 	height: 37px;
 	line-height: 37px;
@@ -2061,7 +2061,7 @@ DIV.index #index_tm3 {
 
 #title01,
 #title02 {
-	/*background: url(../images/midashi01.png) repeat-x;*/
+	/*background: url(images/midashi01.png) repeat-x;*/
 	background-image:linear-gradient(#003a6b 0%, #081e3c 65%);
 	background-position-y: bottom;
 	height: 24px;
@@ -2104,7 +2104,7 @@ DIV#index_top_2 .top_news H2,
 DIV#index_top_2 #top_access h2 {
 	width: auto;
 	height: 2.5rem;
-	background: url(../images/h3.png) repeat-x bottom;
+	background: url(images/h3.png) repeat-x bottom;
     font-size: 2.0rem;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -2128,7 +2128,7 @@ DIV#index_top_2 #top_info2 P {
 	left: 0;
 	top: 100px;
 	display: block;
-	background: url(../images/h2box2.png) no-repeat top left;
+	background: url(images/h2box2.png) no-repeat top left;
 	width: 322px;
 	height: 100px;
 	padding-top: 28px;
@@ -2214,7 +2214,7 @@ DIV.company DIV.table TABLE {
 DIV HR.ser_hr {
 	height: 2px;
 	border: none;
-	background: url(../images/hr_bg.gif) repeat-x;
+	background: url(images/hr_bg.gif) repeat-x;
 	width: 100%;
 	margin: 3px auto 13px;
 }
@@ -2249,7 +2249,7 @@ DIV.ser_sub TABLE {
 DIV HR.dotted {
 	height: 1px;
 	border: none;
-	background: url(../images/hr_dotted.gif) repeat-x;
+	background: url(images/hr_dotted.gif) repeat-x;
 	margin: 15px 10px;
 	width: auto;
 	/*width: 100%;*/
@@ -2440,7 +2440,7 @@ FORM#toi_form TABLE TD INPUT[name="mail_2"] {
 	#sub UL#com_menu LI#ser_menu_title2,
 	#sub UL#ser_menu LI#ser_menu_title1,
 	#sub UL#ser_menu LI#ser_menu_title2 {
-		/*background: url(../images/midashi01.png) repeat-x;*/
+		/*background: url(images/midashi01.png) repeat-x;*/
 		background-image:linear-gradient(#003a6b 0%, #081e3c 65%);
 		height: 37px;
 	}
