@@ -11,8 +11,8 @@
         <div class="carousel-visual-item">
             <div class="home-mainvisual">
                 <div class="home-mainvisual-item">
-                    <div class="home-mainvisual-pict"><img src="/images/mainvisual_img01_202311.jpg" alt=""
-                            class="pc-content" /><img src="/images/mainvisual_img01_sp_202311.jpg" alt=""
+                    <div class="home-mainvisual-pict"><img src="../images/mainvisual_img01_202311.jpg" alt=""
+                            class="pc-content" /><img src="../images/mainvisual_img01_sp_202311.jpg" alt=""
                             class="sp-content" /></div>
                     <p class="home-mainvisual-lead">
                         <i>GSSは、公認会計士・税理士をブレーンとして活動している経営・会計・税務の総合コンサルティングファームです。</i>
@@ -45,17 +45,28 @@
                 </li>
             </ul>
         </div>
+        <div class="carousel-visual-item">
+            <div class="home-mainvisual">
+                <div class="home-mainvisual-item -ad">
+                    <div class="home-mainvisual-pict"><img src="/images/mainvisual_img01_240806.jpg" alt="日本の広告費2023"
+                            class="pc-content" /><img src="/images/mainvisual_img01_sp_240806.jpg" alt="日本の広告費2023"
+                            class="sp-content" /></div>
+                    <div class="home-mainvisual-button -ai"><a href="/knowledge/ad_cost/2023/"
+                            class="button -outline">詳しくみる</a></div>
+                    <p class="home-mainvisual-lead -ad">
+                        「日本の広告費」は、日本国内で１年間（1〜12月）に使われた広告費（広告媒体料と広告制作費）の統計です。<br>1947年に推定を開始し、毎年発表しています。</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <div class="home-content home-service">
         <div class="content-inner">
-            <p class="home-content-lead">
-                弊社グループでは、公認会計士、税理士、社会保険労務士等のほか、アライアンス先に弁護士事務所・司法書士事務所・不動産鑑定士事務所等があり、あらゆるサービスをひとつの窓口で提供しております。
-            </p>
-            <figure class="home-service-pict"><img src="/images/service_img.png" alt=""
-                    class="pc-content" /><img src="/images/service_img_sp.png"
-                    alt="高度化された広告コミュニケーション マーケティング基盤の変革 お客様体験の変革" class="sp-content" />
+            <p class="home-content-lead">電通は４つのTransformationでビジネスを支援します</p>
+            <figure class="home-service-pict"><img src="/images/service_img.png"
+                    alt="高度化された広告コミュニケーション マーケティング基盤の変革 お客様体験の変革" class="pc-content" /><img
+                    src="/images/service_img_sp.png" alt="高度化された広告コミュニケーション マーケティング基盤の変革 お客様体験の変革" class="sp-content" />
                 <ul class="home-service-link">
                     <li class="ax"><a href="/capabilities/?tab-capabilities=ax"></a></li>
                     <li class="bx"><a href="/capabilities/?tab-capabilities=bx"></a></li>
