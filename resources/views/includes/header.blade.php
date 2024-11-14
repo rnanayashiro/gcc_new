@@ -1,9 +1,15 @@
 <header id="header" class="header">
-    <h1 class="header-logo"><a href="/"><img src="/common/images/gccinc.svg" alt=""></a></h1>
-    <button class="header-hamburger js-hamburger-button"><span class="header-hamburger-line"></span><span
-            class="header-hamburger-line"></span><span class="header-hamburger-line"></span></button>
-    <div class="jp-en-btn"><a href="/" class="jp-btn">JP</a>|<a class="en-btn -not-en" href="/en/">EN</a></div>
-    <nav class="header-nav">
+    <h1 class="header-logo"><a href="/"><img src="" alt=""></a></h1>
+    <button class="header-hamburger js-hamburger-button">
+        <span class="header-hamburger-line"></span>
+        <span class="header-hamburger-line"></span>
+        <span class="header-hamburger-line"></span>
+    </button>
+    <div class="jp-en-btn">
+        <a href="/" class="jp-btn">JP</a>|
+        <a class="en-btn -not-en" href="/en/">EN</a>
+    </div>
+    <nav class="header-nav" id="nav-header">
         <div class="header-nav-inner">
             <div class="header-nav-container">
                 <div class="header-search">
@@ -22,47 +28,10 @@
                             <div class="header-dropdown -lv1 js-dropdown-menu">
                                 <p class="header-dropdown-title"><a href="/aboutus/">企業情報 TOP</a></p>
                                 <ul class="header-dropdown-menu">
-                                    <li class="header-dropdown-menu-item"><a href="/aboutus/message.html">トップメッセージ</a>
-                                    </li>
-                                    <li class="header-dropdown-menu-item"><a href="/aboutus/philosophy.html">PURPOSE</a>
-                                    </li>
-                                    <li class="header-dropdown-menu-item">
-                                        <a href="/aboutus/summary/"
-                                            class="header-dropdown-button js-dropdown-button">会社概要</a>
-                                        <div class="header-dropdown -lv2 js-dropdown-menu">
-                                            <p class="header-dropdown-title"><a href="/aboutus/summary/">会社概要 TOP</a>
-                                            </p>
-                                            <ul class="header-dropdown-menu">
-                                                <li class="header-dropdown-menu-item"><a
-                                                        href="/aboutus/summary/sub_company/">国内グループ会社</a></li>
-                                                <li class="header-dropdown-menu-item"><a
-                                                        href="/aboutus/summary/company.html">関連会社一覧</a></li>
-                                                <li class="header-dropdown-menu-item"><a
-                                                        href="/aboutus/summary/den.html">電通エンタテインメントネットワーク</a></li>
-                                                <li class="header-dropdown-menu-item"><a
-                                                        href="/aboutus/summary/dsn.html">電通スポーツネットワーク</a></li>
-                                                <li class="header-dropdown-menu-item"><a
-                                                        href="/aboutus/summary/dtn.html">電通プロモーションネットワーク</a></li>
-                                                <li class="header-dropdown-menu-item"><a
-                                                        href="/aboutus/summary/dentsusoken.html">電通総研グループ</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="header-dropdown-menu-item"><a href="/aboutus/director.html">役員一覧</a></li>
-                                    <li class="header-dropdown-menu-item"><a href="/aboutus/jigyosho.html">事業所一覧</a>
-                                    </li>
-                                    <li class="header-dropdown-menu-item"><a
-                                            href="/aboutus/summary/sub_company/">国内グループ会社</a></li>
-                                    <li class="header-dropdown-menu-item"><a href="/aboutus/history.html">歴史</a></li>
-                                    <li class="header-dropdown-menu-item"><a
-                                            href="/aboutus/working_environment_reform/">労働環境改革</a></li>
-                                    <li class="header-dropdown-menu-item"><a href="/aboutus/de_and_i.html">DEI</a>
-                                    </li>
-                                    <li class="header-dropdown-menu-item"><a href="/aboutus/prize.html">広告電通賞</a></li>
-                                    <li class="header-dropdown-menu-item"><a
-                                            href="/aboutus/introduction.html">広告賞受賞歴</a></li>
-                                    <li class="header-dropdown-menu-item"><a
-                                            href="/aboutus/creative_sphere_prize.html">クリエイター・オブ・ザ・イヤー</a></li>
+                                    <li class="header-dropdown-menu-item"><a href="/aboutus/message.html">会社案内TOP</a></li>
+                                    <li class="header-dropdown-menu-item"><a href="/aboutus/philosophy.html">社長挨拶</a></li>
+                                    <li class="header-dropdown-menu-item"><a href="/aboutus/director.html">メンバー</a></li>
+                                    <li class="header-dropdown-menu-item"><a href="/aboutus/jigyosho.html">グループ紹介</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -72,18 +41,12 @@
                                 <p class="header-dropdown-title"><a href="/capabilities/">事業紹介 TOP</a></p>
                                 <ul class="header-dropdown-menu">
                                     <li class="header-dropdown-menu-item"><a
-                                            href="/capabilities/?tab-capabilities=ax">AX</a></li>
+                                            href="/capabilities/?tab-capabilities=ax">会計コンサルティング</a></li>
                                     <li class="header-dropdown-menu-item"><a
-                                            href="/capabilities/?tab-capabilities=bx">BX</a></li>
-                                    <li class="header-dropdown-menu-item"><a
-                                            href="/capabilities/?tab-capabilities=cx">CX</a></li>
-                                    <li class="header-dropdown-menu-item"><a
-                                            href="/capabilities/?tab-capabilities=dx">DX</a></li>
+                                            href="/capabilities/?tab-capabilities=bx">税務コンサルティング</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="header-menu-item" data-effect-delay="10"><a href="/people/"
-                                class="header-menu-title">ピープル</a></li>
                         <li class="header-menu-item" data-effect-delay="12"><a href="/news/"
                                 class="header-menu-title header-dropdown-button js-dropdown-button">ニュースリリース</a>
                             <div class="header-dropdown -lv1 js-dropdown-menu">
@@ -147,13 +110,43 @@
 @section('script')
     <script>
         $(document).ready(function() {
-            // ハンバーガーメニューのクリックイベント
-            $('.js-hamburger-button').on('click', function() {
-                // メニューを開閉する
-                $('.header-nav').toggleClass('open'); // メニューに 'open' クラスを追加または削除
+            // ハンバーガーメニューをクリックしたとき
+            $(".js-hamburger-button").on("click", function() {
+                // headerに 'is-opened' クラスをトグル
+                $("header").toggleClass("is-opened");
 
-                // ハンバーガーアイコンのアニメーション（例: 変形）
-                $(this).toggleClass('open'); // ハンバーガーアイコンの状態も変更
+                // メニューが開いている時、スクロールを無効にする
+                if ($("header").hasClass("is-opened")) {
+                    $("body").css("overflow", "hidden");
+                } else {
+                    $("body").css("overflow", "auto"); // メニューが閉じたらスクロールを有効にする
+                }
+            });
+
+            // BACKボタンをクリックしたとき
+            $(".header-dropdown-back-button").on("click", function() {
+                // headerから 'is-opened' クラスを削除してナビゲーションを閉じる
+                $("header").removeClass("is-opened");
+                $("body").css("overflow", "auto"); // スクロールを有効にする
+            });
+
+
+            // メニューのクリックイベント
+            $(".js-dropdown-button").on("click", function(e) {
+                e.preventDefault(); // リンクの遷移を防止
+
+                var $this = $(this); // クリックされたボタン
+                var $dropdownMenu = $this.next(".header-dropdown"); // クリックしたボタンの次のドロップダウンメニュー
+
+                // すべてのドロップダウンメニューを閉じる
+                $(".header-dropdown").not($dropdownMenu).slideUp().removeClass("is-opened");
+
+                // 対応するドロップダウンメニューを開く
+                if ($dropdownMenu.hasClass("is-opened")) {
+                    $dropdownMenu.removeClass("is-opened").stop(true, true).slideUp(); // すでに開いていたら閉じる
+                } else {
+                    $dropdownMenu.addClass("is-opened").stop(true, true).slideDown(); // 開いていなければ表示
+                }
             });
         });
     </script>

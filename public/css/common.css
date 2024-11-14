@@ -507,6 +507,7 @@ body.is-fixed-body {
   left: auto;
 }
 
+/* 初期状態でheader-navは非表示 */
 .header-nav {
   z-index: 5;
   position: absolute;
@@ -518,15 +519,16 @@ body.is-fixed-body {
   background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.3s ease; /* スムーズにフェードイン */
 }
 
+/* is-openedクラスが付与されたときに表示される */
 .header.is-opened .header-nav {
-  -webkit-transition: opacity 0.3s ease;
   opacity: 1;
   pointer-events: auto;
-  transition: opacity 0.3s ease;
 }
 
+/* header-nav-inner（メニュー内のスクロール） */
 .header-nav-inner {
   scrollbar-width: none;
   -webkit-backdrop-filter: blur(6px);
@@ -539,6 +541,7 @@ body.is-fixed-body {
   display: none;
 }
 
+/* ナビゲーションの内容 */
 .header-nav-container {
   width: 100%;
   max-width: 1100px;
@@ -546,6 +549,7 @@ body.is-fixed-body {
   padding: 36px 34px 0 49px;
 }
 
+/* 検索バーのデザイン */
 .header-search {
   font-size: 1.3rem;
 }
@@ -557,7 +561,7 @@ body.is-fixed-body {
 }
 
 .header-search-tags a::after {
-  -webkit-transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -568,7 +572,27 @@ body.is-fixed-body {
   background: url(/common/images/icon_arrow_r.svg) no-repeat 50% 50%;
   background-size: contain;
   content: '';
-  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* BACKボタン */
+.header-dropdown-back-button {
+  display: none;
+  padding: 8px 16px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.header-dropdown-back-button:hover {
+  background-color: #bbb;
+}
+
+/* ヘッダーが開いているときにBACKボタンを表示 */
+.header.is-opened .header-dropdown-back-button {
+  display: block;
 }
 
 .header-search-tags a:hover::after {
@@ -11314,13 +11338,10 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
     -ms-flex-positive: 1;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    flex-direction: row-reverse;
     flex-grow: 1;
     justify-content: space-between;
     height: calc(100% - 84px);
