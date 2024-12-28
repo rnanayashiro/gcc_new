@@ -22,3 +22,12 @@ Route::get('/top', function () {
 Route::get('/newsForm', function () {
     return view('newsForm');
 });
+Route::get('/accountingConsulting', function () {
+    return view('accountingConsulting');
+});
+Route::get('/taxConsulting', function () {
+    return view('taxConsulting');
+});
+Route::get('/companyOverview', function () {
+    return view('companyOverview');
+});
