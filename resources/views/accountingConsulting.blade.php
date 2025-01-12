@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('styles')
     @parent <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/accounting.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
 @section('content')
     <main id="main" class="contents">
-        <div class="accounting-consulting-contents">
+        <div class="main-contents">
             <h1 class="main-title">会計コンサルティング</h1>
             <div class="">
                 企業経営の根幹となる会計・税務に関して、公認会計士・税理士が専門的な観点からアドバイスを行います。
