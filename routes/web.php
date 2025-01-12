@@ -31,3 +31,6 @@ Route::get('/taxConsulting', function () {
 Route::get('/companyOverview', function () {
     return view('companyOverview');
 });
+Route::get('/messageFromOurPresident', function () {
+    return view('messageFromOurPresident');
+});

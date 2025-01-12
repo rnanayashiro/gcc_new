@@ -1,0 +1,156 @@
+/* 全体のレイアウト */
+.main-contents {
+    width: 100%;
+    max-width: 1000px;  /* 最大幅を1000pxに設定 */
+    margin: 0 auto;  /* 中央揃え */
+    padding: 20px;
+    background-color: #f9f9f9;  /* 背景色 */
+}
+
+.main-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.main-title-eng {
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+}
+/* セクションごとのスタイル */
+.main-contents > div {
+    margin-bottom: 40px;  /* 各セクションの間隔 */
+    padding-bottom: 20px;
+}
+
+.main-contents > div > div:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000033;  /* 見出しの色 */
+}
+
+.support-cases {
+    font-family: Arial, sans-serif; /* フォント設定 */
+    margin: 20px; /* 外部余白設定 */
+    padding: 20px; /* 内部余白設定 */
+    background-color: #f9f9f9; /* 背景色 */
+    border-radius: 8px; /* 角丸 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.support-cases h3 {
+    font-size: 1.5em; /* 見出しのフォントサイズ */
+    color: #333; /* 見出しの文字色 */
+    margin-bottom: 10px; /* 見出し下の余白 */
+}
+
+.support-cases ul {
+    list-style-type: none; /* リストのマーカーを消す */
+    padding-left: 0; /* 左の余白を消す */
+}
+
+.support-cases li {
+    font-size: 1.1em; /* アイテムのフォントサイズ */
+    color: #555; /* アイテムの文字色 */
+    margin-bottom: 8px; /* 各アイテムの下に余白を追加 */
+    padding-left: 20px; /* 左側にインデントを追加 */
+    position: relative; /* アイテム位置を調整 */
+}
+
+.support-cases li::before {
+    content: "✔"; /* アイテム前にチェックマークを追加 */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* アイコンを中央に配置 */
+    color: #4CAF50; /* チェックマークの色 */
+    font-size: 1.2em; /* チェックマークのサイズ */
+}
+
+.sub-container {
+    display: flex;
+    align-items: flex-start;  /* 上揃え */
+}
+
+.sub-container-litem {
+    width: 200px;  /* 「本社」の固定幅 */
+    text-align: left;
+    margin-right: 10px;  /* 「本社」と住所の間のマージンを減らす */
+}
+
+.sub-container-rtem {
+    flex-grow: 1;  /* 住所が右端まで広がるように */
+}
+
+.sub-container-date {
+    margin-left: auto;  /* 右端に寄せる */
+    font-size: 12px; /* 文字サイズを小さくする */
+    color: #666;  /* 色を薄いグレーに */
+}
+
+.sub-container-border {
+    background: linear-gradient(135deg, #003366, #006699); /* 紺色のグラデーション */
+    padding: 8px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.sub-container-border-text {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* 右寄せ */
+    transform: translateY(-50%); /* 垂直方向で中央揃え */
+    color: white; /* 文字色を白に設定 */
+    font-size: 8px; /* 文字サイズを小さく設定 */
+    text-align: right; /* 右揃え */
+}
+
+.border-gray {
+    border-bottom: 1px solid #DCDCDC;
+    margin: 5px;
+    position: relative;
+}
+
+.container {
+    display: flex; /* 横並びにする */
+    justify-content: flex-start; /* 左寄せ */
+    align-items: center; /* 垂直方向で中央揃え */
+}
+
+.label {
+    margin-right: 10px; /* 左側の要素との間にスペースを追加 */
+    font-weight: bold; /* 総人員数を太字に */
+}
+
+.english {
+    font-style: italic; /* 英語のテキストをイタリック体に */
+}
+
+.txt-right {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .main-contents {
+        padding: 15px;  /* モバイルでのパディング調整 */
+    }
+
+    .main-title {
+        font-size: 24px;  /* モバイル向けにタイトルのサイズを小さく */
+    }
+
+    .main-contents > div > div:first-child {
+        font-size: 18px;  /* 見出しのサイズを調整 */
+    }
+
+    .main-contents > div > div:last-child {
+        font-size: 14px;  /* コンテンツのフォントサイズを調整 */
+    }
+}
