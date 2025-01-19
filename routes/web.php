@@ -34,3 +34,9 @@ Route::get('/companyOverview', function () {
 Route::get('/messageFromOurPresident', function () {
     return view('messageFromOurPresident');
 });
+Route::get('/member', function () {
+    return view('member');
+});
+Route::get('/group', function () {
+    return view('group');
+});
