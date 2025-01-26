@@ -193,6 +193,10 @@
     margin-top: 30px;
 }
 
+.m-top10{
+    margin-top: 10px;
+}
+
 .m-bottom10{
     margin-bottom: 10px;
 }
@@ -201,7 +205,76 @@
     font-weight: 700;
 }
 
-/* レスポンシブ対応 */
+.font-navy{
+    color: #003366;
+}
+
+ul.advisory-services,
+ul.short-term-services {
+    list-style-type: none; /* デフォルトのリストマーカーを削除 */
+    padding: 0;
+}
+
+ul.advisory-services li {
+    background-color: #e0f7fa; /* 明るい背景色 */
+    border: 1px solid #26c6da; /* リストアイテムのボーダー */
+    margin: 5px 0; /* アイテム間の余白 */
+    padding: 10px; /* アイテム内の余白 */
+    border-radius: 5px; /* 丸みを帯びた角 */
+    font-size: 16px; /* フォントサイズ */
+    line-height: 1.6; /* 行間を広げて読みやすく */
+}
+
+  /* サービス名の強調 */
+ul.advisory-services li span.service-name,
+ul.short-term-services li span.service-name{
+    font-weight: bold; /* サービス名を太字に */
+    color: #333; /* サービス名の文字色 */
+}
+
+
+ul.short-term-services li {
+    background-color: #ffe391; /* からし色の淡い背景色 */
+    border: 1px solid #bb9914; /* からし色のボーダー */
+    margin: 5px 0; /* アイテム間の余白 */
+    padding: 12px; /* アイテム内の余白 */
+    border-radius: 5px; /* 丸みを帯びた角 */
+    font-size: 16px; /* フォントサイズ */
+    line-height: 1.6; /* 行間を広げて読みやすく */
+    color: #333; /* テキストカラー */
+}
+
+/* ボタンを囲む親要素をフレックスコンテナに */
+.button-container {
+    display: flex; /* フレックスレイアウト */
+    justify-content: flex-end; /* ボタンを左寄せ */
+    align-items: center; /* 垂直方向中央寄せ */
+}
+
+  /* リンク全体をボタンのようにスタイリング */
+a.succession-button {
+    text-decoration: none; /* デフォルトのリンクの下線を削除 */
+}
+
+  /* ボタンのデザイン */
+.succession-text {
+    background-color: #003366; /* 濃い青色の背景 */
+    color: white; /* 白い文字 */
+    padding: 12px 20px; /* 内側の余白 */
+    border-radius: 5px; /* 角を丸く */
+    font-size: 16px; /* フォントサイズ */
+    font-weight: bold; /* 太字 */
+    text-align: center; /* テキストを中央寄せ */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 背景色の遷移効果とアニメーション */
+}
+
+.succession-button:hover .succession-text {
+    background-color: #005b99; /* ホバー時の濃い青色 */
+    cursor: pointer; /* ポインターを手のひらに */
+    transform: translateY(-3px); /* ホバー時にボタンを少し上に浮かせる */
+}
+
+  /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .main-contents {
         padding: 15px;  /* モバイルでのパディング調整 */
