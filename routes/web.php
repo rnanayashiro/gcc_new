@@ -40,3 +40,30 @@ Route::get('/member', function () {
 Route::get('/group', function () {
     return view('group');
 });
+Route::get('/flow', function () {
+    return view('flow');
+});
+Route::get('/bussinessSuccession', function () {
+    return view('bussinessSuccession');
+});
+Route::get('/businessSuccessionServices', function () {
+    return view('businessSuccessionServices');
+});
+Route::get('/recruit', function () {
+    return view('recruit');
+});
+Route::get('/systemConsulting', function () {
+    return view('systemConsulting');
+});
+Route::get('/mergersandAcquisitionsConsulting', function () {
+    return view('mergersandAcquisitionsConsulting');
+});
+Route::get('/humanResourcesConsulting', function () {
+    return view('humanResourcesConsulting');
+});
+Route::get('/initialPublicOfferingConsulting', function () {
+    return view('initialPublicOfferingConsulting');
+});
+Route::get('/internationalTaxConsulting', function () {
+    return view('internationalTaxConsulting');
+});

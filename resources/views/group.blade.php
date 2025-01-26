@@ -24,7 +24,8 @@
                     </div>
                     <div class="sub-container-ritem">
                         弊社を中心としてAccounting ＆Taxation Professional Groupを構築しており、<br>
-                        グローバルグループ各社においても以下のような様々なサービスを提供しております。 </div>
+                        グローバルグループ各社においても以下のような様々なサービスを提供しております。
+                    </div>
                 </div>
                 <div class="border-gray"></div>
 
@@ -250,6 +251,7 @@
                 </div>
                 <div class="border-gray"></div>
             </div>
+        </div>
     </main>
     <!-- /.main -->
 @endsection
