@@ -67,3 +67,6 @@ Route::get('/initialPublicOfferingConsulting', function () {
 Route::get('/internationalTaxConsulting', function () {
     return view('internationalTaxConsulting');
 });
+Route::get('/Duediligence', function () {
+    return view('Duediligence');
+});
