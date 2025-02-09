@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -66,4 +69,12 @@ Route::get('/initialPublicOfferingConsulting', function () {
 });
 Route::get('/internationalTaxConsulting', function () {
     return view('internationalTaxConsulting');
+});
+
+Route::get('/contact', [ContactController::class, 'showForm'])->name('contact');
+Route::post('/contact/confirm', [ContactController::class, 'showConfirm'])->name('confirm');
+Route::post('/contact/submit', [ContactController::class, 'submit'])->name('submit');
+
+Route::get('/Duediligence', function () {
+    return view('Duediligence');
 });

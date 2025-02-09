@@ -12809,3 +12809,26 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
     font-size: 2.1rem
   }
 }
+
+.transition-button-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.transition-button {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.transition-button:hover {
+  background-color: #002244;
+}

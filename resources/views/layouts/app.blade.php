@@ -21,11 +21,10 @@
         integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
-    </style>
-
     @yield('styles') <!-- stylesセクションを追加 -->
+    <!-- Styles / Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/common.css', 'resources/css/pagesetting.css'])
+
 </head>
 
 <body>
