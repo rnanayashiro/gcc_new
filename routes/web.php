@@ -67,6 +67,18 @@ Route::get('/initialPublicOfferingConsulting', function () {
 Route::get('/internationalTaxConsulting', function () {
     return view('internationalTaxConsulting');
 });
-Route::get('/Duediligence', function () {
-    return view('Duediligence');
+Route::get('/duediligence', function () {
+    return view('duediligence');
+});
+Route::get('/duediligenceService', function () {
+    return view('duediligenceService');
+});
+Route::get('/duediligenceFaq', function () {
+    return view('duediligenceFaq');
+});
+Route::get('/sitePolicy', function () {
+    return view('sitePolicy');
+});
+Route::get('/privacyPolicy', function () {
+    return view('privacyPolicy');
 });
