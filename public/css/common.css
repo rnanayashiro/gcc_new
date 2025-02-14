@@ -9179,3 +9179,12 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
 .transition-button:hover {
   background-color: #002244;
 }
+
+.content-inner {
+  width: 100%;
+  max-width: 1266px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
