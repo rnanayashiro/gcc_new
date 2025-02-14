@@ -274,6 +274,35 @@ a.succession-button {
     transform: translateY(-3px); /* ホバー時にボタンを少し上に浮かせる */
 }
 
+.red-symbol {
+    color: #FF0000;
+}
+
+.form-group-input,
+.form-group-txtarea {
+    border: 1px solid #bdcfd9 !important;
+    border-radius: 4px !important;
+    width: 615px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.width210 {
+    width: 210px;
+}
+
   /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .main-contents {
