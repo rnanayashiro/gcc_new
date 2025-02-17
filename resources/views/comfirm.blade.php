@@ -59,6 +59,15 @@
                         Contact Form
                     </div>
                 </div>
+                <div id="error-messages" style="color: red;">
+                    @if ($errors->any())
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    @endif
+                </div>
                 <form action="{{ route('submit') }}" method="POST">
                     @csrf
 

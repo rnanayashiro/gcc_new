@@ -1,22 +1,29 @@
-$(document).ready(function () {
-    // 保存されたフォームデータを取得
-    var formValues = JSON.parse(localStorage.getItem("formValues"));
+$(document).ready(function() {
+    // フォームの送信イベント
+    $('form').on('submit', function(e) {
+        e.preventDefault();  // フォームの通常の送信を防ぐ
 
-    if (formValues) {
-        var detailsHtml = "";
+        // フォームデータを取得
+        var formData = $(this).serialize(); // すべてのフォームデータをシリアライズ
 
-        // データを確認画面に表示
-        $.each(formValues, function (key, value) {
-            detailsHtml += "<p><strong>" + key + ":</strong> " + value + "</p>";
+        // AJAXリクエストを送信
+        $.ajax({
+            url: '{{ route('submit') }}',  // 送信先URL
+            type: 'POST',                  // POSTリクエスト
+            data: formData,                // 送信するデータ
+            success: function(response) {
+                // 成功した場合
+                alert('フォームが正常に送信されました。');
+                console.log(response);
+            },
+            error: function(xhr) {
+                // エラーが発生した場合
+                var errors = xhr.responseJSON.errors;
+                // エラーメッセージを表示
+                for (var key in errors) {
+                    alert(errors[key].join(', '));  // 各フィールドのエラーメッセージを表示
+                }
+            }
         });
-
-        $("#confirm-details").html(detailsHtml);
-    }
-
-    $("#submit-confirm").on("click", function () {
-        // 最終的にサーバーにデータを送信
-        // サーバー送信のコードを追加できます
-        alert("送信完了!");
-        localStorage.removeItem("formValues"); // 送信後はデータを削除
     });
-});
+})

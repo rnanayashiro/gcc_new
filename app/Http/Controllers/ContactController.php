@@ -17,9 +17,7 @@ class ContactController extends Controller
 
     public function showConfirm(Request $request)
     {
-        \Log::info($request->all());
-        date_default_timezone_set('Asia/Tokyo');
-        $input = $request->all();
+        // バリデーションルール
         $rules = [
             'company-name' => 'required|string|max:255',
             'contact-name' => 'required|string|max:255',
@@ -28,21 +26,25 @@ class ContactController extends Controller
             'email' => 'required|email|max:255',
             'inquiry' => 'required', // お問い合わせ内容は1つ以上選択することを確認
         ];
+
         $messages = [
             'required' => '入力してください。',
             'string' => '文字列を入力してください。',
             'regex' => '半角英数字で入力してください。',
+            'email' => '有効なメールアドレスを入力してください。',
         ];
 
         // バリデーションの実行
-        $validator = Validator::make($input, $rules, $messages);
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        // バリデーションエラーがあればフォームに戻す
         if ($validator->fails()) {
-            return response()->json([
-                'errors' => $validator->errors()->toArray()
-            ], 400);
+            return back()->withErrors($validator)->withInput();
         }
 
-        $validatedData = $validator->validated();
+        // バリデーション通過後の処理（データの保存やメール送信など）
+        // ここでは確認ページにリダイレクト
+        return redirect()->route('contact.confirm')->with('success', 'フォームが送信されました');
     }
 
     // フォーム送信処理
