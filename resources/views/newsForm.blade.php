@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('styles')
-    @parent <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
+    @parent 
+    <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/news.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
