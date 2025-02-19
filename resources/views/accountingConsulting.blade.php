@@ -1,15 +1,27 @@
 @extends('layouts.app')
 @section('styles')
-    @parent <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
+@parent
+<!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
 @section('content')
-    <main id="main" class="contents">
+<main id="main" class="contents">
+    <div class="main-cover">
         <div class="main-contents">
-            <h1 class="main-title">会計コンサルティング</h1>
+            <div class="article-header">
+                <p class="article-category">サービス　Services</p>
+                <h1 class="main-title">会計コンサルティング</h1>
+            </div>
+            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
             <div class="">
-                企業経営の根幹となる会計・税務に関して、公認会計士・税理士が専門的な観点からアドバイスを行います。
+                <div class=""></div>
+                <div class="image-text-block">
+                    <img src="images/gccinc.webp" alt="税理士法人GCC" class="image-block-flex">
+                    <div class="text-block-flex">
+                        企業経営の根幹となる会計・税務に関して、公認会計士・税理士が専門的な観点からアドバイスを行います。
+                    </div>
+                </div>
             </div>
             <div class="">
                 <div class="">
@@ -59,6 +71,7 @@
                 </div>
             </div>
         </div>
-    </main>
-    <!-- /.main -->
+    </div>
+</main>
+<!-- /.main -->
 @endsection

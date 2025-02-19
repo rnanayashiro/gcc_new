@@ -1,34 +1,30 @@
 @extends('layouts.app')
 @section('styles')
-    @parent <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
+@parent
+<!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
 @section('content')
-    <main id="main" class="contents">
+<main id="main" class="contents">
+    <div class="main-cover">
         <div class="main-contents">
-            <h1 class="main-title-eng">Service</h1>
-            <h1 class="main-title">サービス</h1>
-            <div class="contents-box">
-                <div class="">
-                    システムコンサルティング
-                </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        System Consulting
-                    </div>
-                </div>
-                <div class="sub-container">
-                    <div class="sub-container-litem-img">
-                        <img src="images/ser_top_img5.jpg" alt="f_left" width="650" height="auto">
-                    </div>
-                    <div class="sub-container-ritem">
+            <div class="article-header">
+                <p class="article-category">サービス　Services</p>
+                <h1 class="main-title">システムコンサルティング</h1>
+            </div>
+            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="">
+                <div class=""></div>
+                <div class="image-text-block">
+                    <img src="images/ser_top_img5.jpg" alt="f_left" class="image-block-flex">
+                    <div class="text-block-flex">
                         業務・会計・Ｊ－ＳＯＸを熟知し、システム開発における豊富なコーディネートの経験を持つ公認会計士が販売・会計・財務システムの構築時に、ベンダー任せのシステム構築とならぬよう、貴社の立場にたったアドバイスを行います。
                     </div>
                 </div>
-                <div class="border-gray"></div>
-
-                <div class="font-w700 font-navy m-bottom10">
+            </div>
+            <div class="">
+                <div class="">
                     継続支援サービス
                 </div>
                 <div class="">
@@ -36,16 +32,15 @@
                     <br>
                     弊社グループでは、例えば以下の手順でコンサルティングを行なうことにより、貴社にとって最適なシステムの構築を支援いたします。
                 </div>
-                <div class="image-container-center m-top30">
-                    <img src="/images/img_4.jpg" alt="img_center">
-                </div>
-                <div class="border-gray"></div>
-
-                <div class="image-container-center m-top30">
-                    <img src="/images/img_3.jpg" alt="img_center">
-                </div>
+            </div>
+            <div class="image-container-center m-top30">
+                <img src="/images/img_4.jpg" alt="img_center">
+            </div>
+            <div class="image-container-center m-top30">
+                <img src="/images/img_3.jpg" alt="img_center">
             </div>
         </div>
-    </main>
-    <!-- /.main -->
+    </div>
+</main>
+<!-- /.main -->
 @endsection

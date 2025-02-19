@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  src: url("../fonts/IwaUCDAGothStd-Lt.otf") format("opentype"), url("../fonts/IwaUCDAGothStd-Md.otf") format("opentype"), url("../fonts/IwaUCDAGothStd-R2.otf") format("opentype"), url("../fonts/IwaUCDAGothStd-Th.otf") format("opentype");
-  font-family: 'minmoji';
-}
 
 @-webkit-keyframes fade-in {
   0% {
@@ -103,12 +99,12 @@ a:hover {
   outline-width: 0;
 }
 
-code,
+/* code,
 kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-}
+} */
 
 pre {
   font-size: 1em;
@@ -800,7 +796,7 @@ body.is-fixed-body {
   padding: 5px 10px 5px 30px;
   background-color: #000000;
   color: #ffffff;
-  font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
 }
 
 .header-dropdown-back-button::after {
@@ -854,7 +850,7 @@ body.is-fixed-body {
 
 .header-topics-title {
   margin: 110px 0 20px;
-  font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
   font-size: 2.0rem;
   font-weight: 700;
   line-height: 1.4;
@@ -1271,7 +1267,7 @@ body.is-fixed-body {
 }
 
 .heading-lv2-latin {
-  font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
   font-size: 4rem;
 }
 
@@ -1581,7 +1577,7 @@ body.is-fixed-body {
   height: 100%;
   margin: auto;
   object-fit: contain;
-  font-family: "object-fit: contain;";
+  /* font-family: "object-fit: contain;"; */
 }
 
 .card-pict img {
@@ -1663,7 +1659,7 @@ body.is-fixed-body {
 
 .card-data {
   margin-bottom: 3px;
-  font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
   font-size: 1.3rem;
   line-height: 1.15385;
 }
@@ -1675,7 +1671,7 @@ body.is-fixed-body {
 
 .card-heading {
   margin-bottom: 10px;
-  font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.26667;
@@ -2531,7 +2527,7 @@ body.search ._popfind_sitesearch ._items ._item ._wrap ._thumbnail a img {
   height: 100%;
   margin: auto;
   object-fit: cover;
-  font-family: "object-fit: cover;";
+  /* font-family: "object-fit: cover;"; */
 }
 
 body.search ._popfind_sitesearch ._items ._item ._wrap ._thumbnail a::before {
@@ -2745,7 +2741,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
 
 .home-content-heading {
   margin-bottom: 45px;
-  font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.4;
@@ -2978,7 +2974,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   flex-shrink: 0;
   padding: 0 2em 4px 0;
   color: #888888;
-  font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
   font-size: 2.6rem;
   font-weight: 700;
 }
@@ -3048,7 +3044,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   display: block;
-  font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
   font-weight: 700;
   line-height: 1;
 }
@@ -3554,13 +3550,13 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   font-size: 4.8rem !important;
 }
 
-.ff-base {
+/* .ff-base {
   font-family: "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
 }
 
 .ff-minmoji {
   font-family: "minmoji";
-}
+} */
 
 /* margin */
 .m-auto {
@@ -9077,7 +9073,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
 .fs-sustainability-01{
   font-size: 7.0rem;
   line-height: 1;
-  font-family: halcom, Verdana, sans-serif;
+  /* font-family: halcom, Verdana, sans-serif; */
 }
 .fs-sustainability-02{
   font-size: 2.6rem;
@@ -9187,4 +9183,115 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   margin-left: auto;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.image-block {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.image-text-block {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-block-flex {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.text-block-flex {
+  width: 70%;
+}
+
+.image-text-block_group{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-text-block_flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-block-group {
+  width: 100%;
+}
+
+.text-block-group table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #fff;
+}
+
+.text-block-flex table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.text-block-group table th {
+  background-color: #FFC0CB;
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+.text-block-flex table th {
+  text-align: left;
+  font-weight: normal;
+  width: 100px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.op-table{
+  width: auto !important;
+}
+
+.op-table table th {
+  width: 25% !important;
+  border: 1px solid #fff;
+}
+
+.op-table table td {
+  border: 1px solid #fff;
+}
+
+.text-block-group table td {
+  background-color: #f5f5f5;
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+.text-block-flex table td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.group-title{
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+@media (max-width: 768px) {
+  .image-text-block {
+    flex-direction: column;
+  }
+  .image-block-flex {
+    width: 100%;
+  }
+  .text-block-flex {
+    width: 100%;
+  }
 }

@@ -1,24 +1,23 @@
 @extends('layouts.app')
 @section('styles')
-    @parent <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
+@parent
+<!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
 @section('content')
-    <main id="main" class="contents">
+<main id="main" class="contents">
+    <div class="main-cover">
         <div class="main-contents">
-            <h1 class="main-title-eng">Corporate Profile</h1>
-            <h1 class="main-title">会社案内</h1>
-            <div class="contents-box">
+            <div class="article-header">
+                <p class="article-category">会社案内　Corporate Overview</p>
+                <h1 class="main-title">社長挨拶</h1>
+            </div>
+            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="">
                 <div class="">
                     代表ご挨拶
                 </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        Message From Our President
-                    </div>
-                </div>
-
                 <div class="">
                     「貴社の成長の鍵を握る戦略的パートナー」として2005年に創業して以来、私たちはクライアント様の様々な課題に対して、あたかも貴社の従業員のように、共に向き合い、共に汗を掻いて、共に解決することで、様々な経験を積み重ねてきました。<br>
                     <br>
@@ -42,10 +41,10 @@
                         株式会社 グローバル・コーポレート・コンサルティング<br>
                         代表取締役社長 佐野　信行
                     </div>
-
                 </div>
             </div>
         </div>
-    </main>
-    <!-- /.main -->
+    </div>
+</main>
+<!-- /.main -->
 @endsection
