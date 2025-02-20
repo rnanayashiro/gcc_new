@@ -328,6 +328,151 @@ a.succession-button {
     width: 210px;
 }
 
+/* ヘッダー */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background: rgba(240, 240, 240, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: height 0.3s ease;
+    z-index: 1000;
+}
+
+.header-left a img {
+    width: 100%;
+    max-width: 205px;
+    min-width: 100px;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+}
+
+/* スクロール時の縮小 */
+.scroll-active {
+    height: 80px;
+}
+
+/* ハンバーガーメニュー */
+.menu-toggle {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* ナビゲーションメニュー */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 1222px;
+    max-width: 100%;
+    height: 100vh;
+    background: white;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row; /* 横並び */
+    padding: 50px 20px;
+}
+
+/* メニューリスト */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 270px; /* リストの幅を270px */
+    min-width: 270px;
+}
+
+/* メニューアイテム */
+.menu-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    position: relative;
+    background: #f9f9f9; /* 背景色を設定 */
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* サブメニュー */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: white;
+    width: 270px; /* サブリストの幅を270px */
+    min-width: 270px;
+    border-left: 2px solid #ddd;
+}
+
+.has-submenu:hover > .submenu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* メニュー表示時 */
+.menu-open {
+    right: 0;
+}
+
+/* ハンバーガーメニューのアイコンが前面に来るように */
+.menu-toggle {
+    position: relative;
+    z-index: 1100;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* メニュー開いたときのアイコン変化 */
+.menu-open .menu-toggle span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.menu-open .menu-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open .menu-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+
   /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .main-contents {

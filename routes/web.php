@@ -95,4 +95,9 @@ Route::get('/sitePolicy', function () {
 Route::get('/privacyPolicy', function () {
     return view('privacyPolicy');
 });
-
+Route::get('/services', function () {
+    return view('services');
+});
+Route::get('/kakunin', function () {
+    return view('kakunin');
+});
