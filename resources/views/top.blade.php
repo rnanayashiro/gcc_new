@@ -26,7 +26,7 @@
             <div class="area-bnr">
                 <ul class="area-bnr-list">
                     <li class="area-bnr-list-item area-bnr-list-item-01">
-                        <a href="./feature/philosophy.html">
+                        <a href="{{ route('accountingConsulting') }}">
                             <img src="images/gccred.webp" alt="会計コンサルティング">
                             <span>会計コンサルティング</span>
                         </a>

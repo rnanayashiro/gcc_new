@@ -27,7 +27,8 @@ Route::get('/newsForm', function () {
 });
 Route::get('/accountingConsulting', function () {
     return view('accountingConsulting');
-});
+})->name('accountingConsulting');
+
 Route::get('/taxConsulting', function () {
     return view('taxConsulting');
 });
@@ -93,4 +94,10 @@ Route::get('/sitePolicy', function () {
 });
 Route::get('/privacyPolicy', function () {
     return view('privacyPolicy');
+});
+Route::get('/services', function () {
+    return view('services');
+});
+Route::get('/kakunin', function () {
+    return view('kakunin');
 });

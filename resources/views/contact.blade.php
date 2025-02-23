@@ -1,24 +1,21 @@
 @extends('layouts.app')
 @section('styles')
-    @parent <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
+@parent
+<!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
 @section('content')
-    <main id="main" class="contents">
+<main id="main" class="contents">
+    <div class="main-cover">
         <div class="main-contents">
-            <h1 class="main-title-eng">Contact</h1>
-            <h1 class="main-title">お問い合わせ</h1>
-            <div class="contents-box">
-                <div class="">
-                    お問い合わせ
-                </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        Contact
-                    </div>
-                </div>
-
+            <div class="article-header">
+                <p class="article-category">お問い合わせ　Contact Us</p>
+                <h1 class="main-title">お問い合わせ</h1>
+            </div>
+            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="">
+                <div class=""></div>
                 <div class="">
                     各サービスに関する質問はお問い合わせ内容を下記のフォームからお気軽にお寄せください。<br>
                     折り返しお返事させていただきます。<br>
@@ -40,25 +37,18 @@
                         <a href="mailto:gcc-info@g-c-c.jp">gcc-info@g-c-c.jp</a>
                     </div>
                 </div>
-                <div class="border-gray"></div>
+            </div>
+            <div class="form-container">
+                <div class="">
+                    お問い合わせフォーム
+                </div>
                 <div class="">
                     お問い合わせフォーム<br>
                     <span class="red-symbol">※</span>は記入必須項目ですので、必ずご記入ください。<br>
                     メールアドレスは正しくご入力下さい。（弊社より返信メールが届きません。）<br>
                     半角カナ入力は文字化けの原因となりますのでご注意ください。
                 </div>
-
-            </div>
-
-            <div class="form-container">
-                <div class="">
-                    お問い合わせフォーム
-                </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        Contact Form
-                    </div>
-                </div>
+                <div class="border-gray"></div>
                 <form action="{{ route('confirm') }}" method="POST">
                     @csrf
 
@@ -335,10 +325,13 @@
                         </div>
                     </div>
 
-                    <button type="submit">確認画面へ進む</button>
+                    <div class="form-container-center">
+                        <button type="submit">確認画面へ進む</button>
+                    </div>
                 </form>
             </div>
         </div>
-    </main>
-    <!-- /.main -->
+    </div>
+</main>
+<!-- /.main -->
 @endsection

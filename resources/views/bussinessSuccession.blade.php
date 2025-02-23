@@ -1,51 +1,45 @@
 @extends('layouts.app')
 @section('styles')
-    @parent <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
+@parent
+<!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
 @section('content')
-    <main id="main" class="contents">
+<main id="main" class="contents">
+    <div class="main-cover">
         <div class="main-contents">
-            <h1 class="main-title-eng">Bussiness Succession</h1>
-            <h1 class="main-title">事業承継</h1>
-            <div class="contents-box">
+            <div class="article-header">
+                <p class="article-category">事業承継　Bussiness Succession</p>
+                <h1 class="main-title">事業承継</h1>
+            </div>
+            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="">
                 <div class="">
-                    継続支援サービス
+                    事業承継における税金対策
                 </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        Tax Planning for Business Succession
-                    </div>
-                </div>
-
                 <div class="">
                     オーナー経営者であれば、誰もが直面する問題が「事業承継」です。<br>
                     事業承継対策を行っていますか？という質問に対して、<br>
-                    「株価対策や株の承継はやっている」であるとか「顧問税理士がきっちりと相続税対策をしてくれている」という声はよく聞きます。<br>
-                    <br>
-                    具体的には、<br>
-                    <br>
-                    ・贈与税が発生しない範囲でご子息へ毎年少しずつ株式を渡していく<br>
-                    ・保険加入や退職金を利用した株価対策<br>
-                    ・類似業種比準方式を見据えた株価対策<br>
-                    ・借入をしての不動産購入による株価対策　など<br>
+                    「株価対策や株の承継はやっている」であるとか「顧問税理士がきっちりと相続税対策をしてくれている」という声はよく聞きます。
+                    <div class="support-cases">
+                        <h3>具体的には</h3>
+                        <ul>
+                            <li>贈与税が発生しない範囲でご子息へ毎年少しずつ株式を渡していく</li>
+                            <li>保険加入や退職金を利用した株価対策</li>
+                            <li>類似業種比準方式を見据えた株価対策</li>
+                            <li>借入をしての不動産購入による株価対策など</li>
+                        </ul>
+                    </div>
                     多額の相続税の発生を減らすために株価を低く抑えるための対策です。確かにこれらも「事業承継」対策として重要な対策です。<br>
                     <br>
                     弊社では、会社に応じた事業承継対策アドバイスを行っております。
                 </div>
             </div>
-
-            <div class="contents-box">
+            <div class="">
                 <div class="">
                     事業承継における別の視点
                 </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        Another Perspective on Business Succession
-                    </div>
-                </div>
-
                 <div class="">
                     しかし、上述の対策は相続税額の発生を減らす方向ですので、オーナー経営者様（被相続人）がキャッシュ（現預金・現金同等物）を保有する形は極力避けた方がよいという結論に至ります。<br>
                     しかし、本当にそうでしょうか。<br>
@@ -55,27 +49,19 @@
                     弊社では、一般的な事業承継対策に加え、オーナー経営者様のキャッシュイン最大化を見据えた事業承継対策アドバイスも行っております。
                 </div>
             </div>
-
-            <div class="contents-box">
+            <div class="">
                 <div class="">
                     ご子息が複数名の場合こそ
-                </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        Especially when there are multiple sons
-                    </div>
                 </div>
                 <div class="">
                     承継するご子息が1名である場合は財産権の承継の面から相続税の悩みが中心となりますが、仮にご子息が複数名いるような場合、以下のケースが想定されます。
                 </div>
-
                 <div class="font-w700 font-navy m-top30">
                     以前からご子息が協力して会社の運営に十分関与できている場合
                 </div>
                 <div class="">
                     このような場合には、力を合わせて会社の経営を承継していく準備が整っていると考えられ、ご子息が1名の場合と同様に株式の承継等の財産権の承継が中心的な検討事項になることが多いと考えられます。
                 </div>
-
                 <div class="font-w700 font-navy m-top30">
                     ご子息が複数名いるものの、後継者が明確に決まっていない場合
                 </div>
@@ -86,24 +72,22 @@
                     このように、ご子息に会社の事業を配分することで経営権・財産権の承継の土台を作るといったスキーム検討が重要な場合もありえます。
                 </div>
             </div>
-
-            <div class="contents-box">
+            <div class="">
                 <div class="">
                     事業承継とは
                 </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        What is business succession
-                    </div>
-                </div>
-
                 <div class="font-w700 font-navy m-top30">
                     「事業承継」とは
                 </div>
                 <div class="">
                     会社の経営を、いつ、誰に、どのように承継していくかを考えることであり、「経営権（社長の座）」と「財産権（自社株式の所有）」を適切な人材に譲り渡すことで今の事業を引継ぎ、事業を存続させることです。
                 </div>
-
+                <div class="font-w700 font-navy m-top30">
+                    経営権の承継
+                </div>
+                <div class="">
+                    経営承継の留意点は、次期経営者が従業員はもちろんのこと得意先・金融機関等の各種ステークホルダーから経営者としての承認を受けることです。そのために、新しい経営ビジョンを示した次期経営者による新経営計画の策定が有効なツールになりえます。
+                </div>
                 <div class="font-w700 font-navy m-top30">
                     財産権の承継
                 </div>
@@ -112,44 +96,36 @@
                     後継者は、経営者ご自身のご子息のみならず外部の第三者ということもありえます。<br>
                     なお、財産権の承継にあたっては、株価対策以外にも、承継手法の検討・組織再編の活用の検討、買取・納税資金の検討など、様々な視点からの検討が必要となります。
                 </div>
-
-                <div class="font-w700 font-navy m-top30">
+            </div>
+            <div class="">
+                <div class="">
                     事業承継のフォローチャート
                 </div>
                 <div class="">
                     事業承継における財産権の承継に関しての一般的な検討の流れは、以下の通りとなります。
                 </div>
-                <div class="image-container-center m-top30">
-                    <img src="images/ma_flow01.png" alt="一般的な事業承継検討フローチャート" width="700px" height="">
-                </div>
             </div>
-
-            <div class="contents-box">
+            <div class="image-container-center m-top30">
+                <img src="images/ma_flow01.png" alt="一般的な事業承継検討フローチャート" width="700px" height="">
+            </div>
+            <div class="">
                 <div class="">
                     M&Aの可能性
                 </div>
-                <div class="sub-container-border">
-                    <div class="sub-container-border-text">
-                        Possibility of Mergers and Acquisitions
-                    </div>
-                </div>
-
                 <div class="font-w700 font-navy m-top30">
                     会社の後継者＝ご子息とならない現状
                 </div>
                 <div class="">
                     最近、関西圏（大阪・神戸・兵庫・京都・奈良）の中小企業様におかれましても、会社の後継者＝ご子息とならないケースのご相談が増えております。これは、以下のような理由によるものです。
                 </div>
-
-                <div class="font-w700 m-top10">
+                <div class="font-w700 font-navy m-top30">
                     ご子息がいない、ご子息に承継の意思がないケース
                 </div>
                 <div class="">
                     純粋に後継者となるご子息が不在である<br>
                     ご子息が他の業界・業種に就職してしまい、会社経営に興味を持たない
                 </div>
-
-                <div class="font-w700 m-top10">
+                <div class="font-w700 font-navy m-top30">
                     現経営者がご子息に承継させる意思がないケース
                 </div>
                 <div class="">
@@ -157,20 +133,18 @@
                     会社（ないしは事業）にとって、同業者等の第三者に譲った方がよいと判断した場合<br>
                     現経営者様が築き上げてきた会社を売却することで、資金化を望む場合
                 </div>
-
                 <div class="font-w700 font-navy m-top30">
                     「事業承継」における「M&A」の活用
                 </div>
                 <div class="">
                     上記のようにご子息が承継できない場合、昔は「廃業する」しかないと考える経営者が多かったのですが、最近では中小企業でも「Ｍ＆Ａ」に対しての敷居が下がっており抵抗感もなくなってきているため、第三者への株式売却等「Ｍ＆Ａ」を活用した事業承継を選択することも、やりやすい環境になってきていると言えます
                 </div>
-                <div class="button-container m-top30">
-                    <a href="/businessSuccessionServices" class="succession-button">
-                        <div class="succession-text">サービス内容へ</div>
-                    </a>
-                </div>
+            </div>
+            <div class="transition-button-container">
+                <a href="#" class="transition-button">サービス内容へ</a>
             </div>
         </div>
-    </main>
-    <!-- /.main -->
+    </div>
+</main>
+<!-- /.main -->
 @endsection
