@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
+@include('includes.header')
 @section('content')
 <main id="main" class="contents">
     <div class="main-cover">
@@ -87,4 +88,5 @@
     </div>
 </main>
 <!-- /.main -->
+@include('includes.footer')
 @endsection

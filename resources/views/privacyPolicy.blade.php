@@ -164,4 +164,5 @@
     </div>
 </main>
 <!-- /.main -->
+@include('includes.footer')
 @endsection
