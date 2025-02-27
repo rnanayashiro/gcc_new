@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/news.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
+@include('includes.header')
 @section('content')
     <main id="main" class="contents">
         <div class="news-contents">
@@ -47,4 +48,5 @@
         </div>
     </main>
     <!-- /.main -->
+@include('includes.footer')
 @endsection
