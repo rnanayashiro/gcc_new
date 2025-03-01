@@ -297,6 +297,20 @@ a.succession-button {
     color: #FF0000;
 }
 
+.error {
+    color: #FF0000;
+}
+
+.back-button {
+    padding: 15px 20px;
+    background-color: #888888;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+}
+
 .form-group-input,
 .form-group-txtarea {
     border: 1px solid #bdcfd9 !important;
@@ -359,7 +373,7 @@ header.scroll-active {
 
 .menu-toggle-wrapper {
     background: black;
-    height: 110px; 
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,7 +382,7 @@ header.scroll-active {
 }
 
 .scroll-active .menu-toggle-wrapper {
-    height: 80px; 
+    height: 80px;
 }
 
 .menu-toggle {
@@ -430,7 +444,7 @@ header.scroll-active {
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: white; 
+    background-color: white;
     transition: 0.3s ease;
 }
 
