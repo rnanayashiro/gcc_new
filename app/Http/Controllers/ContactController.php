@@ -17,32 +17,42 @@ class ContactController extends Controller
 
     public function showConfirm(Request $request)
     {
-        \Log::info($request->all());
         date_default_timezone_set('Asia/Tokyo');
+
         $input = $request->all();
+
+        // 電話番号からハイフンを取り除く
+        if (isset($input['phone'])) {
+            $input['phone'] = str_replace('-', '', $input['phone']);
+        }
+
+        // バリデーションルール
         $rules = [
-            'company-name' => 'required|string|max:255',
-            'contact-name' => 'required|string|max:255',
-            'contact-name-kana' => 'required|string|max:255',
             'phone' => 'required|regex:/^\d{10,11}$/', // 電話番号（10～11桁の数字）
             'email' => 'required|email|max:255',
-            'inquiry' => 'required', // お問い合わせ内容は1つ以上選択することを確認
         ];
+
+        // バリデーションメッセージ
         $messages = [
-            'required' => '入力してください。',
-            'string' => '文字列を入力してください。',
-            'regex' => '半角英数字で入力してください。',
+            'regex' => '電話番号は半角数字で10桁または11桁で入力してください。',
+            'email' => '有効なメールアドレスを入力してください。',
         ];
 
         // バリデーションの実行
         $validator = Validator::make($input, $rules, $messages);
+
         if ($validator->fails()) {
-            return response()->json([
-                'errors' => $validator->errors()->toArray()
-            ], 400);
+            // エラーメッセージと入力データをビューに渡す
+            return redirect()->back()->withErrors($validator)->withInput();
         }
 
         $validatedData = $validator->validated();
+
+        // バリデーション済みデータと入力データをまとめて渡す
+        $data = array_merge($validatedData, $input);
+
+        // 確認画面に遷移し、すべてのデータを渡す
+        return view('comfirm', compact('data'));
     }
 
     // フォーム送信処理
