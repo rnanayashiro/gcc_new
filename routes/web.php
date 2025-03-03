@@ -31,10 +31,12 @@ Route::get('/accountingConsulting', function () {
 
 Route::get('/taxConsulting', function () {
     return view('taxConsulting');
-});
+})->name('taxConsulting');
+
 Route::get('/companyOverview', function () {
     return view('companyOverview');
-});
+})->name('companyOverview');
+
 Route::get('/messageFromOurPresident', function () {
     return view('messageFromOurPresident');
 });
@@ -46,7 +48,8 @@ Route::get('/group', function () {
 });
 Route::get('/flow', function () {
     return view('flow');
-});
+})->name('flow');
+
 Route::get('/bussinessSuccession', function () {
     return view('bussinessSuccession');
 });
@@ -55,7 +58,8 @@ Route::get('/businessSuccessionServices', function () {
 });
 Route::get('/recruit', function () {
     return view('recruit');
-});
+})->name('recruit');
+
 Route::get('/systemConsulting', function () {
     return view('systemConsulting');
 });
@@ -97,7 +101,8 @@ Route::get('/privacyPolicy', function () {
 });
 Route::get('/services', function () {
     return view('services');
-});
+})->name('services');
+
 Route::get('/kakunin', function () {
     return view('kakunin');
 });
