@@ -196,12 +196,12 @@
                             </a>
                         </li>
                         <li class="group-list-item">
-                            <a href="{{ route('') }}" target="_blank" rel="noopener noreferrer">
+                            <a href="{{ route('recruit') }}"target="_blank" rel="noopener noreferrer">
                                 お問い合わせ
                             </a>
                         </li>
                         <li class="group-list-item">
-                            <a href="{{ route('') }}" target="_blank" rel="noopener noreferrer">
+                            <a href="{{ route('recruit') }}"target="_blank" rel="noopener noreferrer">
                                 お知らせ
                             </a>
                         </li>
