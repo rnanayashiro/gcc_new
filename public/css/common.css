@@ -730,7 +730,6 @@ body.is-fixed-body {
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
-  height: 100%;
   padding: 40px;
   overflow: hidden;
   border: solid #ffffff;

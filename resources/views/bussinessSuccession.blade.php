@@ -14,7 +14,7 @@
                 <p class="article-category">事業承継　Bussiness Succession</p>
                 <h1 class="main-title">事業承継</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac07.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     事業承継における税金対策
@@ -142,7 +142,7 @@
                 </div>
             </div>
             <div class="transition-button-container">
-                <a href="#" class="transition-button">サービス内容へ</a>
+                <a href="{{ route('businessSuccessionServices') }}" class="transition-button">サービス内容へ</a>
             </div>
         </div>
     </div>

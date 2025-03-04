@@ -14,7 +14,7 @@
                 <p class="article-category">サービスコンセプト　Service Concept</p>
                 <h1 class="main-title">サービスコンセプト</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac04.jpg" alt=""></div>
             <div class="">
                 <div class=""></div>
                 <div class="">

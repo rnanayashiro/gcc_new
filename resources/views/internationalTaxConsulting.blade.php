@@ -14,7 +14,7 @@
                 <p class="article-category">サービス　Services</p>
                 <h1 class="main-title">国際税務コンサルティング</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac02.jpg" alt=""></div>
             <div class="">
                 <div class=""></div>
                 <div class="image-text-block">

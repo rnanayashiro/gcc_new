@@ -14,7 +14,7 @@
                 <p class="article-category">事業承継　Bussiness Succession</p>
                 <h1 class="main-title">サービス内容</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac07.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     弊社の支援内容（後継者への承継の場合）

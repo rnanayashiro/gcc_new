@@ -14,7 +14,7 @@
                 <p class="article-category">プライバシーポリシー　Privacy Policy</p>
                 <h1 class="main-title">プライバシーポリシー</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac10.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     個人情報の取り組みとオンライン・プライバシーポリシーについて
@@ -56,7 +56,7 @@
                     氏名、肩書・役職、勤務先・所属、年齢、住所・居所、電子メールアドレス、電話番号、ファックス番号、その他、共同用者がサービス・業務に関連して入手した個人情報。<br>
                     <br>
                     -2.共同利用者の範囲<br>
-                    グローバルグループにおける関連会社（会社案内<a href="../company/group">「グループ紹介」</a>をご参照ください。）<br>
+                    グローバルグループにおける関連会社（会社案内<a href="{{ route('group') }}">「グループ紹介」</a>をご参照ください。）<br>
                     <br>
                     -3.共同利用者の利用目的<br>
                     上記「2.個人情報の利用目的」に定めた利用目的に準じます。<br>

@@ -14,7 +14,7 @@
                 <p class="article-category">採用情報　Careers</p>
                 <h1 class="main-title">採用情報</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac06.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     募集要領

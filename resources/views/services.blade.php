@@ -14,7 +14,7 @@
                 <p class="article-category">サービス　Services</p>
                 <h1 class="main-title">サービス一覧</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac12.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     会計コンサルティング
@@ -22,7 +22,7 @@
                 <ul class="card-list js-request-api js-filtering-area js-first-wide" data-effect-list="slide-up"
                     data-category="showcase">
                     <li class="card-list-item is-visible is-act" style="">
-                        <a href="/showcase/yasashii.html" target="_self" class="card -horizontal -center">
+                        <a href="{{ route('accountingConsulting') }}" target="_self" class="card -horizontal -center">
                             <div class="card-pict"><img src="/images/ser_top_img1.jpg" alt=""></div>
                             <div class="card-content">
 
@@ -42,7 +42,7 @@
                         </a>
                     </li>
                     <li class="card-list-item is-visible is-act" style="">
-                        <a href="/showcase/yasashii.html" target="_self" class="card -horizontal -center">
+                        <a href="{{ route('mergersandAcquisitionsConsulting') }}" target="_self" class="card -horizontal -center">
                             <div class="card-pict"><img src="images/ser_top_img2.jpg" alt=""></div>
                             <div class="card-content">
 
@@ -62,7 +62,7 @@
                         </a>
                     </li>
                     <li class="card-list-item is-visible is-act" style="">
-                        <a href="/showcase/yasashii.html" target="_self" class="card -horizontal -center">
+                        <a href="{{ route('initialPublicOfferingConsulting') }}" target="_self" class="card -horizontal -center">
                             <div class="card-pict"><img src="images/ser_top_img4.jpg" alt=""></div>
                             <div class="card-content">
 
@@ -82,7 +82,7 @@
                         </a>
                     </li>
                     <li class="card-list-item is-visible is-act" style="">
-                        <a href="/showcase/yasashii.html" target="_self" class="card -horizontal -center">
+                        <a href="{{ route('systemConsulting') }}" target="_self" class="card -horizontal -center">
                             <div class="card-pict"><img src="images/ser_top_img5.jpg" alt=""></div>
                             <div class="card-content">
 
@@ -98,7 +98,7 @@
                         </a>
                     </li>
                     <li class="card-list-item is-visible is-act" style="">
-                        <a href="/showcase/yasashii.html" target="_self" class="card -horizontal -center">
+                        <a href="{{ route('humanResourcesConsulting') }}" target="_self" class="card -horizontal -center">
                             <div class="card-pict"><img src="images/ser_top_img7.jpg" alt=""></div>
                             <div class="card-content">
 
@@ -123,7 +123,7 @@
                 <ul class="card-list js-request-api js-filtering-area js-first-wide" data-effect-list="slide-up"
                     data-category="showcase">
                     <li class="card-list-item is-visible is-act" style="">
-                        <a href="/showcase/yasashii.html" target="_self" class="card -horizontal -center">
+                        <a href="{{ route('taxConsulting') }}" target="_self" class="card -horizontal -center">
                             <div class="card-pict"><img src="images/ser_top_img1_2.jpg" alt=""></div>
                             <div class="card-content">
 
@@ -141,7 +141,7 @@
                         </a>
                     </li>
                     <li class="card-list-item is-visible is-act" style="">
-                        <a href="/showcase/yasashii.html" target="_self" class="card -horizontal -center">
+                        <a href="{{ route('internationalTaxConsulting') }}" target="_self" class="card -horizontal -center">
                             <div class="card-pict"><img src="images/ser_top_img3.jpg" alt=""></div>
                             <div class="card-content">
 
@@ -167,7 +167,7 @@
                 <ul class="card-list js-request-api js-filtering-area js-first-wide" data-effect-list="slide-up"
                     data-category="showcase">
                     <li class="card-list-item is-visible is-act" style="">
-                        <a href="/showcase/yasashii.html" target="_self" class="card -horizontal -center">
+                        <a href="https://dmsupport.jp" target="_self" class="card -horizontal -center">
                             <div class="card-pict"><img src="images/ser_top_img6.jpg" alt=""></div>
                             <div class="card-content">
 
