@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use App\Mail\ConfirmationEmail;
+use Illuminate\Support\Facades\Mail;
 
 
 class ContactController extends Controller
@@ -55,14 +57,19 @@ class ContactController extends Controller
         return view('comfirm', compact('data'));
     }
 
-    // フォーム送信処理
     public function submit(Request $request)
     {
-        // 送信されたデータを処理（例：データベースに保存）
+        // 送信されたデータを取得
+        $input = $request->all();
+
+        // メール送信
+        // 確認メールを送信（メールを送る宛先は、フォームから受け取った email にします）
+        Mail::to($input['email'])->send(new ConfirmationEmail($input));
 
         // 送信後にセッションデータを削除
         $request->session()->flush();
 
+        // メール送信完了後のレスポンス
         return "送信が完了しました";
     }
 }
