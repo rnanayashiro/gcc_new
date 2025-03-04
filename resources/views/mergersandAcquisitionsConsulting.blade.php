@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="transition-button-container">
-                <a href="#" class="transition-button">DD詳細はこち</a>
+                <a href="{{ route('duediligence') }}" class="transition-button">DD詳細はこち</a>
             </div>
             <div class="">
                 <div class="">
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="transition-button-container">
-                <a href="#" class="transition-button">DD詳細はこち</a>
+                <a href="{{ route('duediligence') }}" class="transition-button">DD詳細はこち</a>
             </div>
             <div class="">
                 <div class="">

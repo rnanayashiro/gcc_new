@@ -14,7 +14,7 @@
                 <p class="article-category">サイトポリシー　Site Policy</p>
                 <h1 class="main-title">サイトポリシー</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac09.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     法律で定められた独占業務の取り扱いについて

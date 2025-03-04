@@ -14,7 +14,7 @@
                 <p class="article-category">会社案内　Corporate Overview</p>
                 <h1 class="main-title">社長挨拶</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac03.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     代表ご挨拶

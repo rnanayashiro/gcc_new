@@ -14,7 +14,7 @@
                 <p class="article-category">財務デューデリジェンス・株価算定　Duediligence</p>
                 <h1 class="main-title">サービス内容</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac08.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     全国対応可能であること
@@ -64,7 +64,7 @@
                         ２.デューデリジェンス（トータルDD）対応
                     </div>
                     上記１の財務DDのみならず、グループ内の税理士法人・社会保険労務士及び提携先の司法書士・弁護士といったそれぞれの分野における専門家との連携をとり、財務DD・税務DD・法務DD・労務DDなどワンストップでのデューデリジェンスの窓口対応も可能です。<br>
-                    調査内容の詳細は、<a href="../duedili/faq">「DDに関するQ&amp;A」</a>をご参照下さい。
+                    調査内容の詳細は、<a href="{{ route('duediligenceFaq') }}">「DDに関するQ&amp;A」</a>をご参照下さい。
                 </div>
             </div>
             <div class="">
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="transition-button-container">
-                <a href="#" class="transition-button">FAQへ</a>
+                <a href="{{ route('duediligenceFaq') }}" class="transition-button">FAQへ</a>
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@
                 <p class="article-category">財務デューデリジェンス・株価算定　Duediligence</p>
                 <h1 class="main-title">財務DDとは</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac08.jpg" alt=""></div>
             <div class="">
                 <div class="">
                     「デューデリジェンス」とは・・・
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="transition-button-container">
-                <a href="#" class="transition-button">サービスへ</a>
+                <a href="{{ route('duediligenceService') }}" class="transition-button">サービスへ</a>
             </div>
         </div>
     </div>

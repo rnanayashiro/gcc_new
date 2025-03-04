@@ -14,7 +14,7 @@
                 <p class="article-category">財務デューデリジェンス・株価算定　Duediligence</p>
                 <h1 class="main-title">DDに関するQ&A</h1>
             </div>
-            <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+            <div class="image-block"><img src="images/ac08.jpg" alt=""></div>
             <div class="">
                 <div class=""></div>
                 <div class="">

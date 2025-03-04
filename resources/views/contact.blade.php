@@ -14,7 +14,7 @@
                     <p class="article-category">お問い合わせ　Contact Us</p>
                     <h1 class="main-title">お問い合わせ</h1>
                 </div>
-                <div class="image-block"><img src="images/ac01.jpg" alt=""></div>
+                <div class="image-block"><img src="images/ac05.jpg" alt=""></div>
                 <div class="">
                     <div class=""></div>
                     <div class="">

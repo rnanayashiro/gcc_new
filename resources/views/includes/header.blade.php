@@ -1,6 +1,6 @@
 <header id="header">
     <div class="header-left">
-        <a href="/">
+        <a href="{{ route('top') }}">
             <img src="/images/gccinc_logo.png" alt="ロゴ">
         </a>
     </div>
@@ -20,7 +20,7 @@
 
 <div class="nav-container" id="navContainer">
     <div class="nav-header">
-        <a href="/">
+        <a href="{{ route('top') }}">
             <img src="/images/gccinc_logo.png" alt="ロゴ">
         </a>
     </div>
@@ -28,44 +28,37 @@
     <div class="nav-table">
         <div class="menu-list">
             <ul>
-                <li><a href="/">TOP</a></li>
+                <li><a href="{{ route('top') }}">TOP</a></li>
                 <li class="has-submenu">
                     <a href="#" data-submenu="serviceMenu">サービス　▶</a>
                 </li>
-                <li><a href="/">サービスコンセプト</a></li>
+                <li><a href="{{ route('flow') }}">サービスコンセプト</a></li>
                 <li class="has-submenu">
                     <a href="#" data-submenu="companyMenu">会社案内　▶</a>
                 </li>
-                <li><a href="/">お問い合わせ</a></li>
-                <li><a href="/">お知らせ</a></li>
-                <li><a href="/">採用情報</a></li>
+                <li><a href="{{ route('contact') }}">お問い合わせ</a></li>
+                <li><a href="#">お知らせ</a></li>
+                <li><a href="{{ route('recruit') }}">採用情報</a></li>
             </ul>
         </div>
         
         <div class="submenu-list" id="serviceMenu">
             <ul>
-                <li><a href="/">サービスTOP</a></li>
-                <li><a href="/">会計コンサルティング</a></li>
-                <li><a href="/">M&Aコンサルティング</a></li>
-                <li><a href="/">株式公開支援</a></li>
-                <li><a href="/">税務コンサルティング</a></li>
-                <li><a href="/">国際税務コンサルティング</a></li>
-                <!-- <li class="has-submenu">
-                    <a href="#" data-submenu="bServiceMenu">Bサービス</a>
-                </li>
-                <ul class="submenu" id="bServiceMenu">
-                    <li><a href="/">Bサービス1</a></li>
-                    <li><a href="/">Bサービス2</a></li>
-                </ul> -->
+                <li><a href="{{ route('services') }}">サービスTOP</a></li>
+                <li><a href="{{ route('accountingConsulting') }}">会計コンサルティング</a></li>
+                <li><a href="{{ route('mergersandAcquisitionsConsulting') }}">M&Aコンサルティング</a></li>
+                <li><a href="{{ route('initialPublicOfferingConsulting') }}">株式公開支援</a></li>
+                <li><a href="{{ route('taxConsulting') }}">税務コンサルティング</a></li>
+                <li><a href="{{ route('internationalTaxConsulting') }}">国際税務コンサルティング</a></li>
             </ul>
         </div>
 
         <div class="submenu-list" id="companyMenu">
             <ul>
-                <li><a href="/">会社案内TOP</a></li>
-                <li><a href="/">社長挨拶</a></li>
-                <li><a href="/">メンバー</a></li>
-                <li><a href="/">グループ紹介</a></li>
+                <li><a href="{{ route('companyOverview') }}">会社案内TOP</a></li>
+                <li><a href="{{ route('messageFromOurPresident') }}">社長挨拶</a></li>
+                <li><a href="{{ route('member') }}">メンバー</a></li>
+                <li><a href="{{ route('group') }}">グループ紹介</a></li>
             </ul>
         </div>
     </div>
@@ -73,9 +66,9 @@
 	<div class="sub-footer-inner">
 		<div class="sub-footer-links-wrap">
 			<ul class="footer-links">
-              <li><a href="/terms/business_guideline.html">サイトポリシー</a></li>
-              <li><a href="/terms/index.html">プライバシーポリシー</a></li>
-              <li><a href="/terms/rss.html">お問い合わせ</a></li>  
+              <li><a href="{{ route('sitePolicy') }}">サイトポリシー</a></li>
+              <li><a href="{{ route('privacyPolicy') }}">プライバシーポリシー</a></li>
+              <li><a href="{{ route('contact') }}">お問い合わせ</a></li>  
 			</ul>
 		</div>
 		
