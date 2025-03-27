@@ -289,7 +289,7 @@ body {
   word-wrap: break-word;
   background: #f3f5f7;
   color: #000000;
-  font-family: "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
+  /* font-family: "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif; */
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.75;
@@ -6418,7 +6418,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   a:hover {
     text-decoration: underline;
   }
- 
+
   .pagetop a:hover {
     text-decoration: none;
     opacity: 0.5;
