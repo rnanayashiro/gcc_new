@@ -7548,6 +7548,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
 }
 
 .area-bnr-list-item span {
+  font-weight: 500;
   position: absolute;
   top: 50%; /* 垂直方向中央に配置 */
   left: 50%; /* 水平方向中央に配置 */
