@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Mail\ConfirmationEmail;
+use App\Mail\AdminNotificationEmail;
 use Illuminate\Support\Facades\Mail;
 
 
@@ -62,9 +63,11 @@ class ContactController extends Controller
         // 送信されたデータを取得
         $input = $request->all();
 
-        // メール送信
-        // 確認メールを送信（メールを送る宛先は、フォームから受け取った email にします）
+        // 確認メールを送信
         Mail::to($input['email'])->send(new ConfirmationEmail($input));
+
+        // サイト運営者にもメールを送信
+        // Mail::to('admin@example.com')->send(new AdminNotificationEmail($input));
 
         // 送信後にセッションデータを削除
         $request->session()->flush();
