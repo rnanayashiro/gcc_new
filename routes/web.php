@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -134,6 +135,10 @@ Route::get('/privacyPolicy', function () {
 Route::get('/newsForm', function () {
     return view('newsForm');
 });
+
+//お問い合わせ
+Route::get('/newsForm', [NewsController::class, 'showForm'])->name('news');
+Route::post('/newsForm/submit', [NewsController::class, 'submit'])->name('news.submit');
 
 //サービス一覧
 Route::get('/services', function () {
