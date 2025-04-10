@@ -62,54 +62,27 @@
                         <h2 class="home-content-heading">News Releases</h2>
                         <ul class="column -center js-request-api" data-omit="36" data-omit-sp="27"
                             data-effect-list="slide-up" data-category="release,business,topics" data-limit="4">
-                            <li class="column-col-4 column-col-1-sp is-visible">
-                                <a href="#" target="" class="card -media">
-                                    <div class="card-pict"><img src="path/to/placeholder-image.jpg" alt="Placeholder Image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="card-data">2023.12.01</div>
-                                        <div class="card-category">News Release</div>
-                                        <p class="card-title -sm" data-file-capacity="">年末年始営業日のお知らせ</p>
-                                        ###TAGAREA###
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="column-col-4 column-col-1-sp is-visible">
-                                <a href="#" target="" class="card -media">
-                                    <div class="card-pict"><img src="path/to/placeholder-image.jpg" alt="Placeholder Image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="card-data">2023.12.01</div>
-                                        <div class="card-category">News Release</div>
-                                        <p class="card-title -sm" data-file-capacity="">年末年始営業日のお知らせ</p>
-                                        ###TAGAREA###
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="column-col-4 column-col-1-sp is-visible">
-                                <a href="#" target="" class="card -media">
-                                    <div class="card-pict"><img src="path/to/placeholder-image.jpg" alt="Placeholder Image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="card-data">2023.12.01</div>
-                                        <div class="card-category">News Release</div>
-                                        <p class="card-title -sm" data-file-capacity="">年末年始営業日のお知らせ</p>
-                                        ###TAGAREA###
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="column-col-4 column-col-1-sp is-visible">
-                                <a href="#" target="" class="card -media">
-                                    <div class="card-pict"><img src="path/to/placeholder-image.jpg" alt="Placeholder Image">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="card-data">2023.12.01</div>
-                                        <div class="card-category">News Release</div>
-                                        <p class="card-title -sm" data-file-capacity="">年末年始営業日のお知らせ</p>
-                                        ###TAGAREA###
-                                    </div>
-                                </a>
-                            </li>
+                            @foreach ($news as $item)
+                                <li class="column-col-4 column-col-1-sp is-visible">
+                                    <a href="#" class="card -media">
+                                        <div class="card-pict">
+                                            @if ($item->image_path)
+                                                <img src="{{ asset('storage/' . $item->image_path) }}"
+                                                    alt="{{ $item->title }}">
+                                            @else
+                                                <img src="path/to/placeholder-image.jpg" alt="Placeholder Image">
+                                            @endif
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-data">{{ \Carbon\Carbon::parse($item->date)->format('Y.m.d') }}
+                                            </div>
+                                            <div class="card-category">{{ ucfirst($item->category) }}</div>
+                                            <p class="card-title -sm">{{ $item->title }}</p>
+                                            <!-- ###TAGAREA### ここにタグなどを追加可能 -->
+                                        </div>
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                         <div class="button-block"><a href="/news/" class="button">News Releases 一覧</a></div>
                     </div>

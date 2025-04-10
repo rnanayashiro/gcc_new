@@ -23,7 +23,7 @@
             <h1 class="main-title">NEWS投稿</h1> <!-- メインタイトル -->
 
             <!-- フォームの開始 -->
-            <form action="{{ route('news.submit') }}" method="POST">
+            <form action="{{ route('news.submit') }}" method="POST" enctype="multipart/form-data">
                 @csrf <!-- CSRFトークン -->
                 <div class="input-group">
                     <!-- タイトル -->
@@ -55,6 +55,15 @@
                             <option value="updates" {{ old('category') == 'updates' ? 'selected' : '' }}>Updates</option>
                         </select>
                         @error('category')
+                            <div class="error-message">{{ $message }}</div>
+                        @enderror
+                    </div>
+
+                    <!-- 画像 -->
+                    <div class="input-item">
+                        <div class="input-label">Image</div>
+                        <input type="file" id="image" class="" name="image" accept="image/*" />
+                        @error('image')
                             <div class="error-message">{{ $message }}</div>
                         @enderror
                     </div>

@@ -10,5 +10,5 @@ class News extends Model
     use HasFactory;
 
     // マスアサインメントを許可するカラム
-    protected $fillable = ['title', 'date', 'category', 'content'];
+    protected $fillable = ['title', 'date', 'category', 'image_path', 'content'];
 }

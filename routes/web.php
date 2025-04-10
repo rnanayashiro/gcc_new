@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\TopController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,9 +23,8 @@ Route::get('/', function () {
 });
 
 //TOP
-Route::get('/top', function () {
-    return view('top');
-})->name('top');
+Route::get('/top', [TopController::class, 'index'])->name('top');
+
 
 //会計コンサルティング
 Route::get('/accountingConsulting', function () {

@@ -23,6 +23,8 @@ class CreateNewsTable extends Migration
             $table->dateTime('date')->comment('日付');
             // カテゴリを格納するカラムを作成
             $table->string('category')->comment('カテゴリ');
+            // 画像パスのカラムを追加
+            $table->string('image_path')->nullable()->comment('画像パス');
             // 記事の内容を格納するカラムを作成
             $table->text('content')->comment('本文');
             // created_at と updated_at のカラムを自動で作成
