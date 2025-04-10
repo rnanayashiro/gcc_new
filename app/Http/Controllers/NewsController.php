@@ -18,7 +18,6 @@ class NewsController extends Controller
     // フォーム送信時に実行されるメソッド
     public function submit(Request $request)
     {
-        \Log::info($request->all());
         // バリデーション
         $validated = $request->validate([
             'title' => 'required|string|max:255',  // タイトルは必須、文字列、最大255文字
@@ -31,7 +30,6 @@ class NewsController extends Controller
         $imagePath = null;
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('news_images', 'public');
-            \Log::info('Image stored at: ' . $imagePath);
         }
 
         // バリデーションが成功した場合にデータを保存
