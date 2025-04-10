@@ -66,7 +66,9 @@
             // Show spinner initially
             $('.spinner-container').show();
 
+            $('.success-message').fadeIn(100).delay(2000).fadeOut(1000);
         });
+
         $(window).on('load', function() {
             $('.spinner-container').fadeOut('slow').promise().done(function() {});
         });

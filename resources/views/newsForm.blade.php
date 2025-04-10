@@ -1,52 +1,85 @@
 @extends('layouts.app')
 @section('styles')
-    @parent 
+    @parent
     <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/news.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
 @include('includes.header')
 @section('content')
+    <!-- resources/views/newsForm.blade.php -->
+
+    <!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NEWS投稿</title>
+    </head>
     <main id="main" class="contents">
         <div class="news-contents">
             <h1 class="main-title">NEWS投稿</h1> <!-- メインタイトル -->
-            <div class="input-group">
-                <div class="input-item">
-                    <div class="input-label">Title</div>
-                    <input id="title" class="input-form" name="title" />
-                    <div id="title_error" class="error-message"></div>
-                </div>
 
-                <div class="input-item">
-                    <div class="input-label">Date</div>
-                    <input type="date" id="date" class="input-form" name="date" />
-                    <div id="date_error" class="error-message"></div>
-                </div>
+            <!-- フォームの開始 -->
+            <form action="{{ route('news.submit') }}" method="POST">
+                @csrf <!-- CSRFトークン -->
+                <div class="input-group">
+                    <!-- タイトル -->
+                    <div class="input-item">
+                        <div class="input-label">Title</div>
+                        <input id="title" class="input-form" name="title" value="{{ old('title') }}" />
+                        @error('title')
+                            <div class="error-message">{{ $message }}</div>
+                        @enderror
+                    </div>
 
-                <div class="input-item">
-                    <div class="input-label">Category</div>
-                    <select id="category" class="input-form" name="category">
-                        <option value="">Please select</option>
-                        <option value="news">News</option>
-                        <option value="events">Events</option>
-                        <option value="updates">Updates</option>
-                    </select>
-                    <div id="category_error" class="error-message"></div>
-                </div>
+                    <!-- 日付 -->
+                    <div class="input-item">
+                        <div class="input-label">Date</div>
+                        <input type="date" id="date" class="input-form" name="date"
+                            value="{{ old('date') }}" />
+                        @error('date')
+                            <div class="error-message">{{ $message }}</div>
+                        @enderror
+                    </div>
 
-                <div class="input-item">
-                    <div class="input-label">Contents</div>
-                    <textarea id="contents" class="input-form" name="contents"></textarea>
-                    <div id="contents_error" class="error-message"></div>
-                </div>
+                    <!-- カテゴリ -->
+                    <div class="input-item">
+                        <div class="input-label">Category</div>
+                        <select id="category" class="input-form" name="category">
+                            <option value="">Please select</option>
+                            <option value="news" {{ old('category') == 'news' ? 'selected' : '' }}>News</option>
+                            <option value="events" {{ old('category') == 'events' ? 'selected' : '' }}>Events</option>
+                            <option value="updates" {{ old('category') == 'updates' ? 'selected' : '' }}>Updates</option>
+                        </select>
+                        @error('category')
+                            <div class="error-message">{{ $message }}</div>
+                        @enderror
+                    </div>
 
-                <!-- 投稿ボタン -->
-                <div class="input-item">
-                    <button type="submit" class="submit-button">投稿</button>
+                    <!-- 本文 -->
+                    <div class="input-item">
+                        <div class="input-label">Contents</div>
+                        <textarea id="contents" class="input-form" name="content">{{ old('content') }}</textarea>
+                        @error('content')
+                            <div class="error-message">{{ $message }}</div>
+                        @enderror
+                    </div>
+
+                    <!-- 投稿ボタン -->
+                    <div class="input-item">
+                        <button type="submit" class="submit-button">投稿</button>
+                    </div>
                 </div>
-            </div>
+            </form>
+            @if (session('success'))
+                <div class="success-message">{{ session('success') }}</div>
+            @endif
         </div>
     </main>
-    <!-- /.main -->
-@include('includes.footer')
+
+    </html>
+    @include('includes.footer')
 @endsection
