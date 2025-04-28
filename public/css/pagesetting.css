@@ -511,6 +511,30 @@ header.scroll-active {
     overflow-y: auto;
 }
 
+.has-submenu a {
+    position: relative;
+    display: inline-block;
+    padding-right: 28px; /* アイコン分 */
+}
+
+.has-submenu a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    width: 16px;
+    height: 16px;
+    background: url('/images/icon_arrow_r.svg') no-repeat center center;
+    background-size: contain;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+/* ホバーで伸ばして反転 */
+.has-submenu a:hover::after {
+    transform: translateY(-50%) scaleX(1.5);    filter: invert(1);
+}
+
 .submenu-list {
     visibility: hidden;
     opacity: 0;

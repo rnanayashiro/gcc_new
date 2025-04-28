@@ -30,11 +30,11 @@
             <ul>
                 <li><a href="{{ route('top') }}">TOP</a></li>
                 <li class="has-submenu">
-                    <a href="#" data-submenu="serviceMenu">サービス　▶</a>
+                    <a href="#" data-submenu="serviceMenu">サービス</a>
                 </li>
                 <li><a href="{{ route('flow') }}">サービスコンセプト</a></li>
                 <li class="has-submenu">
-                    <a href="#" data-submenu="companyMenu">会社案内　▶</a>
+                    <a href="#" data-submenu="companyMenu">会社案内</a>
                 </li>
                 <li><a href="{{ route('contact') }}">お問い合わせ</a></li>
                 <li><a href="#">お知らせ</a></li>
