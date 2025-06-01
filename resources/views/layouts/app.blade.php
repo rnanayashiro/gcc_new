@@ -23,7 +23,7 @@
 
     @yield('styles') <!-- stylesセクションを追加 -->
     <!-- Styles / Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/common.css', 'resources/css/pagesetting.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/beta.js', 'resources/css/common.css', 'resources/css/pagesetting.css'])
 
 </head>
 

@@ -12,10 +12,12 @@ class TopController extends Controller
     public function index()
     {
         $news = DB::table('news')->get();
+        $topics = DB::table('topics')->get();
 
         // ビューにデータを渡す
         return view('top', [
             'news' => $news,
+            'topics' => $topics,
         ]);
     }
 }
