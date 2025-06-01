@@ -9,12 +9,16 @@ return new class extends Migration {
     {
         Schema::create('topics', function (Blueprint $table) {
             $table->id()->comment('主キー');
-            $table->string('category')->comment('カテゴリー');
-            $table->string('title')->comment('タイトル');
-            $table->text('body')->comment('本文');
-            $table->string('link_text')->nullable()->comment('リンクテキスト');
+            $table->string('category_ja')->comment('カテゴリー（日本語）');
+            $table->string('category_en')->comment('カテゴリー（英語）');
+            $table->string('title_ja')->comment('タイトル（日本語）');
+            $table->string('title_en')->comment('タイトル（英語）');
+            $table->text('body_ja')->comment('本文（日本語）');
+            $table->text('body_en')->comment('本文（英語）');
+            $table->string('link_text_ja')->nullable()->comment('リンクテキスト（日本語）');
+            $table->string('link_text_en')->nullable()->comment('リンクテキスト（英語）');
             $table->string('link')->nullable()->comment('関連リンク');
-            $table->timestamps(); // created_at, updated_at は自動的に付加されます
+            $table->timestamps();
         });
     }
 

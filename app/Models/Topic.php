@@ -13,10 +13,14 @@ class Topic extends Model
      * 一括代入可能な属性
      */
     protected $fillable = [
-        'category',   // カテゴリー
-        'title',      // タイトル
-        'body',       // 本文
-        'link_text',       // リンクテキスト
-        'link',       // 関連リンク
+        'category_ja',
+        'category_en',
+        'title_ja',
+        'title_en',
+        'body_ja',
+        'body_en',
+        'link_text_ja',
+        'link_text_en',
+        'link',
     ];
 }
