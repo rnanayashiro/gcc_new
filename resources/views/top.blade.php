@@ -3,6 +3,7 @@
     @parent
     <!-- 親のスタイル（app.blade.phpのstylesセクション）を読み込む -->
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/pagesetting.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/modal.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/common.css') }}" />
 @endsection
 @include('includes.header')
@@ -74,7 +75,8 @@
                                             @endif
                                         </div>
                                         <div class="card-content">
-                                            <div class="card-data">{{ \Carbon\Carbon::parse($item->date)->format('Y.m.d') }}
+                                            <div class="card-data">
+                                                {{ \Carbon\Carbon::parse($item->date)->format('Y.m.d') }}
                                             </div>
                                             <div class="card-category">{{ ucfirst($item->category) }}</div>
                                             <p class="card-title -sm">{{ $item->title }}</p>
@@ -94,60 +96,30 @@
                         <div class="slider-arrows js-slider-arrows"></div>
                         <div class="card-slider-list js-card-slider js-adjust-height-slider js-home-request-api -areaD1"
                             data-omit="36" data-omit-sp="36" data-slider-col="4" data-effect="slide-up"
-                            data-category="showcase" data-limit="10">
+                            data-category="topics" data-limit="10">
 
-                            <div class="card-slider-list-item">
-                                <a href="###LINK###" target="###TARGET###" class="card">
-                                    <div class="card-pict"><img src="###THUMBNAIL###" alt=""></div>
-                                    <div class="card-content">
-                                        <div class="card-category">国内関係</div>
-                                        <p class="card-title" data-file-capacity="###FILESIZE###">「事業再構築補助金」に関して</p>
-                                        <p class="card-description">弊社は中小企業庁認定 経営革新等支援機関として、事業再構築補助金の申請支援を行っております。</p>
-                                        ###TAGAREA###
-                                    </div>
-                                </a>
-                            </div>
+                            @foreach ($topics as $topic)
+                                <div class="card-slider-list-item">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="card-category">{{ $topic->category }}</div>
+                                            <p class="card-title">{{ $topic->title }}</p>
+                                            <p class="card-description">{{ $topic->body }}</p>
 
-                            <!-- ここに他のカードスライダーアイテムを追加 -->
-                            <div class="card-slider-list-item">
-                                <a href="###LINK###" target="###TARGET###" class="card">
-                                    <div class="card-pict"><img src="###THUMBNAIL###" alt=""></div>
-                                    <div class="card-content">
-                                        <div class="card-category">国内関係</div>
-                                        <p class="card-title" data-file-capacity="###FILESIZE###">「事業再構築補助金」に関して</p>
-                                        <p class="card-description">弊社は中小企業庁認定 経営革新等支援機関として、事業再構築補助金の申請支援を行っております。</p>
-                                        ###TAGAREA###
+                                            {{-- 関連リンク表示 --}}
+                                            <p>
+                                                <a href="{{ $topic->category === '国内関係' ? route($topic->link) : $topic->link }}"
+                                                    target="_blank" class="related-link">
+                                                    {{ $topic->link_text }}
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-
-                            <div class="card-slider-list-item">
-                                <a href="###LINK###" target="###TARGET###" class="card">
-                                    <div class="card-pict"><img src="###THUMBNAIL###" alt=""></div>
-                                    <div class="card-content">
-                                        <div class="card-category">国内関係</div>
-                                        <p class="card-title" data-file-capacity="###FILESIZE###">「事業再構築補助金」に関して</p>
-                                        <p class="card-description">弊社は中小企業庁認定 経営革新等支援機関として、事業再構築補助金の申請支援を行っております。</p>
-                                        ###TAGAREA###
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="card-slider-list-item">
-                                <a href="###LINK###" target="###TARGET###" class="card">
-                                    <div class="card-pict"><img src="###THUMBNAIL###" alt=""></div>
-                                    <div class="card-content">
-                                        <div class="card-category">国内関係</div>
-                                        <p class="card-title" data-file-capacity="###FILESIZE###">「事業再構築補助金」に関して</p>
-                                        <p class="card-description">弊社は中小企業庁認定 経営革新等支援機関として、事業再構築補助金の申請支援を行っております。</p>
-                                        ###TAGAREA###
-                                    </div>
-                                </a>
-                            </div>
+                                </div>
+                            @endforeach
                         </div>
 
                         <p class="text-center is-empty" style="display: none;">該当するコンテンツがありません</p>
-                        <div class="button-block"><a href="/showcase/" class="button">Showcase 一覧</a></div>
                     </div>
                 </section>
 
@@ -191,4 +163,6 @@
     </main>
     <!-- /.main -->
     @include('includes.footer')
+
+    @include('includes.modal')
 @endsection
