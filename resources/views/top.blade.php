@@ -13,14 +13,17 @@
             <div class="carousel-visual-item">
                 <div class="home-mainvisual">
                     <div class="home-mainvisual-item">
-                        <div class="home-mainvisual-pict"><img src="../images/GCC TOP3.jpg" alt=""
-                                class="pc-content" /><img src="../images/mainvisual_img01_sp_202311.jpg" alt=""
-                                class="sp-content" /></div>
+                        <div class="home-mainvisual-pict">
+                            <img src="../images/GCC TOP3.jpg" alt="" class="pc-content" />
+                            <img src="../images/mainvisual_img01_sp_202311.jpg" alt="" class="sp-content" />
+                        </div>
                         <p class="home-mainvisual-lead">
-                            <i>GSSは、公認会計士・税理士をブレーンとして活動している経営・会計・税務の総合コンサルティングファームです。</i>
+                            <i>{{ __('message.main_message') }}</i>
                         </p>
-                        <div class="home-mainvisual-button"><a href="{{ route('services') }}"
-                                class="button -outline -light">詳しくみる</a></div>
+                        <div class="home-mainvisual-button">
+                            <a href="{{ route('services') }}"
+                                class="button -outline -light">{{ __('message.read_more') }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -29,20 +32,20 @@
                 <ul class="area-bnr-list">
                     <li class="area-bnr-list-item area-bnr-list-item-01">
                         <a href="{{ route('accountingConsulting') }}">
-                            <img src="images/gccred.webp" alt="会計コンサルティング">
-                            <span>会計コンサルティング</span>
+                            <img src="images/gccred.webp" alt="{{ __('message.accounting_consulting') }}">
+                            <span>{{ __('message.accounting_consulting') }}</span>
                         </a>
                     </li>
                     <li class="area-bnr-list-item area-bnr-list-item-02">
                         <a href="{{ route('taxConsulting') }}">
-                            <img src="images/gccblue.webp" alt="税務コンサルティング">
-                            <span>税務コンサルティング</span>
+                            <img src="images/gccblue.webp" alt="{{ __('message.tax_consulting') }}">
+                            <span>{{ __('message.tax_consulting') }}</span>
                         </a>
                     </li>
                     <li class="area-bnr-list-item area-bnr-list-item-03">
                         <a href="{{ route('companyOverview') }}">
-                            <img src="images/gccyellow.webp" alt="会社案内">
-                            <span>会社案内</span>
+                            <img src="images/gccyellow.webp" alt="{{ __('message.company_profile') }}">
+                            <span>{{ __('message.company_profile') }}</span>
                         </a>
                     </li>
                 </ul>
@@ -51,9 +54,11 @@
             <div class="home-content home-service">
                 <div class="content-inner">
                     <p class="home-content-lead">
-                        弊社グループでは、公認会計士、税理士、社会保険労務士等のほか、アライアンス先に弁護士事務所・司法書士事務所・不動産鑑定士事務所等があり、あらゆるサービスをひとつの窓口で提供しております。 </p>
+                        {{ __('message.group_intro') }}
                     </p>
-                    <div class="button-block"><a href="{{ route('flow') }}" class="button">詳しくみる</a></div>
+                    <div class="button-block">
+                        <a href="{{ route('flow') }}" class="button">{{ __('message.read_more') }}</a>
+                    </div>
                 </div>
             </div>
             <div class="home-filtering">
@@ -98,19 +103,27 @@
                             data-omit="36" data-omit-sp="36" data-slider-col="4" data-effect="slide-up"
                             data-category="topics" data-limit="10">
 
+                            @php $locale = app()->getLocale(); @endphp
+
                             @foreach ($topics as $topic)
                                 <div class="card-slider-list-item">
                                     <div class="card">
                                         <div class="card-content">
-                                            <div class="card-category">{{ $topic->category }}</div>
-                                            <p class="card-title">{{ $topic->title }}</p>
-                                            <p class="card-description">{{ $topic->body }}</p>
+                                            <div class="card-category">
+                                                {{ $locale === 'en' ? $topic->category_en : $topic->category_ja }}
+                                            </div>
+                                            <p class="card-title">
+                                                {{ $locale === 'en' ? $topic->title_en : $topic->title_ja }}
+                                            </p>
+                                            <p class="card-description">
+                                                {{ $locale === 'en' ? $topic->body_en : $topic->body_ja }}
+                                            </p>
 
                                             {{-- 関連リンク表示 --}}
                                             <p>
-                                                <a href="{{ $topic->category === '国内関係' ? route($topic->link) : $topic->link }}"
+                                                <a href="{{ $topic->category_ja === '国内関係' ? route($topic->link) : $topic->link }}"
                                                     target="_blank" class="related-link">
-                                                    {{ $topic->link_text }}
+                                                    {{ $locale === 'en' ? $topic->link_text_en : $topic->link_text_ja }}
                                                 </a>
                                             </p>
                                         </div>
@@ -128,35 +141,28 @@
                         <ul class="group-list">
                             <li class="group-list-item">
                                 <a href="{{ route('services') }}" target="_blank" rel="noopener noreferrer">
-                                    サービス
+                                    {{ __('message.service') }}
                                 </a>
                             </li>
                             <li class="group-list-item">
                                 <a href="{{ route('flow') }}" target="_blank" rel="noopener noreferrer">
-                                    サービスコンセプト
+                                    {{ __('message.service_concept') }}
                                 </a>
                             </li>
                             <li class="group-list-item">
-                                <a href="{{ route('companyOverview') }}" target="_blank" 　rel="noopener noreferrer">
-                                    会社案内
+                                <a href="{{ route('companyOverview') }}" target="_blank" rel="noopener noreferrer">
+                                    {{ __('message.company_profile') }}
                                 </a>
                             </li>
                             <li class="group-list-item">
-                                <a href="{{ route('recruit') }}"target="_blank" rel="noopener noreferrer">
-                                    お問い合わせ
+                                <a href="{{ route('contact') }}" target="_blank" rel="noopener noreferrer">
+                                    {{ __('message.contact') }}
                                 </a>
                             </li>
                             <li class="group-list-item">
-                                <a href="{{ route('recruit') }}"target="_blank" rel="noopener noreferrer">
-                                    お知らせ
+                                <a href="{{ route('news') }}" target="_blank" rel="noopener noreferrer">
+                                    {{ __('message.news') }}
                                 </a>
-                            </li>
-                            <li class="group-list-item">
-                                <a href="{{ route('recruit') }}" target="_blank" 　rel="noopener noreferrer">
-                                    採用情報
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

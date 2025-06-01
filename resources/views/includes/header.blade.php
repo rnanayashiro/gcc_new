@@ -4,14 +4,23 @@
             <img src="/images/gccinc_logo.png" alt="ロゴ">
         </a>
     </div>
-    <div class="menu-toggle-wrapper">
-        <div class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
+
+    <div class="header-right">
+        <div class="language-switcher">
+            <a href="{{ url()->current() }}?lang=ja" class="lang-btn" id="jp-btn">JP</a> ｜
+            <a href="{{ url()->current() }}?lang=en" class="lang-btn" id="en-btn">EN</a>
+        </div>
+
+        <div class="menu-toggle-wrapper">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 </header>
+
 
 <button class="close-menu" id="closeMenu">
     <span></span>
@@ -30,37 +39,41 @@
             <ul>
                 <li><a href="{{ route('top') }}">TOP</a></li>
                 <li class="has-submenu">
-                    <a href="#" data-submenu="serviceMenu">サービス</a>
+                    <a href="#" data-submenu="serviceMenu">{{ __('message.service') }}</a>
                 </li>
-                <li><a href="{{ route('flow') }}">サービスコンセプト</a></li>
+                <li><a href="{{ route('flow') }}">{{ __('message.service_concept') }}</a></li>
                 <li class="has-submenu">
-                    <a href="#" data-submenu="companyMenu">会社案内</a>
+                    <a href="#" data-submenu="companyMenu">{{ __('message.company_profile') }}</a>
                 </li>
-                <li><a href="{{ route('contact') }}">お問い合わせ</a></li>
-                <li><a href="#">お知らせ</a></li>
-                <li><a href="{{ route('recruit') }}">採用情報</a></li>
+                <li><a href="{{ route('contact') }}">{{ __('message.contact') }}</a></li>
+                <li><a href="#">{{ __('message.news') }}</a></li>
+                <li><a href="{{ route('recruit') }}">{{ __('message.recruit') }}</a></li>
             </ul>
         </div>
 
         <div class="submenu-list" id="serviceMenu">
             <ul>
-                <li><a href="{{ route('services') }}">サービスTOP</a></li>
-                <li><a href="{{ route('accountingConsulting') }}">会計コンサルティング</a></li>
-                <li><a href="{{ route('mergersandAcquisitionsConsulting') }}">M&Aコンサルティング</a></li>
-                <li><a href="{{ route('initialPublicOfferingConsulting') }}">株式公開コンサルティング</a></li>
-                <li><a href="{{ route('systemConsulting') }}">システムコンサルティング</a></li>
-                <li><a href="{{ route('humanResourcesConsulting') }}">人事コンサルティング</a></li>
-                <li><a href="{{ route('taxConsulting') }}">税務コンサルティング</a></li>
-                <li><a href="{{ route('internationalTaxConsulting') }}">国際税務コンサルティング</a></li>
+                <li><a href="{{ route('services') }}">{{ __('message.services_top') }}</a></li>
+                <li><a href="{{ route('accountingConsulting') }}">{{ __('message.accounting_consulting') }}</a></li>
+                <li><a href="{{ route('mergersandAcquisitionsConsulting') }}">{{ __('message.ma_consulting') }}</a>
+                </li>
+                <li><a href="{{ route('initialPublicOfferingConsulting') }}">{{ __('message.ipo_consulting') }}</a>
+                </li>
+                <li><a href="{{ route('systemConsulting') }}">{{ __('message.system_consulting') }}</a></li>
+                <li><a href="{{ route('humanResourcesConsulting') }}">{{ __('message.hr_consulting') }}</a></li>
+                <li><a href="{{ route('taxConsulting') }}">{{ __('message.tax_consulting') }}</a></li>
+                <li><a
+                        href="{{ route('internationalTaxConsulting') }}">{{ __('message.international_tax_consulting') }}</a>
+                </li>
             </ul>
         </div>
 
         <div class="submenu-list" id="companyMenu">
             <ul>
-                <li><a href="{{ route('companyOverview') }}">会社案内TOP</a></li>
-                <li><a href="{{ route('messageFromOurPresident') }}">社長挨拶</a></li>
-                <li><a href="{{ route('member') }}">メンバー</a></li>
-                <li><a href="{{ route('group') }}">グループ紹介</a></li>
+                <li><a href="{{ route('companyOverview') }}">{{ __('message.company_top') }}</a></li>
+                <li><a href="{{ route('messageFromOurPresident') }}">{{ __('message.president_message') }}</a></li>
+                <li><a href="{{ route('member') }}">{{ __('message.member') }}</a></li>
+                <li><a href="{{ route('group') }}">{{ __('message.group') }}</a></li>
             </ul>
         </div>
     </div>
@@ -68,9 +81,9 @@
         <div class="sub-footer-inner">
             <div class="sub-footer-links-wrap">
                 <ul class="footer-links">
-                    <li><a href="{{ route('sitePolicy') }}">サイトポリシー</a></li>
-                    <li><a href="{{ route('privacyPolicy') }}">プライバシーポリシー</a></li>
-                    <li><a href="{{ route('contact') }}">お問い合わせ</a></li>
+                    <li><a href="{{ route('sitePolicy') }}">{{ __('message.site_policy') }}</a></li>
+                    <li><a href="{{ route('privacyPolicy') }}">{{ __('message.privacy_policy') }}</a></li>
+                    <li><a href="{{ route('contact') }}">{{ __('message.contact') }}</a></li>
                 </ul>
             </div>
 
