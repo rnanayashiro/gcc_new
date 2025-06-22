@@ -407,4 +407,34 @@ return [
     Even companies not legally required to undergo an audit may delegate the evaluation of the accuracy of their financial statements to external experts. This can be a means to enhance credibility with financial institutions and business partners. Additionally, for companies planning to go public in the near future, voluntarily undergoing an audit is considered highly effective as a preliminary step to statutory audits.
     Our group not only provides audits to enhance the reliability of such financial statements but also offers advice during the audit process regarding the status of internal controls and efficient management.
     EOT,
+
+    'm_and_a_intro' => 'GCC is an accounting consulting firm headquartered in Osaka, led by certified public accountants and tax accountants.',
+    'm_and_a_detail' => 'We provide support not only for due diligence and valuation but also for finance scheme planning focusing on accounting and tax aspects.',
+    'm_and_a_services' => 'Corporate mergers and acquisitions serve various purposes, including strengthening domestic and international competitiveness and business expansion. They are increasingly used to address succession issues in small and medium-sized enterprises.',
+    'm_and_a_support' => 'Our group supports everything from proposing finance schemes to closing, including accounting and tax processing, with experienced certified public accountants in M&A.',
+    'm_and_a_schemes' => [
+        'integration' => '[Integration Schemes]<br>Absorption Merger, Incorporation Merger, Share Exchange, Share Transfer',
+        'stock_acquisition' => '[Stock Acquisition Schemes]<br>Transfer of Issued Shares, Subscription of New Shares, Public Tender Offer, MBO, LBO, EBO, Business Transfer',
+        'division' => '[Division Schemes]<br>Absorption-type Demerger, Incorporation-type Demerger',
+    ],
+
+    'transition_button_text' => 'Click here for DD details',
+    'm_and_a_brokerage_title' => 'M&A Brokerage & Advisory',
+    'm_and_a_brokerage_content' => 'Nowadays, even small and medium-sized enterprises commonly use M&A as a method for further business expansion, increasing corporate value, or business succession.
+    Our group meets your needs through the selection and mediation of sellers and buyers, as well as negotiation and execution support under FA contracts.',
+    'due_diligence_title' => 'Due Diligence',
+    'due_diligence_content' => 'As a prerequisite for M&A, it is essential to fully understand the risks and realities of the target company.
+    Our group responds to your needs by conducting efficient and effective due diligence on finance, taxation, labor, and legal matters with certified public accountants, tax accountants, social insurance labor consultants, and attorneys.',
+
+    'transition_button_text' => 'Click here for DD details',
+    'valuation_title' => 'Valuation',
+    'valuation_content' => 'To carry out M&A, it is necessary to evaluate the target company or its business.
+    Our group conducts appropriate valuations (stock price calculations) alongside financial due diligence by certified accountants and tax accountants to evaluate enterprise or business value.',
+    'restructuring_title' => 'Corporate and Organizational Restructuring Consulting',
+    'restructuring_content' => 'After repeated corporate acquisitions, companies often find themselves with an increased number of group companies and expanded business scale on a consolidated basis, but insufficient control over subsidiaries, leading to a situation with many unprofitable companies.
+    Our group offers one-stop services from scheme consideration, execution support, to post-restructuring follow-up.',
+    'recovery_title' => 'Business Recovery Consulting',
+    'recovery_content' => 'Companies burdened with excessive debt can restore competitiveness and recover their businesses by separating core businesses with sufficient competitiveness from unprofitable divisions.
+    Our group has built a system to respond in a one-stop manner, from negotiations with financial institutions to proposals for business recovery schemes.',
+
 ];
