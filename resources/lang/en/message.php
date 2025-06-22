@@ -298,4 +298,80 @@ return [
 
     'phone' => 'The phone number must be 10 or 11 digits.',
     'email' => 'Please enter a valid email address.',
+
+    // 採用情報
+    'careers_category' => 'Careers',
+    'recruitment_heading' => 'Recruitment Details',
+    'recruitment_content' => <<<EOT
+    Global Corporate Consulting is a consulting firm with many professionals, including certified public accountants and tax accountants.
+    To respond to the diverse and sophisticated needs of clients at a higher level amidst the rapidly changing business environment in recent years, our firm conducts various consulting services from the perspectives of "accounting, taxation, and management" through teams of professionals with a wide and deep knowledge base.
+    The areas our firm handles range from accounting to M&A, business improvement, international operations, systems, HR, and IPOs. We work on solving the accounting and management challenges of clients ranging from listed companies to SMEs.
+    Our firm, with many repeat requests from clients, values thinking together and working alongside our clients rather than one-sided improvements, proposals, or guidance.
+
+    We sincerely welcome applications from those who want to grow themselves and aim to become "professionals" in the future at our firm.
+    EOT,
+    'job_openings' => 'Job Openings',
+    'job_tax_staff' => 'Tax Staff',
+    'job_account_consulting_staff' => 'Accounting Consulting Staff (Not currently recruiting)',
+    'job_overseas_consulting_staff' => 'Overseas Consulting Staff (Not currently recruiting)',
+
+    'tax_staff' => 'Tax Staff',
+    'job_title' => 'Job Title',
+    'recruitment_background' => 'Recruitment Background',
+    'tax_staff_background' => 'Recruiting to strengthen organizational responsiveness by leveraging young talent.',
+    'job_description' => 'Job Description',
+    'tax_staff_job_description' => "Preparation of tax documents such as tax returns, monthly visits.",
+    'working_environment' => 'Working Environment',
+    'tax_staff_working_environment' => "After joining, you will be in charge of several clients as a core member.\nNo single-person assignments; clients are managed by multiple members to avoid excessive workload.\nFor those interested, opportunities to collaborate with the consulting team on domestic consulting, international tax,\nand overseas consulting are available.",
+    'application_qualifications' => 'Qualifications',
+    'tax_staff_qualifications' => "Age 22 to 40\n[Required]\nBookkeeping Level 2 or experience taking the tax accountant exam (pass/fail irrelevant; passing subjects preferred)\nExperience preparing or assisting preparation of corporate, consumption, income tax returns\n[Preferred]\nExperience in preparation of statutory reports\nYear-end adjustment document preparation\nAccounting closing journal entries and document organization",
+    'work_location' => 'Work Location',
+    'tax_staff_location' => 'GCC Certified Public Tax Accountant Corporation, Osaka Headquarters',
+    'transportation' => 'Transportation',
+    'tax_staff_transportation' => '"Honmachi Station" 5 min walk, "Sakaisuji-Hommachi Station" 2 min walk',
+    'work_hours' => 'Work Hours',
+    'tax_staff_work_hours' => "Choose from below\n① 8:00 – 17:00\n② 8:30 – 17:30\n③ 9:00 – 18:00\n④ 9:30 – 18:30\n* Overtime may be requested, but the company does not tolerate unnecessary overtime.",
+    'salary' => 'Salary',
+    'tax_staff_salary' => "Monthly salary: From 250,000 yen (preferential treatment based on passed subjects, skills, experience)\n* 3-month probation period",
+    'bonus' => 'Bonus',
+    'tax_staff_bonus' => 'Settlement bonus (once a year, generally more than one month based on company performance)',
+    'holidays' => 'Holidays',
+    'tax_staff_holidays' => 'Basically two days off per week (Sat, Sun), public holidays, year-end/new year holidays, paid leave, maternity/paternity leave',
+    'benefits' => 'Benefits',
+    'tax_staff_benefits' => "Full transportation expenses paid, social insurance system, salary increases\nVarious allowances (overtime, business trip, job duties)\nWorkdays can be negotiated considering study time\nOverseas incentive trips (Vietnam, Hawaii, Guam, Korea, etc.)",
+
+    'tax_staff' => 'Tax Staff',
+    'job_title' => 'Job Title',
+    'recruitment_background' => 'Recruitment Background',
+    'tax_staff_background' => 'Recruiting to strengthen organizational responsiveness by leveraging young talent.',
+    'job_description' => 'Job Description',
+    'tax_staff_job_description' => "Preparation of tax documents such as tax returns, monthly visits.",
+    'working_environment' => 'Working Environment',
+    'tax_staff_working_environment' => "After joining, you will be in charge of several clients as a core member.\nNo single-person assignments; clients are managed by multiple members to avoid excessive workload.\nFor those interested, opportunities to collaborate with the consulting team on domestic consulting, international tax,\nand overseas consulting are available.",
+    'application_qualifications' => 'Qualifications',
+    'tax_staff_qualifications' => "Age 22 to 40\n[Required]\nBookkeeping Level 2 or experience taking the tax accountant exam (pass/fail irrelevant; passing subjects preferred)\nExperience preparing or assisting preparation of corporate, consumption, income tax returns\n[Preferred]\nExperience in preparation of statutory reports\nYear-end adjustment document preparation\nAccounting closing journal entries and document organization",
+    'work_location' => 'Work Location',
+    'tax_staff_location' => 'GCC Certified Public Tax Accountant Corporation, Osaka Headquarters',
+    'transportation' => 'Transportation',
+    'tax_staff_transportation' => '"Honmachi Station" 5 min walk, "Sakaisuji-Hommachi Station" 2 min walk',
+    'work_hours' => 'Work Hours',
+    'tax_staff_work_hours' => "Choose from below\n① 8:00 – 17:00\n② 8:30 – 17:30\n③ 9:00 – 18:00\n④ 9:30 – 18:30\n* Overtime may be requested, but the company does not tolerate unnecessary overtime.",
+    'salary' => 'Salary',
+    'tax_staff_salary' => "Monthly salary: From 250,000 yen (preferential treatment based on passed subjects, skills, experience)\n* 3-month probation period",
+    'bonus' => 'Bonus',
+    'tax_staff_bonus' => 'Settlement bonus (once a year, generally more than one month based on company performance)',
+    'holidays' => 'Holidays',
+    'tax_staff_holidays' => 'Basically two days off per week (Sat, Sun), public holidays, year-end/new year holidays, paid leave, maternity/paternity leave',
+    'benefits' => 'Benefits',
+    'tax_staff_benefits' => "Full transportation expenses paid, social insurance system, salary increases\nVarious allowances (overtime, business trip, job duties)\nWorkdays can be negotiated considering study time\nOverseas incentive trips (Vietnam, Hawaii, Guam, Korea, etc.)",
+
+    'overseas_consulting_staff' => 'Overseas Consulting Staff',
+    'overseas_consulting_job_description' => "Support for overseas-related consulting tasks, including communication with our local subsidiary in Thailand.",
+    'overseas_consulting_working_environment' => "After joining, you will first learn the workflow as a consulting staff member alongside seniors and supervisors.\nTasks will be assigned according to your level of experience and growth.",
+    'overseas_consulting_qualifications' => "Aged 22 to 40, PC skills required (Word, Excel), and motivated individuals.\nEven those with minimal knowledge of accounting or finance are highly welcome.\nSpecifically, the following are preferred:\n- Fluent in English or other foreign languages\n- US CPA exam passers\n- Those with experience taking the US CPA exam\n- Bookkeeping Level 2 or higher\n- Experience in accounting firms, financial institutions, or corporate accounting and finance\n- Interest in Thailand",
+
+    'recruitment_process' => 'Recruitment Process',
+    'image_alt' => 'Image of the recruitment process',
+    'recruitment_note' => "※1) Please send your resume (with photo) and job history to the address below.\n\n〒541-0052 20F, Osaka International Building, 2-3-13, Azuchimachi, Chuo-ku, Osaka\nTo: Recruitment Manager, Global Corporate Consulting Co., Ltd.",
+
 ];
