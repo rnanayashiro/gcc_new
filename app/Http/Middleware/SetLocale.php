@@ -16,14 +16,16 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next)
     {
-        // langクエリパラメータがあるかチェック
-        $lang = $request->query('lang');
-
-        // 許可する言語コードを配列で指定
+        // 許可する言語コード
         $availableLocales = ['ja', 'en'];
 
-        if ($lang && in_array($lang, $availableLocales)) {
+        // セッションまたはクエリパラメータから言語を取得
+        $lang = $request->query('lang') ?? session('locale', 'ja'); // デフォルトは'ja'
+
+        // 言語コードが有効ならアプリケーションに設定
+        if (in_array($lang, $availableLocales)) {
             app()->setLocale($lang);
+            session(['locale' => $lang]); // セッションに保存
         }
 
         return $next($request);

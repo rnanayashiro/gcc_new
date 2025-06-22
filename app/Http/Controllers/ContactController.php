@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Validator;
 use App\Mail\ConfirmationEmail;
 use App\Mail\AdminNotificationEmail;
@@ -37,10 +38,9 @@ class ContactController extends Controller
 
         // バリデーションメッセージ
         $messages = [
-            'regex' => '電話番号は半角数字で10桁または11桁で入力してください。',
-            'email' => '有効なメールアドレスを入力してください。',
+            'regex' => __('validation.phone'), // ロケールに応じたメッセージ
+            'email' => __('validation.email'),
         ];
-
         // バリデーションの実行
         $validator = Validator::make($input, $rules, $messages);
 
