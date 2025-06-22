@@ -374,4 +374,37 @@ return [
     'image_alt' => 'Image of the recruitment process',
     'recruitment_note' => "※1) Please send your resume (with photo) and job history to the address below.\n\n〒541-0052 20F, Osaka International Building, 2-3-13, Azuchimachi, Chuo-ku, Osaka\nTo: Recruitment Manager, Global Corporate Consulting Co., Ltd.",
 
+    // 会計コンサルティング
+    'image_alt' => 'GCC Tax Corporation',
+    'description' => 'Certified accountants and tax accountants provide advice on accounting and taxation, which are the core of corporate management.',
+    'section_title' => 'Accounting and Disclosure Consulting',
+    'section_content' => <<<EOT
+    For business owners to grasp the true state of their companies, appropriate accounting processes are essential. Additionally, proper corporate disclosure is an effective means to enhance credibility with financial institutions and external shareholders.<br>
+    Our group provides guidance on accounting processes based on institutional accounting standards, such as business combination accounting, financial instrument accounting, impairment accounting for fixed assets, lease accounting, and retirement benefit accounting, as well as support and guidance on institutional disclosure systems under the Companies Act and the Financial Instruments and Exchange Act.
+    EOT,
+
+    'group_consulting_title' => 'Group Management Consulting',
+    'group_consulting_content' => <<<EOT
+    As companies expand and group companies increase through new company establishment and M&A, controlling each group company becomes difficult, and understanding the overall group situation becomes challenging. This trend is especially evident in companies with many overseas bases and subsidiaries. Our group provides segmentation for group management, consolidated accounting systems, and support/guidance for building consolidated-based fund management and budget management systems.
+    EOT,
+    'accounting_support_title' => 'Accounting Support for Listed Companies',
+    'accounting_support_content' => <<<EOT
+    Our accounting support for listed companies is not merely dispatching personnel with accounting knowledge. Certified public accountants and consulting staff form a team to flexibly support your company's practical accounting issues with knowledge of accounting processes required for listed companies.
+    Furthermore, we not only undertake tasks but also report on points for improvement noticed during support and address inquiries regarding matters pointed out by auditors or accounting processes. This is a packaged outsourcing form of "accounting advisory" + "practical work support."
+    EOT,
+    'support_cases_title' => 'Specific Support Cases',
+    'support_cases' => [
+        'Support for preparation of consolidated financial statements',
+        'Support and review for partial materials such as consolidated CF and tax effect materials',
+        'Support for preparation of management materials for board meetings and management',
+        'Support and review for preparation of financial statements and other documents',
+        'Support for restructuring consolidated packages',
+        'Support and review for preparation of consolidated packages by subsidiaries',
+        'Support for accounting and settlement work by subsidiaries',
+    ],
+    'voluntary_audit_title' => 'Voluntary Audit',
+    'voluntary_audit_content' => <<<EOT
+    Even companies not legally required to undergo an audit may delegate the evaluation of the accuracy of their financial statements to external experts. This can be a means to enhance credibility with financial institutions and business partners. Additionally, for companies planning to go public in the near future, voluntarily undergoing an audit is considered highly effective as a preliminary step to statutory audits.
+    Our group not only provides audits to enhance the reliability of such financial statements but also offers advice during the audit process regarding the status of internal controls and efficient management.
+    EOT,
 ];
