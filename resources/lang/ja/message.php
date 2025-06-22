@@ -92,6 +92,7 @@ return [
     'company_group_description' => '弊社グループでは、公認会計士、税理士、社会保険労務士等のほか、アライアンス先に弁護士事務所・司法書士事務所・不動産鑑定士事務所等があり、あらゆるサービスをひとつの窓口で提供しております。' . "\n" .
         '例えば、M&A案件に係るデューデリジェンスにおいては、会計・税務のみならず、法務・労務・不動産関連に関する問題点を横断的に指摘することが可能です。' . "\n" .
         'また、弊社の特徴として、士業にありがちな一人の先生による対応ということはなく、どのような案件も複数名のチームで対応することとしております。専門家コンサルタントとコンサルティングスタッフが連携して、お客様のご要望を聞きながら、お客様にとって最もふさわしい、的確なアドバイスを行い、お客様とともに問題を解決するスタイルをとっております。',
+
     'service_form_title' => 'サービス形態',
     'service_form_description' => '弊社グループでは主として以下の形態でサービスを提供させていただきます。',
     'continuous_support_title' => '継続支援サービス',
@@ -105,6 +106,7 @@ return [
     'example_6' => 'システム構築支援業務',
     'example_7' => '税務顧問業務',
     'example_8' => '移転価格税制など国際税務に関するアドバイザリー業務',
+
     'spot_support_title' => 'スポット支援サービス',
     'spot_support_description' => '短期間で、貴社の特定の課題を解決するためのサービスです。',
     'examples' => '事例',
@@ -118,4 +120,50 @@ return [
     'spot_example_8' => '移転価格税制など国際税務に関するアドバイザリー業務',
     'spot_support_note' => '※スポット支援の後も、継続支援という形で、引き続き貴社へのサービス提供をさせていただくことも可能です。',
 
+    // 会社概要
+    'company_overview_category' => '会社案内　Corporate Overview',
+    'company_overview_title' => '会社概要',
+
+    'company_name' => '株式会社グローバル・コーポレート・コンサルティング',
+    'head_office' => '本社',
+    'office_address_line1' => '大阪市中央区安土町2丁目3-13',
+    'office_address_line2' => '大阪国際ビルディング20F',
+    'representative_director' => '代表取締役',
+    'rep_name_1' => '佐野 信行　（社長）',
+    'rep_name_2' => '佐野 信行　（社長）',
+    'director' => '取締役',
+    'director_1' => '下川 浩司　（会長）',
+    'director_2' => '五島 元',
+    'director_3' => '野村 光',
+    'director_4' => '今野 貴史',
+    'business_content' => '事業内容',
+    'business_description' => '会計・経営に関する総合コンサルティング事業',
+
+    'tax_corp_name' => '税理士法人ＧＣＣ',
+    'office_location' => '事務所所在地',
+    'tax_corp_address' => '大阪市中央区安土町2丁目3-13 大阪国際ビルディング',
+    'representative_partner' => '代表社員',
+    'tax_rep_1' => '佐野 信行',
+    'tax_rep_2' => '阪田 健司',
+    'tax_business_description' => '国際税務、事業承継、Ｍ＆Ａ時の税務デューデリジェンス',
+
+    'total_personnel' => '総人員数',
+    'cpa' => '公認会計士',
+    'tax_accountant' => '税理士',
+    'social_insurance_labor_consultant' => '社会保険労務士',
+    'real_estate_appraiser' => '不動産鑑定士',
+    'consulting_staff' => 'コンサルティングスタッフ',
+    'total' => '計',
+    'people' => '名',
+    'as_of_date' => '2024年3月現在',
+
+    'location' => '所在地',
+    'zip_code' => '〒541-0052',
+    'address' => '大阪市中央区安土町2丁目3-13 大阪国際ビルディング20F',
+    'phone' => 'TEL 06-6264-5177',
+    'map_alt_right' => '地図右',
+    'map_alt_left' => '地図左',
+
+    // お問い合わせ
+    'contact_us' => 'お問い合わせ　Contact Us',
 ];

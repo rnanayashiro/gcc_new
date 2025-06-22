@@ -11,197 +11,141 @@
         <div class="main-cover">
             <div class="main-contents">
                 <div class="article-header">
-                    <p class="article-category">会社案内　Corporate Overview</p>
-                    <h1 class="main-title">会社概要</h1>
+                    <p class="article-category">{{ __('message.company_overview_category') }}</p>
+                    <h1 class="main-title">{{ __('message.company_overview_title') }}</h1>
                 </div>
                 <div class="image-block"><img src="images/gccyellow.webp" alt=""></div>
                 <div class="">
-                    <div class="">
-                        株式会社グローバル・コーポレート・コンサルティング
-                    </div>
+                    <div>{{ __('message.company_name') }}</div>
+
                     <div class="sub-container">
-                        <div class="sub-container-litem">
-                            本社
-                        </div>
+                        <div class="sub-container-litem">{{ __('message.head_office') }}</div>
                         <div class="sub-container-ritem">
-                            大阪市中央区安土町2丁目3-13<br>
-                            大阪国際ビルディング20F
+                            {{ __('message.office_address_line1') }}<br>
+                            {{ __('message.office_address_line2') }}
                         </div>
                     </div>
+
                     <div class="border-gray"></div>
+
                     <div class="sub-container">
-                        <div class="sub-container-litem">
-                            代表取締役
-                        </div>
-                        <div class="sub-container-ritem">
-                            佐野 信行　（社長）
-                        </div>
+                        <div class="sub-container-litem">{{ __('message.representative_director') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.rep_name_1') }}</div>
                     </div>
+
                     <div class="sub-container">
-                        <div class="sub-container-litem">
-                            代表取締役
-                        </div>
-                        <div class="sub-container-ritem">
-                            佐野 信行　（社長）
-                        </div>
+                        <div class="sub-container-litem">{{ __('message.representative_director') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.rep_name_2') }}</div>
                     </div>
+
                     <div class="sub-container">
-                        <div class="sub-container-litem">
-                            取締役
-                        </div>
-                        <div class="sub-container-ritem">
-                            下川 浩司　（会長）
-                        </div>
+                        <div class="sub-container-litem">{{ __('message.director') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.director_1') }}</div>
                     </div>
+
                     <div class="sub-container">
-                        <div class="sub-container-litem">
-                            取締役
-                        </div>
-                        <div class="sub-container-ritem">
-                            五島 元
-                        </div>
+                        <div class="sub-container-litem">{{ __('message.director') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.director_2') }}</div>
                     </div>
+
                     <div class="sub-container">
-                        <div class="sub-container-litem">
-                            取締役
-                        </div>
-                        <div class="sub-container-ritem">
-                            野村 光
-                        </div>
+                        <div class="sub-container-litem">{{ __('message.director') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.director_3') }}</div>
                     </div>
+
                     <div class="sub-container">
-                        <div class="sub-container-litem">
-                            取締役
-                        </div>
-                        <div class="sub-container-ritem">
-                            今野 貴史
-                        </div>
+                        <div class="sub-container-litem">{{ __('message.director') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.director_4') }}</div>
                     </div>
+
                     <div class="border-gray"></div>
+
                     <div class="sub-container">
-                        <div class="sub-container-litem">
-                            事業内容
-                        </div>
-                        <div class="sub-container-ritem">
-                            会計・経営に関する総合コンサルティング事業
-                        </div>
+                        <div class="sub-container-litem">{{ __('message.business_content') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.business_description') }}</div>
+                    </div>
+                </div>
+                <div class="">
+                    <div>{{ __('message.tax_corp_name') }}</div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.office_location') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.tax_corp_address') }}</div>
+                    </div>
+
+                    <div class="border-gray"></div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.representative_partner') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.tax_rep_1') }}</div>
+                    </div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.representative_partner') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.tax_rep_2') }}</div>
+                    </div>
+
+                    <div class="border-gray"></div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.business_content') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.tax_business_description') }}</div>
+                    </div>
+                </div>
+                <div class="">
+                    <div>{{ __('message.total_personnel') }}</div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.cpa') }}</div>
+                        <div class="sub-container-ritem">9{{ __('message.people') }}</div>
+                    </div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.tax_accountant') }}</div>
+                        <div class="sub-container-ritem">6{{ __('message.people') }}</div>
+                    </div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.social_insurance_labor_consultant') }}</div>
+                        <div class="sub-container-ritem">2{{ __('message.people') }}</div>
+                    </div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.real_estate_appraiser') }}</div>
+                        <div class="sub-container-ritem">1{{ __('message.people') }}</div>
+                    </div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.consulting_staff') }}</div>
+                        <div class="sub-container-ritem">45{{ __('message.people') }}</div>
+                    </div>
+
+                    <div class="border-gray"></div>
+
+                    <div class="sub-container">
+                        <div class="sub-container-litem">{{ __('message.total') }}</div>
+                        <div class="sub-container-ritem">63{{ __('message.people') }}</div>
+                        <div class="sub-container-date">{{ __('message.as_of_date') }}</div>
                     </div>
                 </div>
                 <div class="">
                     <div class="">
-                        税理士法人ＧＣＣ
-                    </div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            事務所所在地
-                        </div>
-                        <div class="sub-container-ritem">
-                            大阪市中央区安土町2丁目3-13 大阪国際ビルディング
-                        </div>
-                    </div>
-                    <div class="border-gray"></div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            代表社員
-                        </div>
-                        <div class="sub-container-ritem">
-                            佐野 信行
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            代表社員
-                        </div>
-                        <div class="sub-container-ritem">
-                            阪田 健司
-                        </div>
-                    </div>
-                    <div class="border-gray"></div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            事業内容
-                        </div>
-                        <div class="sub-container-ritem">
-                            国際税務、事業承継、Ｍ＆Ａ時の税務
-                            デュー デリジェンス
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="">
-                        総人員数
-                    </div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            公認会計士
-                        </div>
-                        <div class="sub-container-ritem">
-                            9名
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            税理士
-                        </div>
-                        <div class="sub-container-ritem">
-                            6名
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            社会保険労務士
-                        </div>
-                        <div class="sub-container-ritem">
-                            2名
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            不動産鑑定士
-                        </div>
-                        <div class="sub-container-ritem">
-                            1名
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            コンサルティングスタッフ
-                        </div>
-                        <div class="sub-container-ritem">
-                            45名
-                        </div>
-                    </div>
-                    <div class="border-gray"></div>
-                    <div class="sub-container">
-                        <div class="sub-container-litem">
-                            計
-                        </div>
-                        <div class="sub-container-ritem">
-                            63名
-                        </div>
-                        <div class="sub-container-date">
-                            2024年3月現在
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="">
-                        所在地
+                        {{ __('message.location') }}
                     </div>
                     <div class="sub-container-add">
                         <div class="">
-                            〒541-0052
+                            {{ __('message.zip_code') }}
                         </div>
                         <div class="">
-                            大阪市中央区安土町2丁目3-13 大阪国際ビルディング20F
+                            {{ __('message.address') }}
                         </div>
                         <div class="">
-                            TEL 06-6264-5177
+                            {{ __('message.phone') }}
                         </div>
                     </div>
                     <div class="image-container-flex m-top30">
-                        <img src="images/com_building.png" alt="map_right">
-                        <img src="images/gccmap202209.png" alt="map_left">
+                        <img src="images/com_building.png" alt="{{ __('message.map_alt_right') }}">
+                        <img src="images/gccmap202209.png" alt="{{ __('message.map_alt_left') }}">
                     </div>
                     <div class="m-top30">
                         <iframe

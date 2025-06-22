@@ -118,4 +118,52 @@ return [
     'spot_example_8' => 'Advisory services on international taxation such as transfer pricing',
     'spot_support_note' => '※ After spot support, it is also possible to continue providing services to your company in the form of ongoing support.',
 
+
+    // 会社概要
+    'company_overview_category' => 'Corporate Overview',
+    'company_overview_title' => 'Company Profile',
+
+    'company_name' => 'Global Corporate Consulting Inc.',
+    'head_office' => 'Head Office',
+    'office_address_line1' => '2-3-13 Azuchimachi, Chuo-ku, Osaka',
+    'office_address_line2' => 'Osaka International Building 20F',
+    'representative_director' => 'Representative Director',
+    'rep_name_1' => 'Nobuyuki Sano (President)',
+    'rep_name_2' => 'Nobuyuki Sano (President)',
+    'director' => 'Director',
+    'director_1' => 'Koji Shimokawa (Chairman)',
+    'director_2' => 'Hajime Goto',
+    'director_3' => 'Hikaru Nomura',
+    'director_4' => 'Takashi Konno',
+    'business_content' => 'Business Description',
+    'business_description' => 'Comprehensive consulting services for accounting and management',
+
+    'tax_corp_name' => 'GCC Tax Corporation',
+    'office_location' => 'Office Location',
+    'tax_corp_address' => '2-3-13 Azuchimachi, Chuo-ku, Osaka, Osaka International Building',
+    'representative_partner' => 'Representative Partner',
+    'tax_rep_1' => 'Nobuyuki Sano',
+    'tax_rep_2' => 'Kenji Sakata',
+    'tax_business_description' => 'International taxation, business succession, and tax due diligence in M&A',
+
+    'total_personnel' => 'Total Personnel',
+    'cpa' => 'Certified Public Accountants',
+    'tax_accountant' => 'Tax Accountants',
+    'social_insurance_labor_consultant' => 'Social Insurance Labor Consultants',
+    'real_estate_appraiser' => 'Real Estate Appraisers',
+    'consulting_staff' => 'Consulting Staff',
+    'total' => 'Total',
+    'people' => ' persons',
+    'as_of_date' => 'As of March 2024',
+
+    'location' => 'Location',
+    'zip_code' => '〒541-0052',
+    'address' => '20F, Osaka International Building, 2-3-13 Azuchimachi, Chuo-ku, Osaka',
+    'phone' => 'TEL 06-6264-5177',
+    'map_alt_right' => 'Map Right',
+    'map_alt_left' => 'Map Left',
+
+    // お問い合わせ
+    'contact_us' => 'Contact Us',
+
 ];
