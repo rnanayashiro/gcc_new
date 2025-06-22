@@ -512,4 +512,79 @@ return [
     EOT,
     'ceo_name' => 'Global Corporate Consulting Co., Ltd.<br>President & CEO Nobuyuki Sano',
 
+    // メンバー
+    'partner' => 'Partner',
+    'tax_accountant' => 'Certified Tax Accountant',
+    'cpa_tax_accountant' => 'Certified Public Accountant / Tax Accountant',
+
+    'shimokawa_ja' => 'Koji Shimokawa',
+    'shimokawa_en' => 'Koji Shimokawa',
+    'shimokawa_desc' => "Worked at Fuji Bank Ltd. and CPA Masao Arahori Office.\nIn 1996, he established Shimokawa Accounting Office after independence.\nHe has extensive experience supporting Japanese companies expanding overseas by providing consulting on tax matters such as business succession, corporate restructuring, M&A, international taxation, and due diligence with overseas partner companies.\nAlso experienced in medical field supporting organizational restructuring of medical corporations and opening/operation of approximately 300 clinics.\nAdvisor at Mizuho Research Institute.\nGraduated from a high school in Indiana, USA, and Doshisha University Faculty of Economics (1985). Registered tax accountant (1996).",
+
+    'sano_ja' => 'Nobuyuki Sano',
+    'sano_en' => 'Nobuyuki Sano',
+    'sano_desc' => "Has experience supporting IPOs at Azusa Audit Corporation.\nAfter independence, he has been involved in consulting on IPOs and corporate finance, as well as many accounting information system construction projects.\nHe is also familiar with J-SOX and has consulted multiple listed companies.\nGraduated from Doshisha University Faculty of Commerce (1995). Certified Public Accountant (2003), Tax Accountant (2006).",
+
+    'nomura_ja' => 'Hikaru Nomura',
+    'nomura_en' => 'Hikaru Nomura',
+    'nomura_desc' => "Engaged in statutory audit work at Azusa Audit Corporation.\nHas experience in many business rehabilitation projects, financial investigations, stock price calculations, and J-SOX support.\nAlso familiar with accounting and taxation in foreign countries, and engaged in overseas business organizational restructuring.\nGraduated from Keio University Faculty of Economics (1998). Certified Public Accountant (2002), Tax Accountant (2005).",
+
+    'konno_ja' => 'Takashi Konno',
+    'konno_en' => 'Takashi Konno',
+    'konno_desc' => "Engaged in statutory audit work at Azusa Audit Corporation.\nHas experience in many business rehabilitation projects, financial investigations, stock price calculations, and J-SOX support.\nAlso familiar with accounting and taxation in foreign countries, and engaged in overseas business organizational restructuring.\nGraduated from Keio University Faculty of Economics (1998). Certified Public Accountant (2002), Tax Accountant (2005).",
+
+    'goto_ja' => 'Gen Goto',
+    'goto_en' => 'Gen Goto',
+    'goto_desc' => "Supported many companies’ IPOs practically at Asahi Audit Corporation (now Azusa Audit Corporation).\nAfterwards, experienced practical work in management departments of venture companies and engaged in various corporate finance consulting and fund formation/operation.\nCurrently involved in management of fund investment projects.\nGraduated from Osaka University Faculty of Economics (1992). Certified Public Accountant (1999), Tax Accountant (2003).",
+
+    'manager' => 'Manager',
+    'sakata_ja' => 'Kenji Sakata',
+    'sakata_en' => 'Kenji Sakata',
+    'sakata_desc' => "Engaged in statutory audits for many companies at Azusa Audit Corporation, with experience in financial investigations and IPO support.\n\nGraduated from Kobe University Faculty of Law (1999), Certified Public Accountant (2003)\nGraduated from Osaka University Faculty of Economics (1992), Certified Public Accountant (1999), Tax Accountant (2003)",
+
+    'cpa_tax_accountant' => 'Certified Public Accountant / Tax Accountant',
+    'kano_ja' => 'Daisuke Kano',
+    'kano_en' => 'Daisuke Kano',
+    'kano_desc' => "Engaged in corporate business planning support and business improvement consulting at the company,\nwith experience in stock valuation, financial investigation, and support for accounting information system construction.\n\nGraduated from Kobe University Faculty of Law (2004), Certified Public Accountant (2016)",
+
+
+    'associate' => 'Associate',
+    'tax_accountant' => 'Tax Accountant',
+    'matsumoto_ja' => 'Yukiya Matsumoto',
+    'matsumoto_en' => 'Yukiya Matsumoto',
+    'matsumoto_desc' => "Accumulated experience in tax and accounting operations at a tax accountant office.\n\nGraduated from Setsunan University Faculty of Engineering Management (2000), Registered Tax Accountant (2008)\nGraduated from Kobe University Faculty of Law (2004), Certified Public Accountant (2016)",
+
+    'specified_sharoushi' => 'Certified Social Insurance Labor Consultant',
+    'kotani_ja' => 'Masataka Kotani',
+    'kotani_en' => 'Masataka Kotani',
+    'kotani_desc' => "After working as a public administrator in Osaka City, he gained practical experience in labor management, personnel evaluation system development, and subsidy applications at a social insurance labor consultant office.\nBy gaining practical experience at an accounting firm, he provides human resources and labor consulting that also considers financial aspects.\n\nGraduated from Osaka University of Economics, Faculty of Business Administration (2001). Certified Social Insurance Labor Consultant (2003), Certified Specific Social Insurance Labor Consultant (2006).",
+
+    'alliance' => 'Alliance',
+    'lawyer' => 'Lawyer',
+    'takamatsu_ja' => 'Naoki Takamatsu',
+    'takamatsu_en' => 'Naoki Takamatsu',
+    'takamatsu_desc' => 'Graduated from Konan University Faculty of Law (1998), admitted to the bar (2003), worked at Kitahama Law Office, then established Sowa Law Office (2015).',
+
+    'judicial_scrivener' => 'Judicial Scrivener',
+    'matsumoto_ja' => 'Kazuki Matsumoto',
+    'matsumoto_en' => 'Kazuki Matsumoto',
+    'matsumoto_desc' => 'Graduated from Doshisha University Faculty of Law (1996), registered judicial scrivener (2003), established Tanimachi Comprehensive Judicial Scrivener Office (2010).',
+
+    'overseas_consultant' => 'Overseas Business Consultant',
+    'international_business_consultant' => 'International Business Consultant',
+    'takahashi_ja' => 'Aiichiro Takahashi',
+    'takahashi_en' => 'Aiichiro Takahashi',
+    'takahashi_desc' => "Gained practical experience in establishing local subsidiaries and accounting/tax operations for Japanese clients at a Japanese accounting firm in Bangkok.\nCurrently engaged mainly in various overseas projects including internal control system construction for overseas subsidiaries, stock valuation, establishment schemes, international tax, and business matching.\n\nEntered Osaka City University, graduated from Asia-Pacific International University (Thailand) (2007), Director of GCC SERVICES (THAILAND) CO., LTD.",
+
+    'cpa_tax_accountant' => 'CPA and Tax Accountant',
+    'cpa_tax_accountant_title' => 'CPA and Tax Accountant',
+    'inoue_ja' => 'Keita Inoue',
+    'inoue_en' => 'Keita Inoue',
+    'inoue_desc' => "Representative of A.I. NETWORK (THAILAND) CO., LTD.<br>Worked at Chuo Audit Corporation Tokyo Office and Audit Corporation Nakachi before gaining extensive experience in providing comprehensive advice and practical support for Japanese companies in Thailand, including company establishment, investment promotion applications, and accounting, tax, and legal services.<br>Also experienced in financial due diligence, internal auditing, accounting outsourcing for foreign companies in Japan, and ODA consulting services in developing countries.<br><br>Graduated from Hitotsubashi University School of Commerce (1992), Certified Public Accountant (registered in 1996), Tax Accountant (registered in 2005), Certified Internal Auditor (registered in 2002)",
+
+    'tax_accountant' => 'Tax Accountant',
+    'lee_ja' => 'Lee Kyo-seong',
+    'lee_en' => 'Lee Kyo-seong',
+    'lee_desc' => 'Born in South Korea. Graduated from Doshisha University Faculty of Economics and completed the Master\'s program at Doshisha University Graduate School of Commerce. Certified Tax Accountant (registered in 2004).',
+
 ];

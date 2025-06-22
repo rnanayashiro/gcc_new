@@ -11,7 +11,7 @@
         <div class="main-cover">
             <div class="main-contents">
                 <div class="article-header">
-                    <p class="article-category">{{ __('message.company_overview') }}</p>
+                    <p class="article-category">{{ __('message.company_overview_category') }}</p>
                     <h1 class="main-title">{{ __('message.president_message') }}</h1>
                 </div>
                 <div class="image-block"><img src="images/ac03.jpg" alt=""></div>
