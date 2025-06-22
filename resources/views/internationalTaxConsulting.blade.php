@@ -12,7 +12,7 @@
             <div class="main-contents">
                 <div class="article-header">
                     <p class="article-category">{{ __('message.service_category') }}</p>
-                    <h1 class="main-title">{{ __('message.international_tax_consulting') }}</h1>
+                    <h1 class="main-title">{{ __('message.company_overview') }}</h1>
                 </div>
                 <div class="image-block"><img src="images/ac02.jpg" alt=""></div>
                 <div class="image-text-block">

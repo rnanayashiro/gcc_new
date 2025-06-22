@@ -496,4 +496,20 @@ return [
     'overseas_subsidiary_finance_review_title' => 'Overseas Subsidiary Financial Review Consulting',
     'overseas_subsidiary_finance_review_text' => "Overseas bases sometimes lack sufficient staff for management and accounting operations, making it difficult to plan business and budgets, grasp financial and accounting issues, and understand current term settlements. Language barriers may also hinder proper reporting to the parent company, requiring significant time and effort. Our group not only inquiries overseas subsidiaries but also visits local corporations to understand the situation and promotes operational improvements through advice and guidance.",
 
+    // 社長挨拶
+    'company_overview' => 'Corporate Overview',
+    'ceo_greeting_title' => 'Message from the CEO',
+    'ceo_greeting_text' => <<<EOT
+    Since our founding in 2005 as "Your Strategic Partner for Growth," we have worked closely with our clients, almost as if we were part of their team, facing challenges together, sweating together, and solving problems together, accumulating a wealth of experience.
+    We deeply appreciate the continued growth we have shared.
+    The business environment is undergoing significant changes under keywords such as declining birthrate and aging population, digital transformation, and SDGs.
+    In such an environment, corporate activities must not only handle routine tasks and troubleshooting daily but also allocate management resources to "irregular" activities beyond ordinary operations, such as value-added improvements, productivity enhancement, and new initiatives, for sustainable development.
+    Meanwhile, despite the declining working-age population, with rising female and senior employment rates, companies are increasingly required to offer a working environment with flexibility, diversity, and balance, making responses to various irregularities more challenging amid chronic labor shortages.
+    Moreover, tackling these "irregular" activities that rebalance the delicate framework of corporate activities often encounters organizational resistance and lack of resources (knowledge and manpower), posing significant hurdles.
+    Based on our experience, we firmly believe that utilizing external professionals as stabilizers is highly effective in overcoming these hurdles.
+    For GCC as well, adapting to environmental changes is a critical issue. While maintaining flexibility and freedom, we aim to evolve further as a professional group by actively engaging in irregular activities and accumulating knowledge and experience.
+    We hope you will continue to rely on GCC, your evolving strategic partner.
+    EOT,
+    'ceo_name' => 'Global Corporate Consulting Co., Ltd.<br>President & CEO Nobuyuki Sano',
+
 ];
