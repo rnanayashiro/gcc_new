@@ -587,4 +587,61 @@ return [
     'lee_en' => 'Lee Kyo-seong',
     'lee_desc' => 'Born in South Korea. Graduated from Doshisha University Faculty of Economics and completed the Master\'s program at Doshisha University Graduate School of Commerce. Certified Tax Accountant (registered in 2004).',
 
+    // グループ紹介
+    'global_group' => 'Global Group',
+    'global_corporate_consulting' => 'Global Corporate Consulting Co., Ltd.',
+    'group_description' => 'We have built the Accounting & Taxation Professional Group centered on our company, and the Global Group companies also provide various services as follows.',
+    'gcc_logo' => 'GCC SERVICES (THAILAND) CO., LTD. Logo',
+    'company_name' => 'Company Name',
+    'gcc_name' => 'GCC SERVICES (THAILAND) CO., LTD.',
+    'managing_director' => 'Managing Director',
+    'konno_takashi' => 'Takashi Konno (Japanese Certified Public Accountant)',
+    'business_description' => 'Business Description',
+    'business_content' => 'Support for establishment of local corporations, accounting, taxation, legal support, consulting services, and marketing research in Thailand.',
+    'location' => 'Location',
+    'location_address' => '952 Ramaland Building, 13 floor, Room No.47, Rama 4 Road, Suriyawong, Bangrak, Bangkok 10500 Thailand',
+
+    'jpac_group_notice' => 'JPAC Group Japan Desk Announcement in Thailand',
+    'jpac_group_description' => 'Our member firm, GCC SERVICES (THAILAND) CO., LTD., in collaboration with JPAC Group located in Bangkok, Thailand, established the JPAC Group Japan Desk in 2017.<br>
+    The Japan Desk comprises a team of Thai accountants and lawyers with experience at major auditing firms. They offer comprehensive solutions to Japanese clients, including accounting, taxation, and legal issues, streamlining financial reporting processes to parent companies, international taxation, financial advisory for international M&A, due diligence, and more.<br>
+    A Japanese coordinator is permanently stationed to provide consulting at our standards and to handle inquiries and reporting in Japanese.<br><br>
+    For more details, please contact us below.',
+    'jpac_group_title' => 'JPAC Group Japan Desk',
+    'jpac_group_phone' => 'Phone (Japanese): +66-86-987-8277',
+    'jpac_group_email' => 'Email: takahashi@jpac.co.th',
+    'jpac_group_address' => 'Address: 36 Soi Thakam 4st, Rama 2 Road Samaedum, Bangkhuntian, Bangkok 10150 Thailand',
+
+    'ags_alt' => 'AGS(A.I.Global Sun Partners Joint Stock Company)',
+    'company_name' => 'Company Name',
+    'representative' => 'Representative',
+    'business_content' => 'Business Content',
+    'location' => 'Location',
+    'ags_name' => 'AGS (A.I.Global Sun Partners Joint Stock Company)',
+    'ags_representative' => 'Yuki Ishikawa',
+    'ags_business_content' => 'Accounting, local entity establishment support, and consulting services in Vietnam',
+    'ags_location' => 'Hanoi Office: 6F Hoang Sam Building, 260-262 Ba Trieu Str.,<br>Hai Ba Trung Dist., Hanoi',
+
+    'ghc_alt' => 'Global Human Communications Inc.',
+    'ghc_title' => 'Global Human Communications Inc.',
+    'ghc_ceo' => 'Nobuyuki Sano (CPA)',
+    'ghc_business_content' => 'Accounting, financial, and labor support<br>HR consulting, training, and placement',
+
+    'gmc_alt' => 'Global Management Consulting Inc.',
+    'gmc_title' => 'Global Management Consulting Inc.',
+    'gmc_ceo' => 'Takashi Konno (CPA)',
+    'gmc_business_content' => 'Overseas expansion consulting, business revitalization, M&A consulting',
+
+    'gsc_alt' => 'Global System Consulting Inc.',
+    'gsc_title' => 'Global System Consulting Inc.',
+    'gsc_ceo' => 'Nobuyuki Sano (CPA)',
+    'gsc_business_content' => 'Accounting and financial system consulting',
+
+    'gac_alt' => 'Global Assist Consulting Inc.',
+    'gac_title' => 'Global Assist Consulting Inc.',
+    'gac_ceo' => 'Hikaru Nomura (CPA)',
+    'gac_business_content' => 'M&A and organizational restructuring consulting, business planning',
+
+    'ceo' => 'CEO',
+    'business_content' => 'Business Content',
+
 ];

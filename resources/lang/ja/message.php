@@ -576,4 +576,62 @@ return [
     'lee_en' => 'Lee Kyo-seong',
     'lee_desc' => '韓国出身。同志社大学経済学部卒業、同志社大学院商学研究科修士課程終了。税理士（2004年登録）',
 
+    // グループ紹介
+    'global_group' => 'グローバルグループ',
+    'global_corporate_consulting' => '（株）グローバル・コーポレート・コンサルティング',
+    'group_description' => '弊社を中心としてAccounting ＆Taxation Professional Groupを構築しており、グローバルグループ各社においても以下のような様々なサービスを提供しております。',
+    'gcc_logo' => 'GCC SERVICES (THAILAND) CO., LTD. Logo',
+    'company_name' => '会社名',
+    'gcc_name' => 'GCC SERVICES (THAILAND) CO., LTD.',
+    'managing_director' => 'Managing Director',
+    'konno_takashi' => '今野 貴史 （日本国公認会計士）',
+    'business_description' => '事業内容',
+    'business_content' => 'タイでの現地法人等設立支援、会計・税務・法務支援、コンサルティング業務、マーケティングリサーチ',
+    'location' => '所在地',
+    'location_address' => '952 Ramaland Building, 13 floor, Room No.47, Rama 4 Road, Suriyawong, Bangrak, Bangkok 10500 Thailand',
+
+    'jpac_group_notice' => 'タイのJPAC Group ジャパンデスクのお知らせ',
+    'jpac_group_description' => '弊社メンバーファームのタイ法人GCC SERVICES (THAILAND) CO., LTD.は、<br>
+    タイ国バンコク都にあるJPAC Groupと共同で2017年よりJPAC Groupジャパンデスクを開設しております。<br>
+    ジャパンデスクでは、メンバーに大手監査法人出身のタイ人会計士やタイ人弁護士がチームとなり、日系クライアント様が抱える会計・税務・法務に関する問題から、親会社への財務報告プロセス効率化、国際税務、国際M&Aのフィナンシャルアドバイザリー、デューデリジェンスなど、総合的なコンサルティングのニーズまでワンストップでソリューションをご提供いたします。<br>
+    日本人コーディネーターが常勤し、弊社水準でのコンサルティング、日本語でのご相談・レポーティングに対応いたします。<br><br>
+    詳しい内容は下記までお問い合わせください。',
+    'jpac_group_title' => 'JPAC Group Japan Desk',
+    'jpac_group_phone' => '電話（日本語）　+66-86-987-8277',
+    'jpac_group_email' => 'Eメール　takahashi@jpac.co.th',
+    'jpac_group_address' => '住所　36 Soi Thakam 4st, Rama 2 Road Samaedum, Bangkhuntian, Bangkok 10150 Thailand',
+
+    'ags_alt' => 'AGS(A.I.Global Sun Partners Joint Stock Company)',
+    'company_name' => '会社名',
+    'representative' => '代表',
+    'business_content' => '事業内容',
+    'location' => '所在地',
+    'ags_name' => 'ＡＧＳ (A.I.Global Sun Partners Joint Stock Company)',
+    'ags_representative' => '石川　幸',
+    'ags_business_content' => 'ベトナム現地での会計・現地法人等設立支援・コンサルティング業務',
+    'ags_location' => 'ハノイ事務所：6F Hoang Sam Building, 260-262 Ba Trieu Str.,<br>Hai Ba Trung Dist., Hanoi',
+
+    'ghc_alt' => '株式会社グローバル･ヒューマン･コミュニケーションズ',
+    'ghc_title' => '株式会社グローバル･ヒューマン･コミュニケーションズ',
+    'ghc_ceo' => '佐野 信行 （公認会計士）',
+    'ghc_business_content' => '経理、会計、財務、労務の業務支援・補助<br>人事コンサルティング・人材育成・紹介',
+
+    'gmc_alt' => '株式会社グローバル･マネジメント･コンサルティング',
+    'gmc_title' => '株式会社グローバル･マネジメント･コンサルティング',
+    'gmc_ceo' => '今野 貴史 （公認会計士）',
+    'gmc_business_content' => '海外進出コンサルティング、事業再生、Ｍ＆Ａコンサルティング',
+
+    'gsc_alt' => '株式会社グローバル･システム･コンサルティング',
+    'gsc_title' => '株式会社グローバル･システム･コンサルティング',
+    'gsc_ceo' => '佐野 信行 （公認会計士）',
+    'gsc_business_content' => '会計・財務システムコンサルティング',
+
+    'gac_alt' => '株式会社グローバル･アシスト･コンサルティング',
+    'gac_title' => '株式会社グローバル･アシスト･コンサルティング',
+    'gac_ceo' => '野村 光 （公認会計士）',
+    'gac_business_content' => 'Ｍ＆Ａ・組織再編コンサルティング、事業計画策定',
+
+    'ceo' => '代表取締役',
+    'business_content' => '事業内容',
+
 ];
