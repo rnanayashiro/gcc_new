@@ -83,8 +83,8 @@
 .support-cases li::before {
     content: "\2714"; /* アイテム前にチェックマークを追加 */
     position: absolute;
-    left: 0;
-    top: 50%;
+    left: -10px;
+        top: 50%;
     transform: translateY(-50%); /* アイコンを中央に配置 */
     color: #4CAF50; /* チェックマークの色 */
     font-size: 1.2em; /* チェックマークのサイズ */
@@ -302,7 +302,7 @@ a.succession-button {
 }
 
 .back-button {
-    padding: 15px 20px;
+    padding: 11px 20px;
     background-color: #888888;
     color: white;
     border: none;
@@ -761,4 +761,21 @@ header.scroll-active {
     font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", meiryo, sans-serif;
     font-weight: 300;
     text-align: center;
+}
+
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #0056b3;
 }

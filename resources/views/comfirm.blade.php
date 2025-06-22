@@ -12,19 +12,18 @@
             <div class="main-contents">
                 <div class="article-header">
                     <p class="article-category">Contact Us</p>
-                    <h1 class="main-title">お問い合わせ</h1>
+                    <h1 class="main-title">{{ __('message.contact') }}</h1>
                 </div>
                 <div class="">
                     <div class="">
-                        お問い合わせ内容確認
+                        {{ __('message.inquiry_confirmation') }}
                     </div>
                     <div class="">
-                        お問い合わせフォーム<br>
-                        メールアドレスは正しくご入力下さい。（弊社より返信メールが届きません。）<br>
-                        半角カナ入力は文字化けの原因となりますのでご注意ください。
+                        {{ __('message.inquiry_form') }}<br>
+                        {{ __('message.email_warning') }}<br>
+                        {{ __('message.halfwidth_kana_warning') }}
                     </div>
                 </div>
-
                 <div class="form-container">
                     <form action="{{ route('submit') }}" method="POST">
                         @csrf
@@ -32,7 +31,7 @@
                         <!-- 会社名 -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                会社名<span class="red-symbol">※</span>
+                                {{ __('message.company_name') }}<span class="red-symbol">※</span>
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['company-name'] ?? '' }}</p>
@@ -43,7 +42,7 @@
                         <!-- 業種 -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                業種<span class="red-symbol">※</span>
+                                {{ __('message.industry') }}<span class="red-symbol">※</span>
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['industry'] ?? '' }}</p>
@@ -54,7 +53,7 @@
                         <!-- 部署名 -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                部署名
+                                {{ __('message.department') }}
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['department'] ?? '' }}</p>
@@ -62,10 +61,10 @@
                             <input type="hidden" name="department" value="{{ $data['department'] ?? '' }}">
                         </div>
 
-                        <!-- 役職名（必須） -->
+                        <!-- 役職名 -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                役職名
+                                {{ __('message.position') }}
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['position'] ?? '' }}</p>
@@ -76,7 +75,7 @@
                         <!-- 担当者名（必須） -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                担当者名<span class="red-symbol">※</span>
+                                {{ __('message.contact_name') }}<span class="red-symbol">※</span>
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['contact-name'] ?? '' }}</p>
@@ -87,7 +86,7 @@
                         <!-- 担当者名(かな) -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                担当者名(かな)<span class="red-symbol">※</span>
+                                {{ __('message.contact_name_kana') }}<span class="red-symbol">※</span>
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['contact-name-kana'] ?? '' }}</p>
@@ -96,37 +95,41 @@
                         </div>
 
                         <!-- ご住所 -->
-                        <div class="m-top30 font-w700">ご住所</div>
+                        <div class="m-top30 font-w700">{{ __('message.address') }}</div>
+
                         <div class="sub-container">
                             <div class="sub-container-litem160">
-                                都道府県
+                                {{ __('message.prefecture') }}
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['prefecture'] ?? '' }}</p>
                             </div>
                             <input type="hidden" name="prefecture" value="{{ $data['prefecture'] ?? '' }}">
                         </div>
+
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                市区町村
+                                {{ __('message.city') }}
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['city'] ?? '' }}</p>
                             </div>
                             <input type="hidden" name="city" value="{{ $data['city'] ?? '' }}">
                         </div>
+
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                町名・番地
+                                {{ __('message.street') }}
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['street'] ?? '' }}</p>
                             </div>
                             <input type="hidden" name="street" value="{{ $data['street'] ?? '' }}">
                         </div>
+
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                ビル名等
+                                {{ __('message.building') }}
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['building'] ?? '' }}</p>
@@ -137,7 +140,7 @@
                         <!-- 電話番号 -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                電話番号<span class="red-symbol">※</span>
+                                {{ __('message.phone') }}<span class="red-symbol">※</span>
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['phone'] ?? '' }}</p>
@@ -159,13 +162,13 @@
                         <!-- 国・地域（必須） -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                国・地域
+                                {{ __('message.country_region') }}
                             </div>
                             <div class="sub-container-ritem">
                                 <p>
                                     @if (!empty($data['country']))
-                                        @foreach ($data['country'] as $inquiry)
-                                            {{ $inquiry }}<br>
+                                        @foreach ($data['country'] as $country)
+                                            {{ $country }}<br>
                                         @endforeach
                                         <input type="hidden" name="country[]"
                                             value="{{ implode(',', $data['country']) }}">
@@ -179,7 +182,7 @@
                         <!-- お問い合わせ内容（必須） -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                お問い合わせ内容<span class="red-symbol">※</span>
+                                {{ __('message.inquiry_content') }}<span class="red-symbol">※</span>
                             </div>
                             <div class="sub-container-ritem">
                                 <p>
@@ -199,7 +202,7 @@
                         <!-- その他の内容（任意） -->
                         <div class="sub-container m-top30">
                             <div class="sub-container-litem160">
-                                その他の内容
+                                {{ __('message.other_content') }}
                             </div>
                             <div class="sub-container-ritem">
                                 <p>{{ $data['inquiry'] ?? '' }}</p>
@@ -208,8 +211,8 @@
                         </div>
 
                         <div class="form-container-center">
-                            <a href="{{ route('contact') }}" class="back-button">戻る</a>
-                            <button type="submit">送信</button>
+                            <a href="{{ route('contact') }}" class="back-button">{{ __('message.back') }}</a>
+                            <button type="submit">{{ __('message.submit') }}</button>
                         </div>
                     </form>
                 </div>
