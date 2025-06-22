@@ -466,4 +466,14 @@ return [
     'labor_relations_audit_text' => 'Publicly listed companies and those aiming for listing must comply with labor laws. Since labor laws are revised regularly, periodic checks by experts are necessary. Our group’s social insurance labor consultants conduct short-term investigations to verify compliance with laws and regulations and provide advice for continuous improvement.',
     'group_company_support_text' => 'Our group company, Global Human Communications Co., Ltd., provides support services for management departments such as accounting, general affairs, and human resources.',
 
+    // 税務コンサルティング
+    'tax_service_intro' => 'Our group company, GCC Tax Corporation, provides tax-related services.',
+    'corporate_restructuring_title' => 'Corporate Restructuring Consulting',
+    'corporate_restructuring_text' => 'We provide practical support including the essential assessment of qualified and non-qualified reorganizations when executing corporate restructuring.',
+    'business_succession_title' => 'Business Succession Consulting',
+    'business_succession_text' => "Business succession is an issue faced by every owner-manager. Our firm provides tailored advice on business succession measures according to your company’s situation.\n\nIn Japan, inheritance tax rates reach as high as 50% when the inherited assets exceed 300 million yen. For owners holding assets exceeding this amount, inheritance tax planning is critically important. We propose comprehensive strategies including corporate capital policy, owner succession measures (foundation establishment, overseas asset management company establishment, global fund management), and reasonable tax-saving methods.",
+    'business_succession_detail_btn' => 'Details',
+    'accounting_services_title' => 'Settlement, Bookkeeping, and Tax Return Services',
+    'accounting_services_text' => "We handle general settlement, bookkeeping, and tax return services, including consolidated tax return filings. We also outsource settlement services for listed companies, covering tasks from preparing account details to creating tax returns.",
+
 ];
