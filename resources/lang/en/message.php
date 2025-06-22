@@ -437,4 +437,20 @@ return [
     'recovery_content' => 'Companies burdened with excessive debt can restore competitiveness and recover their businesses by separating core businesses with sufficient competitiveness from unprofitable divisions.
     Our group has built a system to respond in a one-stop manner, from negotiations with financial institutions to proposals for business recovery schemes.',
 
+    // 株式公開コンサルティング
+    'ipo_image_alt' => 'f_left',
+    'ipo_text' => 'Our firm provides guidance and support for preparing accounting processes, strengthening internal control systems, and creating application documents to meet IPO standards.',
+    'short_review_title' => 'Short Review',
+    'short_review_content' => 'For an IPO, it is necessary to develop regulations and build internal control systems capable of withstanding public scrutiny.
+    First, we conduct a short review (preliminary investigation) to identify obstacles to going public and report on improvements needed.',
+    'jsox_title' => 'J-SOX Consulting',
+    'jsox_content' => 'Addressing the review and documentation of operations for internal control evaluations and audits (commonly referred to as "J-SOX") requires considerable time. This involves the following tasks:',
+    'jsox_tasks' => [
+        'Review and reorganize operations to establish internal controls.',
+        'Create required documents such as workflow charts and risk control matrices.',
+        'Continuously evaluate the effectiveness of internal controls.',
+    ],
+    'jsox_note' => 'To address these issues, it is essential to form a dedicated internal control project team and foster awareness company-wide. Considering that internal control evaluations are indispensable and require ongoing efforts for public companies, building a system capable of self-management is desirable. Leveraging external experts is a highly efficient and effective way to train such personnel quickly.',
+    'jsox_support' => 'Our group supports the establishment of internal control evaluation systems, led by certified public accountants experienced in J-SOX support.',
+
 ];
