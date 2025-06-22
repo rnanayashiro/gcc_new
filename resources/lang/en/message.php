@@ -645,6 +645,7 @@ return [
     'business_content' => 'Business Content',
 
     // サイトポリシー
+    'site_policy_category' => 'Site Policy',
     'exclusive_practices_title' => 'Handling of Legally Designated Exclusive Practices',
     'exclusive_practices_description' => 'Regarding exclusive practices stipulated by the Certified Public Accountants Act, the Certified Tax Accountant Act, the Attorney Act, and the Judicial Scrivener Act, we arrange for various professionals to address such matters.',
 
@@ -660,4 +661,81 @@ return [
     'copyright_title' => 'Copyright',
     'copyright_description' => "The content of this website is protected by treaties, Japan's Copyright Act, and other laws.\n\nWhile users are free to browse this website, reproduction or copying of content is prohibited except as permitted by copyright law.",
 
+    // プライバシーポリシー
+    'privacy_policy_category' => 'Privacy Policy',
+    'privacy_policy_title' => 'Privacy Policy and Online Privacy Policy',
+    'privacy_policy_description' => 'When accessing and using the Global Group\'s site (hereinafter referred to as "this site"), please read the following "Personal Information Initiatives" and "Online Privacy Policy".<br>* "Global Group" refers to Global Corporate Consulting Co., Ltd. and its affiliated companies.',
+
+    'personal_information_initiative' => 'Personal Information Initiatives',
+    'personal_information_protection_policy' => 'Global Corporate Consulting Co., Ltd., GCC Tax Corporation, GCC SERVICES (THAILAND) CO., LTD, (hereinafter collectively referred to as "the Company") recognizes the necessity and importance of protecting personal information and strives to comply with applicable laws, guidelines, and other norms regarding personal information.',
+    'purpose_of_personal_information_use' => '1. Purpose of Personal Information',
+    'purpose_of_personal_information_details' => 'Provision of our services (including procedures for independence and conflict checks)<br>
+    Delivery of our newsletters and email magazines (including those via this site and email)<br>
+    Notification, distribution, and management of various seminars and events<br>
+    Delivery of information, books, greeting cards, etc., related to our services<br>
+    Conducting surveys, research, and statistics<br>
+    Responding to various inquiries<br>
+    Recruitment and personnel management of employees and staff (including officers and other individuals engaged in business operations at our company)<br>
+    Comprehensive risk management based on the necessity of compliance and quality management.',
+
+    'shared_use_of_personal_information' => '2. Shared Use of Personal Information',
+    'shared_use_description' => <<<EOT
+    We may share the personal information we have obtained within the Global Corporate Consulting group of companies for the purposes mentioned above.<br>
+    <br>
+    -1. Personal information to be shared<br>
+    Name, title/position, workplace/affiliation, age, address/location, email address, phone number, fax number, and other personal information obtained by co-users in connection with services and business.<br>
+    <br>
+    -2. Scope of co-users<br>
+    Affiliated companies within the Global Group (please refer to the <a href="{{ route('group') }}">"Group Introduction"</a> page for company information).<br>
+    <br>
+    -3. Purpose of co-users<br>
+    In accordance with the purposes specified in "2. Purpose of Personal Information." <br>
+    <br>
+    -4. Management responsibility for shared personal data<br>
+    Global Corporate Consulting Co., Ltd.<br>
+    Contact: Please refer to our inquiry form.
+    EOT,
+    'third_party_provision' => '3. Provision to Third Parties',
+    'third_party_provision_description' => <<<EOT
+    We will not provide personal information to third parties without the prior consent of the user, except in the following cases or when permitted by the Personal Information Protection Act or other laws and regulations.
+    EOT,
+    'personal_information_management_title' => '4. Management of Personal Information',
+    'personal_information_management_desc' => 'We manage personal information securely and implement appropriate information security measures to prevent loss, destruction, alteration, and leakage of personal information, including protection against unauthorized access and computer viruses.',
+
+    'procedure_for_personal_data_requests_title' => '5. Procedures for Requests Regarding Retained Personal Data',
+    'procedure_for_personal_data_requests_desc' => "We respond appropriately in accordance with laws when requests for disclosure or correction of retained personal data are made under the Act on the Protection of Personal Information.\nProcedure: Please contact the reception desk below. We will provide individual guidance on the specific method.\nReception desk: Please see the inquiry form.",
+
+    'complaints_and_inquiries_title' => '6. Complaints and Inquiries',
+    'complaints_and_inquiries_desc' => "If you have complaints, opinions, or questions regarding our handling of personal information, please contact us via the inquiry form.\n* Except in cases of joint use, each group company of Global Corporate Consulting is independently responsible for managing personal information and is not jointly liable without specific circumstances.",
+
+    'online_privacy_policy_title' => 'Online Privacy Policy',
+
+    'online_privacy_policy_1_title' => '1. Basic Concept',
+    'online_privacy_policy_1_text' => 'We collect information about the use of this site to the extent necessary for the smooth operation of services provided by Global Corporate Consulting. The collected information is handled within the scope of use except as stipulated in "4. Third-party Provision" of "Personal Information Handling".',
+
+    'online_privacy_policy_2_title' => '2. Scope of Collected Information',
+    'online_privacy_policy_2_text' => 'When using the "Contact Us" service, we ask you to voluntarily provide your name, company name, address, phone number, email address, etc.',
+
+    'online_privacy_policy_3_title' => '3. Purpose of Use',
+    'online_privacy_policy_3_text' => 'Refer to "2. Purpose of Use of Personal Information" in "Personal Information Handling" above.',
+
+    'online_privacy_policy_4_title' => '4. Restrictions on Use and Provision',
+    'online_privacy_policy_4_text' => 'Refer to "3. Joint Use of Personal Information" and "4. Third-party Provision" in "Personal Information Handling" above.',
+
+    'online_privacy_policy_5_title' => '5. Security Measures',
+    'online_privacy_policy_5_text' => 'Refer to "5. Management of Personal Information" in "Personal Information Handling" above.',
+
+    'online_privacy_policy_6_title' => '6. Log Information and Cookies',
+    'online_privacy_policy_6_text' => "Refer to \"5. Management of Personal Information\" in \"Personal Information Handling\" above.\nThis site uses Google Analytics for access log collection and analysis.\nGoogle Analytics collects access logs using cookies but does not include personally identifiable information.\nCollected access logs are managed according to Google's privacy policy.\nRegarding cookies and IP addresses, this site collects IP address information from web server access logs in addition to cookies used for access analysis.\nCookies and IP address information alone cannot identify specific individuals and are therefore not considered personal information.\nCookie settings can be refused through your browser.\nIf you are unsure whether your browser supports this feature, please contact your software manufacturer.",
+
+    'online_privacy_policy_google_privacy_title' => 'About Google\'s Privacy Policy',
+    'online_privacy_policy_google_privacy_text' => 'Please check the following regarding Google\'s privacy policy for access logs collected by Google Analytics. (External site)',
+
+    'online_privacy_policy_google_partner_link_text' => 'Google\'s data usage when users use Google partner sites or apps',
+    'online_privacy_policy_google_privacy_link_text' => 'Google Privacy Policy',
+
+    'online_privacy_policy_7_title' => '7. Scope of Application',
+    'online_privacy_policy_7_text' => 'This online privacy policy applies only to this site. Global Corporate Consulting makes no guarantees regarding information on linked external sites.',
+
+    'online_privacy_policy_last_updated' => 'Last Updated: December 1, 2022',
 ];
