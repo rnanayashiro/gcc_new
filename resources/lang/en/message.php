@@ -476,4 +476,24 @@ return [
     'accounting_services_title' => 'Settlement, Bookkeeping, and Tax Return Services',
     'accounting_services_text' => "We handle general settlement, bookkeeping, and tax return services, including consolidated tax return filings. We also outsource settlement services for listed companies, covering tasks from preparing account details to creating tax returns.",
 
+    // 国際税務コンサルティング
+    'tax_service_intro' => 'Our group company, GCC Tax Corporation, provides tax-related services.',
+    'international_tax_consulting_title' => 'International Tax Consulting',
+    'international_tax_consulting_text' => 'To respond to the increasingly important international tax issues accompanying corporate globalization, we have alliances mainly in Asia and North America, and have specialists fluent in English, Chinese, Korean, and Thai to meet your needs.',
+    'international_tax_overview_title' => 'About International Tax Consulting',
+    'international_tax_overview_text' => "International taxation covers topics such as tax treaties, transfer pricing regulations, tax haven countermeasures, thin capitalization rules, foreign tax credits, and employment income for expatriates. Addressing these requires specialized knowledge and timely local information gathering for prior consideration.\n\nOur group has affiliated offices overseas and language-proficient experts who quickly respond to your needs.",
+    'transfer_pricing_consulting_title' => 'Transfer Pricing Consulting',
+    'transfer_pricing_consulting_text' => "As companies globalize, transactions with overseas subsidiaries and business partners increase. It is mandatory to investigate whether such transactions are conducted at appropriate prices, not only domestically but also overseas. Our group reviews all transactions with overseas subsidiaries and partners, organizes funds, costs, and risk burdens, and explains the profits of both parties by providing phased services as needed.",
+    'international_tax_short_review_title' => 'International Tax Short Review',
+    'international_tax_short_review_text' => 'We create a report summarizing risks, issues, and solutions regarding international tax and overseas base management systems, tailored to your company’s needs through a short-term survey.',
+    'international_tax_short_review_cases_title' => 'Examples of Short Review',
+    'international_tax_short_review_cases' => [
+        'Listing of risk items related to international taxation and prioritization of issue addressing',
+        'Examples of responses to issues pointed out by tax authorities in the past',
+        'Report on issues regarding regulations, documents, and rules within the parent company',
+        'Report on transfer pricing issues among related companies',
+    ],
+    'overseas_subsidiary_finance_review_title' => 'Overseas Subsidiary Financial Review Consulting',
+    'overseas_subsidiary_finance_review_text' => "Overseas bases sometimes lack sufficient staff for management and accounting operations, making it difficult to plan business and budgets, grasp financial and accounting issues, and understand current term settlements. Language barriers may also hinder proper reporting to the parent company, requiring significant time and effort. Our group not only inquiries overseas subsidiaries but also visits local corporations to understand the situation and promotes operational improvements through advice and guidance.",
+
 ];
