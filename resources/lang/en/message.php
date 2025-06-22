@@ -86,4 +86,36 @@ return [
     'clinic_support_description' => 'We operate a portal site supporting clinic openings, mainly by listing properties for medical institutions and supporting clinic succession.',
     'clinic_support_service_1' => 'Listing of properties for clinic openings',
     'clinic_support_service_2' => 'Clinic succession support',
+
+    //サービスコンセプト
+    'service_concept_category' => 'Service Concept',
+    'company_group_description' => 'Our group consists of certified public accountants, tax accountants, social insurance labor consultants, and alliance partners including law firms, judicial scrivener offices, and real estate appraisal offices, offering all services through a single contact point.' . "\n" .
+        'For example, in due diligence related to M&A projects, we can comprehensively identify issues not only in accounting and taxation but also in legal, labor, and real estate matters.' . "\n" .
+        'Additionally, unlike the typical one-person approach often seen in professional services, we handle all cases with a team of multiple members. Expert consultants and consulting staff collaborate to listen to our clients’ requests, providing the most appropriate and accurate advice, solving problems together with our clients.',
+    'service_form_title' => 'Service Types',
+    'service_form_description' => 'Our group primarily provides services in the following formats.',
+    'continuous_support_title' => 'Ongoing Support Services',
+    'continuous_support_description' => 'This service provides continuous advice and guidance over time while listening to your company’s needs.',
+    'examples' => 'Examples',
+    'example_1' => 'Ongoing advisory services related to accounting processes and strengthening internal control systems',
+    'example_2' => 'Preparation of consolidated financial statements for parent companies and support for consolidated package input on the subsidiary side',
+    'example_3' => 'Advisory services on accounting and J-SOX for IPO realization',
+    'example_4' => 'Advisory services related to overseas expansion',
+    'example_5' => 'Support for building personnel compensation and evaluation systems',
+    'example_6' => 'System construction support services',
+    'example_7' => 'Tax advisory services',
+    'example_8' => 'Advisory services on international taxation such as transfer pricing tax systems',
+    'spot_support_title' => 'Spot Support Services',
+    'spot_support_description' => 'A service to solve your company’s specific issues in a short period of time.',
+    'examples' => 'Examples',
+    'spot_example_1' => 'Financial due diligence and stock valuation',
+    'spot_example_2' => 'MBO advisory services',
+    'spot_example_3' => 'M&A scheme construction advisory services',
+    'spot_example_4' => 'M&A brokerage',
+    'spot_example_5' => 'Support for building personnel compensation and evaluation systems',
+    'spot_example_6' => 'System construction support services',
+    'spot_example_7' => 'Tax advisory services',
+    'spot_example_8' => 'Advisory services on international taxation such as transfer pricing',
+    'spot_support_note' => '※ After spot support, it is also possible to continue providing services to your company in the form of ongoing support.',
+
 ];
