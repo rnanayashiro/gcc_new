@@ -9,6 +9,7 @@ export default defineConfig({
                 "resources/js/app.js",
                 "resources/css/common.css",
                 "resources/css/pagesetting.css",
+                'resources/js/beta.js', 
             ],
             refresh: true,
         }),
