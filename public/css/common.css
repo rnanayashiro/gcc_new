@@ -729,6 +729,7 @@ body.is-fixed-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 280px;
   flex-direction: column;
   padding: 40px;
   overflow: hidden;
@@ -943,9 +944,13 @@ body.is-fixed-body {
 }
 
 .card-description {
-  -webkit-box-orient: vertical;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.6;
+  max-height: calc(1.6em * 3);
 }
 
 .card-description.-blank-icon::after {
@@ -974,6 +979,23 @@ body.is-fixed-body {
 
 .card-content.relation-link > p {
   font-size: 1.5rem;
+}
+
+.card-list {
+  display: block !important;
+}
+
+.card-list-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-list-item {
@@ -1121,7 +1143,7 @@ body.is-fixed-body {
 .card-slider-list {
   display: flex; /* Flexboxを使用して横並びに */
   flex-wrap: wrap; /* ラップを許可 */
-  justify-content: space-between; /* カード間のスペースを均等に */
+  justify-content: flex-start;
 }
 
 .card-slider-list-item {
@@ -7231,10 +7253,13 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   position: absolute;
   top: 70%;
   left: 50%;
+  font-style: normal;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
+
 .home-mainvisual-lead.-ad {
   padding: 0 5%;
   font-size: 2.2rem;
@@ -7245,6 +7270,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 .home-img-bg {/*
   background: url(/images/top_button_area_bg_pc.jpg) no-repeat center center;

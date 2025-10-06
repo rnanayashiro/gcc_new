@@ -18,7 +18,7 @@
                             <img src="../images/mainvisual_img01_sp_202311.jpg" alt="" class="sp-content" />
                         </div>
                         <p class="home-mainvisual-lead">
-                            <i>{{ __('message.main_message') }}</i>
+                            <span>{{ __('message.main_message') }}</span>
                         </p>
                         <div class="home-mainvisual-button">
                             <a href="{{ route('services') }}"

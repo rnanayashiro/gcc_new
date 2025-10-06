@@ -21,8 +21,7 @@
                     <div class="sub-container">
                         <div class="sub-container-litem">{{ __('message.head_office') }}</div>
                         <div class="sub-container-ritem">
-                            {{ __('message.office_address_line1') }}<br>
-                            {{ __('message.office_address_line2') }}
+                            {{ __('message.tax_corp_address') }}
                         </div>
                     </div>
 
@@ -30,12 +29,12 @@
 
                     <div class="sub-container">
                         <div class="sub-container-litem">{{ __('message.representative_director') }}</div>
-                        <div class="sub-container-ritem">{{ __('message.rep_name_1') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.rep_name') }}</div>
                     </div>
 
                     <div class="sub-container">
-                        <div class="sub-container-litem">{{ __('message.representative_director') }}</div>
-                        <div class="sub-container-ritem">{{ __('message.rep_name_2') }}</div>
+                        <div class="sub-container-litem">{{ __('message.chairman_board') }}</div>
+                        <div class="sub-container-ritem">{{ __('message.chairman') }}</div>
                     </div>
 
                     <div class="sub-container">
@@ -51,11 +50,6 @@
                     <div class="sub-container">
                         <div class="sub-container-litem">{{ __('message.director') }}</div>
                         <div class="sub-container-ritem">{{ __('message.director_3') }}</div>
-                    </div>
-
-                    <div class="sub-container">
-                        <div class="sub-container-litem">{{ __('message.director') }}</div>
-                        <div class="sub-container-ritem">{{ __('message.director_4') }}</div>
                     </div>
 
                     <div class="border-gray"></div>
@@ -131,17 +125,6 @@
                 <div class="">
                     <div class="">
                         {{ __('message.location') }}
-                    </div>
-                    <div class="sub-container-add">
-                        <div class="">
-                            {{ __('message.zip_code') }}
-                        </div>
-                        <div class="">
-                            {{ __('message.address') }}
-                        </div>
-                        <div class="">
-                            {{ __('message.phone') }}
-                        </div>
                     </div>
                     <div class="image-container-flex m-top30">
                         <img src="images/com_building.png" alt="{{ __('message.map_alt_right') }}">
