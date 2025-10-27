@@ -1010,177 +1010,8 @@ body.is-fixed-body {
   margin-bottom: 0;
 }
 
+/* koko */
 .card-slider-list {
-  /* ベンダープレフィックスは省略して記述します */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* アイテムのパディングと相殺するネガティブマージン */
-  margin: 0 -25px;
-}
-
-/* Slick初期化後の設定 */
-.card-slider-list.slick-initialized {
-  display: block;
-}
-
-.card-slider-list .slick-list {
-  /* スライドの端の影などが見えるようにする */
-  overflow: visible;
-}
-
-.card-slider-list-item {
-  /* PC (4列表示) を基準とする */
-  /* width: 25% - (左右のパディング 25px * 2) */
-  width: calc(25% - 50px);
-  padding: 0 25px;
-  /* box-sizing: content-box; は calc() の計算と併用するために明示的に設定することがあります */
-  box-sizing: content-box;
-}
-
-.column-col-4 .box-title {
-  font-size: 1.6rem;
-}
-
-@media (max-width: 960px) {
-  /* アイテム幅を2列表示に調整 */
-  .card-slider-list-item {
-    /* width: 50% - (左右のパディング 25px * 2) */
-    width: calc(50% - 50px);
-  }
-
-  /* タブレットでのタイトル縮小 */
-  .column-col-4 .box-title {
-    font-size: 1.3rem;
-  }
-  .card-title {
-    font-size: 1.4rem;
-  }
-}
-
-/* スマートフォン (画面幅 600px以下) - 1列表示 */
-@media (max-width: 600px) {
-  /* マージンとパディングをスマホ向けに小さくする */
-  .card-slider-list {
-    margin: 0 -10px;
-  }
-
-  /* アイテム幅を1列表示に調整 */
-  .card-slider-list-item {
-    /* width: 100% - (左右のパディング 10px * 2) */
-    width: calc(100% - 20px);
-    padding: 0 10px;
-    margin-bottom: 20px;
-  }
-
-  /* スマホでのタイトル縮小 */
-  .column-col-4 .box-title {
-    font-size: 1.2rem;
-  }
-  .card-title {
-    font-size: 1.25rem;
-  }
-
-  /* スマホでは矢印を非表示にすることが多い */
-  .slider-arrows {
-    display: none;
-  }
-}
-.slider-arrows {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-}
-
-.slider-arrows .slick-arrow {
-  position: relative;
-  /* デフォルトの位置をリセット */
-  top: auto;
-  right: auto;
-  left: auto;
-  transform: translateY(0);
-
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  border-radius: 50%;
-  cursor: pointer;
-
-  /* ネウモルフィズムの影とグラデーション */
-  background: linear-gradient(-40deg, #eff1f4, #e1e6ea) no-repeat;
-  box-shadow: -5px -5px 10px #ffffff, 2px 2px 10px rgba(0, 0, 0, 0.31);
-  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-/* ホバーで影を小さくして沈んだように見せる */
-.slider-arrows .slick-arrow:hover {
-  box-shadow: -2px -2px 5px #ffffff, 1px 1px 5px rgba(0, 0, 0, 0.31);
-}
-
-/* アクティブ（クリック時）で内側に影を入れて完全に押し込まれたように見せる */
-.slider-arrows .slick-arrow:active {
-  outline: none;
-  box-shadow: -1px -1px 1px #ffffff inset, -2px -2px 2px #ffffff inset, 0 1px 3px rgba(0, 0, 0, 0.16) inset;
-}
-
-/* 矢印アイコン（::after）の共通設定 */
-.slider-arrows .slick-arrow::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 24px;
-  height: 10px;
-  margin: auto;
-  background: url(/common/images/icon_arrow_r.svg) no-repeat 50% 50%;
-  background-size: contain;
-  content: '';
-  transform: translateY(-1px); /* 微調整 */
-  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-/* Slickのデフォルトのテキストを非表示にする */
-.slider-arrows .slick-arrow::before {
-  content: none;
-}
-
-/* ホバーでアイコンを動かすアニメーション */
-.slider-arrows .slick-arrow:hover::after {
-  transform: translate(5px, -1px);
-}
-
-/* 「前のボタン」のアイコンを反転させる */
-.slider-arrows .slick-prev::after {
-  transform: scale(-1, 1) translateY(-1px);
-}
-
-/* 「前のボタン」のホバーアニメーションを反転させる */
-.slider-arrows .slick-prev:hover::after {
-  transform: scale(-1, 1) translate(5px, -1px);
-}
-
-/* 2つ目以降の矢印の左マージン */
-.slider-arrows .slick-arrow:not(:first-child) {
-  margin-left: 30px;
-}
-
-/* 無効化された矢印のスタイル */
-.slider-arrows .slick-arrow.slick-disabled {
-  opacity: .5;
-  pointer-events: none;
-}
-
-.slider-arrows .slick-arrow.slick-disabled::after {
-  opacity: .57;
-}
-
-/* タイトル直後の矢印の配置調整 */
-.home-content-heading + .slider-arrows {
-  margin-top: -45px;
-}
-
-/* .card-slider-list {
   -ms-flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1209,9 +1040,9 @@ body.is-fixed-body {
   font-size: 1.6rem;
 }
 
- */
+
 /* ----- slider ----- */
-/* .slider-arrows {
+.slider-arrows {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   display: -webkit-box;
@@ -1220,12 +1051,12 @@ body.is-fixed-body {
   justify-content: flex-end;
   margin-bottom: 15px;
 }
-ateY(0);
+
+.slider-arrows .slick-arrow {
+  -webkit-transform: translateY(0);
   -webkit-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-box-shadow: -5px -5px 10px #ffffff, 2px 2px 10px rgba(0, 0, 0, 0.31);
   position: relative;
-.slider-arrows .slick-arrow {
-  -webkit-transform: transl
   top: auto;
   right: auto;
   left: auto;
@@ -1307,9 +1138,7 @@ ateY(0);
 
 .home-content-heading + .slider-arrows {
   margin-top: -45px;
-} */
-kokomade
-
+}
 
 .card-slider-list {
   display: flex; /* Flexboxを使用して横並びに */
@@ -1368,6 +1197,8 @@ kokomade
 
 .carousel-visual-item img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .carousel-visual-dots {
@@ -1384,9 +1215,11 @@ kokomade
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .js-carousel-visual.-dx .carousel-visual-dots {
   display: none !important;
 }
+
 .carousel-visual-dots > li {
   line-height: 1;
 }
@@ -1417,6 +1250,7 @@ kokomade
 
 .carousel-visual-arrow {
   -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
   z-index: 2;
   position: absolute;
   top: 0;
@@ -1424,7 +1258,6 @@ kokomade
   width: 51px;
   height: 51px;
   margin: auto;
-  transform: rotate(45deg);
   border: 1px solid #000000;
 }
 
@@ -1436,6 +1269,65 @@ kokomade
 .carousel-visual-arrow.-next {
   right: 28px;
   border-width: 1px 1px 0 0;
+}
+
+/* ===========================
+   ▼ レスポンシブ対応
+   =========================== */
+
+/* タブレット（1024px以下） */
+@media (max-width: 1024px) {
+  .carousel-visual {
+    margin: 30px 0;
+  }
+
+  .carousel-visual-dots > li button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .carousel-visual-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-visual-arrow.-prev {
+    left: 15px;
+  }
+
+  .carousel-visual-arrow.-next {
+    right: 15px;
+  }
+}
+
+/* スマホ（600px以下） */
+@media (max-width: 600px) {
+  .carousel-visual {
+    margin: 20px 0;
+  }
+
+  .carousel-visual-dots {
+    bottom: 10px; /* ドットを少し上げる */
+  }
+
+  .carousel-visual-dots > li button {
+    width: 16px;
+    height: 16px;
+  }
+
+  .carousel-visual-arrow {
+    width: 28px;
+    height: 28px;
+    border-color: #444;
+  }
+
+  .carousel-visual-arrow.-prev {
+    left: 8px;
+  }
+
+  .carousel-visual-arrow.-next {
+    right: 8px;
+  }
 }
 
 /* ----- お問い合わせ----- */
@@ -2033,17 +1925,6 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  .home-content-lead {
-    margin-bottom: 20px; /* 下マージンを少し減らす */
-
-    /* フォントサイズを大幅に縮小 */
-    font-size: 1.8rem;
-
-    /* line-heightを調整し、狭い画面での余分な間延びを防ぐ */
-    line-height: 1.6;
-  }
-}
 .home-mainvisual {
   text-align: center;
   position: relative;
@@ -2066,7 +1947,9 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.42));
   content: "";
 }
-.home-mainvisual-item.-ad::after, .home-mainvisual-item.-dx::after {
+
+.home-mainvisual-item.-ad::after,
+.home-mainvisual-item.-dx::after {
   content: none;
 }
 
@@ -2074,12 +1957,20 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   position: relative;
 }
 
+.home-mainvisual-item,
+.home-mainvisual-pict {
+    position: relative;
+    width: 100%;
+    height: auto; /* 高さは自動 */
+    min-height: 300px; /* 最低限の高さ */
+    overflow: hidden;  /* カバー表示なのでhiddenに戻す */
+}
+
 .home-mainvisual-pict img {
-  -o-object-fit: cover;
-  display: block;
-  width: 100%;
-  min-height: 500px;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;      /* 親要素に合わせて高さを確保 */
+    object-fit: cover; /* カバー表示 */
+    display: block;
 }
 
 .home-mainvisual-button {
@@ -2091,6 +1982,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   margin: 0 auto;
   text-align: center;
 }
+
 .home-mainvisual-button.-dx {
   top: 88.5%;
 }
@@ -2104,6 +1996,49 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   min-height: 42px;
   border-radius: 0px;
   border: 2px solid #fff;
+}
+
+/* ======================
+   レスポンシブ
+   ====================== */
+
+/* タブレット（1024px以下） */
+@media (max-width: 1024px) {
+    .home-mainvisual-item,
+    .home-mainvisual-pict {
+        min-height: 400px; /* 少し高さを確保 */
+    }
+
+    .home-mainvisual-button {
+        top: 87%;
+    }
+
+    .home-mainvisual-button a {
+        min-width: 220px;
+        font-size: 0.95em;
+    }
+}
+
+/* スマホ（600px以下） */
+@media (max-width: 600px) {
+    .home-mainvisual-item,
+    .home-mainvisual-pict {
+        min-height: 300px;
+    }
+
+    .home-mainvisual-button {
+        top: 90%;
+    }
+
+    .home-mainvisual-button a {
+        min-width: 180px;
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .home-mainvisual-item::after {
+        height: 100px;
+    }
 }
 
 .home-company {
@@ -4936,8 +4871,8 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
     height: 11px;
   }
   .card-title {
-    font@media (max-width: 960px) {
--height: 1.33333;
+    font-size: 1.5rem;
+    line-height: 1.33333;
   }
   .card-title.-sm {
     font-size: 1.3rem;
@@ -5076,9 +5011,9 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   .box.-float-sp .box-content {
     display: block;
   }
-.column-col-4 .box-title {
-    font-size: 1.4rem;
-}
+  .column-col-4 .box-title {
+    font-size: 1.5rem;
+  }
   .table-responsive + .table-responsive {
     margin-top: 25px;
   }
@@ -7735,78 +7670,59 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   list-style: none;
   padding: 0;
   margin: 50px 0;
-  display: flex;
-  justify-content: center;
-  /* ★追加: アイテムがコンテナの幅を超えたら折り返す */
-  flex-wrap: wrap;
+  display: flex; /* 横並びにするためにフレックスボックスを使用 */
+  justify-content: center; /* 中央に配置 */
 }
 
 .area-bnr-list-item {
   position: relative;
-  /* margin: 10px; はそのまま */
-  margin: 10px;
-
-  /* ★変更: アイテムの幅を柔軟に設定 */
-  /* デフォルト (PCなど): 3つのアイテムが並ぶ想定 */
-  /* flex: 0 1 calc(33.33% - 20px); で、横に3つ並び、左右10pxのマージンを考慮した幅にする */
-  /* -20px は左右のmargin 10px*2 を引く */
-  flex: 0 1 calc(33.33% - 20px);
-  min-width: 200px; /* アイテムの最小幅を設定し、極端に小さくなるのを防ぐ */
+  margin: 10px; /* アイテム間の余白 */
 }
 
 .area-bnr-list-item img {
-  display: block;
-  /* ★追加: レスポンシブ対応のため、画像を親要素の幅いっぱいに広げる */
-  width: 100%;
-  height: auto;
-  filter: brightness(0.6);
-  transition: filter 0.3s;
+  display: block; /* 画像をブロック要素にする */
+  height: auto; /* 高さを自動に設定 */
+  filter: brightness(0.6); /* 初期状態で少し暗くする */
+  transition: filter 0.3s; /* トランジションを追加 */
 }
 
 .area-bnr-list-item:hover img {
-  filter: brightness(1);
+  filter: brightness(1); /* マウスオーバーで元の明るさに戻す */
 }
 
 .area-bnr-list-item span {
   font-weight: 500;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  /* ★変更: フォントサイズを相対的なビューポート単位とemの組み合わせで、より柔軟にする */
-  font-size: clamp(1.2em, 3vw, 1.8em);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  /* ★追加: 狭い画面でもテキストがはみ出さないように、必要に応じて折り返す */
-  text-align: center;
-  padding: 0 5px;
-  /* max-width: 100%; は不要な場合が多いが、より確実にしたいなら追加 */
+  top: 50%; /* 垂直方向中央に配置 */
+  left: 50%; /* 水平方向中央に配置 */
+  transform: translate(-50%, -50%); /* 中央に合わせるためのトランスフォーム */
+  color: white; /* テキストの色 */
+  font-size: 1.5em; /* フォントサイズ */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* テキストの影を追加して視認性を高める */
 }
 
-/* ---------------------------------------------------------------------- */
+/* ===========================
+   ▼ レスポンシブ対応追加
+   =========================== */
 
-/* スマートフォン向けのメディアクエリ (例: 画面幅600px以下) */
-@media (max-width: 600px) {
+/* タブレット・スマホ（1024px以下）で縦並びに */
+@media (max-width: 1024px) {
   .area-bnr-list {
-    margin: 30px 0; /* 余白を少し減らす */
+    flex-direction: column; /* 縦並びに変更 */
+    align-items: center; /* 中央寄せ */
   }
 
   .area-bnr-list-item {
-    /* ★変更: 画面幅が狭い場合は、バナーを1列表示 (ほぼ100%幅) にする */
-    /* flex: 0 1 calc(100% - 20px); で、横に1つ並び、左右10pxのマージンを考慮した幅にする */
-    flex: 0 1 calc(100% - 40px); /* 左右に20px (全体の100% - 40px) の余白を確保した方が見た目が良くなることが多い */
-    margin: 10px 20px; /* 左右の余白を増やして、端に寄せすぎないようにする */
+    width: 100%;
+    max-width: 600px; /* 横幅を制限（見やすくする） */
+    margin: 15px 0; /* 上下に余白を確保 */
+  }
+
+  .area-bnr-list-item span {
+    font-size: 1.2em; /* 少し小さめに調整（お好みで） */
   }
 }
 
-/* タブレット向けのメディアクエリ (例: 画面幅601pxから960px) */
-@media (min-width: 601px) and (max-width: 960px) {
-  .area-bnr-list-item {
-    /* ★変更: タブレットでは2列表示にする (例) */
-    /* flex: 0 1 calc(50% - 20px); で、横に2つ並び、左右10pxのマージンを考慮した幅にする */
-    flex: 0 1 calc(50% - 20px);
-  }
-}
 @media screen and (max-width: 767px) {
   [target="_blank"] .pdf-icon::after {
     font-size: 1.2rem;
