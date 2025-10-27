@@ -729,6 +729,7 @@ body.is-fixed-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 280px;
   flex-direction: column;
   padding: 40px;
   overflow: hidden;
@@ -943,9 +944,13 @@ body.is-fixed-body {
 }
 
 .card-description {
-  -webkit-box-orient: vertical;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.6;
+  max-height: calc(1.6em * 3);
 }
 
 .card-description.-blank-icon::after {
@@ -976,6 +981,23 @@ body.is-fixed-body {
   font-size: 1.5rem;
 }
 
+.card-list {
+  display: block !important;
+}
+
+.card-list-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .card-list-item {
   margin: 0 auto 40px;
 }
@@ -988,6 +1010,7 @@ body.is-fixed-body {
   margin-bottom: 0;
 }
 
+/* koko */
 .card-slider-list {
   -ms-flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -1016,6 +1039,7 @@ body.is-fixed-body {
 .column-col-4 .box-title {
   font-size: 1.6rem;
 }
+
 
 /* ----- slider ----- */
 .slider-arrows {
@@ -1116,12 +1140,10 @@ body.is-fixed-body {
   margin-top: -45px;
 }
 
-
-
 .card-slider-list {
   display: flex; /* Flexboxを使用して横並びに */
   flex-wrap: wrap; /* ラップを許可 */
-  justify-content: space-between; /* カード間のスペースを均等に */
+  justify-content: flex-start;
 }
 
 .card-slider-list-item {
@@ -1175,6 +1197,8 @@ body.is-fixed-body {
 
 .carousel-visual-item img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .carousel-visual-dots {
@@ -1191,9 +1215,11 @@ body.is-fixed-body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .js-carousel-visual.-dx .carousel-visual-dots {
   display: none !important;
 }
+
 .carousel-visual-dots > li {
   line-height: 1;
 }
@@ -1224,6 +1250,7 @@ body.is-fixed-body {
 
 .carousel-visual-arrow {
   -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
   z-index: 2;
   position: absolute;
   top: 0;
@@ -1231,7 +1258,6 @@ body.is-fixed-body {
   width: 51px;
   height: 51px;
   margin: auto;
-  transform: rotate(45deg);
   border: 1px solid #000000;
 }
 
@@ -1243,6 +1269,65 @@ body.is-fixed-body {
 .carousel-visual-arrow.-next {
   right: 28px;
   border-width: 1px 1px 0 0;
+}
+
+/* ===========================
+   ▼ レスポンシブ対応
+   =========================== */
+
+/* タブレット（1024px以下） */
+@media (max-width: 1024px) {
+  .carousel-visual {
+    margin: 30px 0;
+  }
+
+  .carousel-visual-dots > li button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .carousel-visual-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-visual-arrow.-prev {
+    left: 15px;
+  }
+
+  .carousel-visual-arrow.-next {
+    right: 15px;
+  }
+}
+
+/* スマホ（600px以下） */
+@media (max-width: 600px) {
+  .carousel-visual {
+    margin: 20px 0;
+  }
+
+  .carousel-visual-dots {
+    bottom: 10px; /* ドットを少し上げる */
+  }
+
+  .carousel-visual-dots > li button {
+    width: 16px;
+    height: 16px;
+  }
+
+  .carousel-visual-arrow {
+    width: 28px;
+    height: 28px;
+    border-color: #444;
+  }
+
+  .carousel-visual-arrow.-prev {
+    left: 8px;
+  }
+
+  .carousel-visual-arrow.-next {
+    right: 8px;
+  }
 }
 
 /* ----- お問い合わせ----- */
@@ -1862,7 +1947,9 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.42));
   content: "";
 }
-.home-mainvisual-item.-ad::after, .home-mainvisual-item.-dx::after {
+
+.home-mainvisual-item.-ad::after,
+.home-mainvisual-item.-dx::after {
   content: none;
 }
 
@@ -1870,12 +1957,20 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   position: relative;
 }
 
+.home-mainvisual-item,
+.home-mainvisual-pict {
+    position: relative;
+    width: 100%;
+    height: auto; /* 高さは自動 */
+    min-height: 300px; /* 最低限の高さ */
+    overflow: hidden;  /* カバー表示なのでhiddenに戻す */
+}
+
 .home-mainvisual-pict img {
-  -o-object-fit: cover;
-  display: block;
-  width: 100%;
-  min-height: 500px;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;      /* 親要素に合わせて高さを確保 */
+    object-fit: cover; /* カバー表示 */
+    display: block;
 }
 
 .home-mainvisual-button {
@@ -1887,6 +1982,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   margin: 0 auto;
   text-align: center;
 }
+
 .home-mainvisual-button.-dx {
   top: 88.5%;
 }
@@ -1900,6 +1996,49 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   min-height: 42px;
   border-radius: 0px;
   border: 2px solid #fff;
+}
+
+/* ======================
+   レスポンシブ
+   ====================== */
+
+/* タブレット（1024px以下） */
+@media (max-width: 1024px) {
+    .home-mainvisual-item,
+    .home-mainvisual-pict {
+        min-height: 400px; /* 少し高さを確保 */
+    }
+
+    .home-mainvisual-button {
+        top: 87%;
+    }
+
+    .home-mainvisual-button a {
+        min-width: 220px;
+        font-size: 0.95em;
+    }
+}
+
+/* スマホ（600px以下） */
+@media (max-width: 600px) {
+    .home-mainvisual-item,
+    .home-mainvisual-pict {
+        min-height: 300px;
+    }
+
+    .home-mainvisual-button {
+        top: 90%;
+    }
+
+    .home-mainvisual-button a {
+        min-width: 180px;
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .home-mainvisual-item::after {
+        height: 100px;
+    }
 }
 
 .home-company {
@@ -7231,10 +7370,13 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   position: absolute;
   top: 70%;
   left: 50%;
+  font-style: normal;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
+
 .home-mainvisual-lead.-ad {
   padding: 0 5%;
   font-size: 2.2rem;
@@ -7245,6 +7387,7 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 .home-img-bg {/*
   background: url(/images/top_button_area_bg_pc.jpg) no-repeat center center;
@@ -7556,6 +7699,28 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   color: white; /* テキストの色 */
   font-size: 1.5em; /* フォントサイズ */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* テキストの影を追加して視認性を高める */
+}
+
+/* ===========================
+   ▼ レスポンシブ対応追加
+   =========================== */
+
+/* タブレット・スマホ（1024px以下）で縦並びに */
+@media (max-width: 1024px) {
+  .area-bnr-list {
+    flex-direction: column; /* 縦並びに変更 */
+    align-items: center; /* 中央寄せ */
+  }
+
+  .area-bnr-list-item {
+    width: 100%;
+    max-width: 600px; /* 横幅を制限（見やすくする） */
+    margin: 15px 0; /* 上下に余白を確保 */
+  }
+
+  .area-bnr-list-item span {
+    font-size: 1.2em; /* 少し小さめに調整（お好みで） */
+  }
 }
 
 @media screen and (max-width: 767px) {
