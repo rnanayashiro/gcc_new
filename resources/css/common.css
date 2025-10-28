@@ -871,7 +871,7 @@ body.is-fixed-body {
 }
 
 .card-content .card-title {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .card-content .card-category {
@@ -990,9 +990,10 @@ body.is-fixed-body {
   width: 100%;
   margin-bottom: 30px;
 }
-
 .card {
-  height: 300px;
+  height: 300px;          /* ←固定高さを解除 */
+  min-height: 240px;     /* ←最低限の高さだけ残す */
+  padding: 24px;         /* ←スマホでも自然な余白に */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1040,6 +1041,100 @@ body.is-fixed-body {
   font-size: 1.6rem;
 }
 
+/* ===============================
+   ▼ タブレット（768px〜1024px）
+   =============================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-slider-list {
+    flex-wrap: wrap; /* 複数行対応 */
+    justify-content: center;
+    margin: 0 -15px; /* 左右の余白調整 */
+  }
+
+  .card-slider-list-item {
+    width: 48%; /* 2列表示に（間に少し余白） */
+    margin-bottom: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+    height: 240px; /* スマホより少し高め */
+    min-height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 100%;
+    height: 140px; /* 画像をやや大きめに */
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .column-col-4 .box-title {
+    font-size: 1.6rem;
+  }
+
+  .card-description {
+    -webkit-line-clamp: 3; /* タブレットでは3行まで */
+    line-height: 1.5;
+    max-height: calc(1.5em * 3);
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-slider-list {
+    flex-direction: column; /* 縦並び */
+    align-items: center; /* 中央揃え */
+    margin: 0;
+  }
+
+  .card-slider-list-item {
+    width: 100% !important; /* 画面幅いっぱいに */
+    max-width: 100vw; /* 安全に全幅に広げる */
+    padding: 0; /* 余白を削除 */
+    margin-bottom: 40px; /* カード間の余白 */
+  }
+
+  .card {
+    width: 100%;
+    height: 200px;
+    min-height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  /* カード内の画像を高さ調整 */
+  .card img {
+    width: 100%;
+    height: 120px; /* ←ここで高さを少し低めに設定 */
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .column-col-4 .box-title {
+    font-size: 1.4rem;
+  }
+
+    .card-description {
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    max-height: calc(1.5em * 2);
+    font-size: 1.5rem;         /* ちょっと小さく */
+  }
+}
 
 /* ----- slider ----- */
 .slider-arrows {
@@ -7801,6 +7896,52 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
     display: none !important;
   }
 }
+
+/* PC用（デフォルト） */
+.pc-content {
+  display: block;
+}
+
+.sp-content {
+  display: none !important;
+}
+
+/* メインビジュアル共通 */
+.home-mainvisual-pict img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===============================
+   ▼ スマホ（767px以下）
+   =============================== */
+@media screen and (max-width: 767px) {
+  .pc-content {
+    display: none !important; /* PC用を非表示 */
+  }
+
+  .sp-content {
+    display: block !important; /* スマホ用を表示 */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .home-mainvisual-pict {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .home-mainvisual-pict img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* 高さ制限をかけて文字の切れ防止 */
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .fs-lg-2{
     font-size: 6.2vw;

@@ -1,11 +1,7 @@
 @extends('layouts.app')
 @section('styles')
     @parent
-    @vite([
-        'resources/css/pagesetting.css',
-        'resources/css/modal.css',
-        'resources/css/common.css',
-    ])
+    @vite(['resources/css/pagesetting.css', 'resources/css/modal.css', 'resources/css/common.css'])
 @endsection
 @include('includes.header')
 @section('content')
@@ -16,7 +12,7 @@
                     <div class="home-mainvisual-item">
                         <div class="home-mainvisual-pict">
                             <img src="../images/GCC TOP3.jpg" alt="" class="pc-content" />
-                            <img src="../images/mainvisual_img01_sp_202311.jpg" alt="" class="sp-content" />
+                            <img src="../images/GCC TOP3.jpg" alt="" class="sp-content" />
                         </div>
                         <p class="home-mainvisual-lead">
                             <span>{{ __('message.main_message') }}</span>
