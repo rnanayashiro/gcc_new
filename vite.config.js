@@ -10,6 +10,7 @@ export default defineConfig({
                 "resources/css/common.css",
                 "resources/css/pagesetting.css",
                 'resources/js/beta.js', 
+                "resources/css/modal.css",
                 "resources/css/news.css",
             ],
             refresh: true,
