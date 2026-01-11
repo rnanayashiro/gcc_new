@@ -9,11 +9,8 @@ export default defineConfig({
                 "resources/js/app.js",
                 "resources/css/common.css",
                 "resources/css/pagesetting.css",
-<<<<<<< Updated upstream
                 'resources/js/beta.js', 
                 "resources/css/modal.css",
-=======
->>>>>>> Stashed changes
                 "resources/css/news.css",
                 "resources/css/modal.css",  // modal.css を追加
                 'resources/js/beta.js',
