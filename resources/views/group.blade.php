@@ -1,10 +1,7 @@
 @extends('layouts.app')
 @section('styles')
     @parent
-    @vite([
-        'resources/css/pagesetting.css',
-        'resources/css/common.css',
-    ])
+    @vite(['resources/css/pagesetting.css', 'resources/css/common.css'])
 @endsection
 @include('includes.header')
 @section('content')
@@ -51,26 +48,9 @@
                         </table>
                     </div>
                 </div>
-                <div class="">
-                    <div class="m-top30">
-                        {{ __('message.jpac_group_notice') }}
-                    </div>
-                    <div class="">
-                        {{ __('message.jpac_group_description') }}
-                    </div>
-                    <div class="support-cases">
-                        <h3>{{ __('message.jpac_group_title') }}</h3>
-                        <ul>
-                            <li>{{ __('message.jpac_group_phone') }}</li>
-                            <li>{{ __('message.jpac_group_email') }}</li>
-                            <li>{{ __('message.jpac_group_address') }}</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="image-container-center m-top30">
-                    <img src="images/JPAC06112017.jpg" alt="JPAC Group Japan Desk">
-                </div>
+
                 <div class="border-gray"></div>
+
                 <div class="image-text-block_group">
                     <img src="/images/AGS-Group_translate.png" alt="{{ __('message.ags_alt') }}" class="image-block-flex">
                     <div class="text-block-group">

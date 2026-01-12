@@ -56,9 +56,7 @@
     /* font-family: Arial, sans-serif;*/
     margin: 20px; /* 外部余白設定 */
     padding: 20px; /* 内部余白設定 */
-    background-color: #f9f9f9; /* 背景色 */
     border-radius: 8px; /* 角丸 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影を追加 */
 }
 
 .support-cases h3 {
@@ -343,9 +341,17 @@ a.succession-button {
 }
 
 header {
+    position: fixed;       /* 上部に固定 */
+    top: 0;                /* 画面上部に */
+    left: 0;
+    width: 100%;           /* 横幅いっぱい */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+    background-color: transparent; /* 背景なし */
+    box-shadow: none;              /* 影も消す場合 */
+    z-index: 1000;
+    height: 100px;
 }
 
 .header-right {
@@ -355,7 +361,8 @@ header {
 
 header.scroll-active {
     height: 80px;
-    background: rgba(220, 220, 220, 0.9);
+    background-color: transparent; /* 背景なし */
+    box-shadow: none;              /* 影も消す場合 */
 }
 
 .header-left a img {
@@ -384,12 +391,17 @@ header.scroll-active {
 
 .menu-toggle-wrapper {
     background: black;
-    height: 110px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
     transition: height 0.3s ease;
+}
+@media (max-width: 768px) {
+    .menu-toggle-wrapper {
+        height: 70px;
+    }
 }
 
 .scroll-active .menu-toggle-wrapper {
@@ -405,6 +417,17 @@ header.scroll-active {
     cursor: pointer;
     position: relative;
     z-index: 1100;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        width: 35px;   /* 幅を小さく */
+        height: 38px;  /* 高さを小さく */
+    }
+
+    .menu-toggle span {
+        height: 2px;   /* 棒の太さも少し細く */
+        margin: 4px 0;
+    }
 }
 
 .menu-toggle span {
@@ -427,11 +450,25 @@ header.scroll-active {
     transition: height 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .language-switcher {
+        height: 70px;
+        font-size: 16px; /* 必要に応じて文字も小さくするとバランス良い */
+        padding: 0 10px; /* 横の余白も調整可能 */
+    }
+}
+
+
 .language-switcher .lang-btn {
     color: #000;
     text-decoration: none;
-    font-size: 14px;
     font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .language-switcher .lang-btn {
+        font-size: 14px;
+    }
 }
 
 .language-switcher .lang-btn:hover {
@@ -916,8 +953,6 @@ header.scroll-active {
         width: 100%;
         height: 70px;
         z-index: 2200;
-        background: white;
-        border-bottom: 1px solid #ddd;
     }
 
     .header-left img {
