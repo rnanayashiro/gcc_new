@@ -25,7 +25,7 @@ return [
     'privacy_policy' => 'Privacy Policy',
     'contact' => 'Contact',
 
-    'main_message' => 'Leverage the expert team "GCC" as your strategic partner.',
+    'main_message' => 'Global Corporate Consulting Co., Ltd. is a comprehensive consulting firm specializing in management, accounting, and taxation, leveraging certified public accountants and tax accountants as its core advisors.',
     'read_more' => 'Read More',
 
     'group_intro' => 'Our group includes certified public accountants, tax accountants, and social insurance labor consultants. Through alliances with law firms, judicial scriveners, and real estate appraisers, we provide all services through a single contact point.',

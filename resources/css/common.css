@@ -7461,11 +7461,12 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   font-size: 2.8rem;
   line-height: 4rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #000;
   position: absolute;
   top: 70%;
   left: 50%;
   font-style: normal;
+  margin-top: -35px;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -7623,8 +7624,9 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
 @media screen and (max-width: 767px) {
   .home-mainvisual-lead {
     padding: 0 5%;
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     line-height: 2.8rem;
+    margin-top: 0px;
   }
   .home-mainvisual-lead.-ad {
     font-size: 1.3rem;
