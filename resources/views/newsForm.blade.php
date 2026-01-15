@@ -1,12 +1,13 @@
 @extends('layouts.app')
 @section('styles')
     @parent
-    @vite([
-        'resources/css/pagesetting.css',
-        'resources/css/common.css',
-        'resources/css/news.css',
-    ])
+    @vite(['resources/css/pagesetting.css', 'resources/css/common.css', 'resources/css/news.css'])
 @endsection
+
+@php
+    $disableEnLang = true;
+@endphp
+
 @include('includes.header')
 @section('content')
     <!-- resources/views/newsForm.blade.php -->
@@ -21,7 +22,7 @@
     </head>
     <main id="main" class="contents">
         <div class="news-contents">
-            <h1 class="main-title">NEWS投稿</h1> <!-- メインタイトル -->
+            <h1 class="news-title">NEWS投稿</h1> <!-- メインタイトル -->
 
             <!-- フォームの開始 -->
             <form action="{{ route('news.submit') }}" method="POST" enctype="multipart/form-data">
