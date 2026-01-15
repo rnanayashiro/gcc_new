@@ -58,8 +58,8 @@
                     </div>
                 </div>
             </div>
-            <div class="home-filtering">
 
+            <div class="home-filtering">
                 <section class="home-content home-newsreleases">
                     <div class="content-inner">
                         <h2 class="home-content-heading">News Releases</h2>
@@ -133,7 +133,7 @@
                     </div>
                 </section>
 
-                <div class="group">
+                {{-- <div class="group">
                     <div class="content-inner">
                         <ul class="group-list">
                             <li class="group-list-item">
@@ -161,7 +161,7 @@
                                     {{ __('message.news') }}
                                 </a>
                     </div>
-                </div>
+                </div> --}}
             </div>
     </main>
     <!-- /.main -->
