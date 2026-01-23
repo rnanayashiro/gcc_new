@@ -7,9 +7,8 @@
 
 .main-contents {
     width: 100%;
-    max-width: 954px;
+    max-width: 1230px;
     margin: 0 auto;
-    padding: 0 70px;
 }
 
 .article-header > p:first-child {
@@ -47,9 +46,54 @@
     font-weight: 700;
     letter-spacing: .05em;
     line-height: 1.4;
-    font-size: 3.0rem;
+    font-size: 3.5rem;
     margin: 2em 0 1em;
     color: #004195;
+}
+
+.main-contents > div > div:nth-child(2) {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.main-contents > div > div:nth-child(3) {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.main-contents > div > div:nth-child(4) {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.main-contents > div > div:nth-child(5) {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.main-contents > div > div:nth-child(6) {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.main-contents > div > div:nth-child(7) {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.main-contents > div > div:nth-child(8) {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.main-contents > div > div:nth-child(9) {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.main-contents > div > div:nth-child(10) {
+    font-size: 1.3em;
+    line-height: 1.4;
 }
 
 .support-cases {
@@ -209,6 +253,7 @@
 
 .m-top30{
     margin-top: 30px;
+    font-size: 1.1em;
 }
 
 .m-top10{
