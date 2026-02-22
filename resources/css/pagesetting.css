@@ -647,14 +647,53 @@ header.scroll-active {
     transform: translateY(-50%) scaleX(1.5);    filter: invert(1);
 }
 
+.nav-bottom-image {
+    position: absolute;
+    bottom: 80px;
+    left: 280px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    z-index: 1; /* submenu より低く */
+}
+
 .submenu-list {
-    visibility: hidden;
+    display: none;
+    position: absolute;
+    left: 270px;
     opacity: 0;
     transform: translateY(10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 10; /* nav-bottom-image より前面 */
+}
+
+.submenu-list.active {
     display: block;
-    left: 270px;
-    position: absolute;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-bottom-image img {
+    width: 320px;
+    height: auto;
+    display: block;
+}
+
+.submenu-list.submenu-open ~ .nav-bottom-image {
+    display: none !important;
+}
+
+@media (max-width: 1024px) {
+    .nav-bottom-image {
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-bottom-image {
+        display: none !important;
+    }
 }
 
 .submenu-open {

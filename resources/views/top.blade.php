@@ -11,12 +11,9 @@
                 <div class="home-mainvisual">
                     <div class="home-mainvisual-item">
                         <div class="home-mainvisual-pict">
-                            <img src="../images/GCC TOP3.jpg" alt="" class="pc-content" />
-                            <img src="../images/GCC TOP3.jpg" alt="" class="sp-content" />
+                            <img src="../images/TOP-PAGE.gif" alt="" class="pc-content" />
+                            <img src="../images/TOP-PAGE.gif" alt="" class="sp-content" />
                         </div>
-                        <p class="home-mainvisual-lead">
-                            <span>{{ __('message.main_message') }}</span>
-                        </p>
                         <div class="home-mainvisual-button">
                             <a href="{{ route('services') }}"
                                 class="button -outline -light">{{ __('message.read_more') }}</a>

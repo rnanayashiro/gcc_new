@@ -983,6 +983,8 @@ body.is-fixed-body {
 
 .card-list {
   display: block !important;
+  padding-left: 0;
+  list-style: none;
 }
 
 .card-list-item {
@@ -1004,7 +1006,7 @@ body.is-fixed-body {
 }
 
 .card-list-item:not(.-wide) {
-  max-width: 1073px;
+  max-width: 1210px;
 }
 
 .card-list-item:last-child {
@@ -2086,6 +2088,12 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
   min-width: 260px;
 }
 
+.home-mainvisual-button a.button {
+    min-height: 40px; 
+    padding: 4px 30px;
+    margin-top: 40px;
+}
+
 .home-mainvisual-button.-dx a {
   min-width: 260px;
   min-height: 42px;
@@ -2112,6 +2120,10 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
         min-width: 220px;
         font-size: 0.95em;
     }
+
+    .home-mainvisual-button a.button {
+      margin-top: 0;
+    }
 }
 
 /* スマホ（600px以下） */
@@ -2133,6 +2145,10 @@ body.search ._popfind_sitesearch ._pagenator ._nav._first {
 
     .home-mainvisual-item::after {
         height: 100px;
+    }
+
+    .home-mainvisual-button a.button {
+      margin-top: 0;
     }
 }
 

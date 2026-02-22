@@ -80,7 +80,11 @@
                 <li><a href="{{ route('group') }}">{{ __('message.group') }}</a></li>
             </ul>
         </div>
+        <div class="nav-bottom-image">
+            <img src="/images/HPO01936.jpg" alt="">
+        </div>
     </div>
+
     <div class="sub-footer">
         <div class="sub-footer-inner">
             <div class="sub-footer-links-wrap">
