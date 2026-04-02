@@ -11,13 +11,10 @@
                 <div class="home-mainvisual">
                     <div class="home-mainvisual-item">
                         <div class="home-mainvisual-pict">
-                            <img src="../images/GCC TOP3.jpg" alt="" class="pc-content" />
+                            <img src="{{ asset('images/TOP-PAGE.gif') }}" alt="" class="pc-content" />
                             <img src="../images/GCC TOP3.jpg" alt="" class="sp-content" />
                         </div>
-                        <p class="home-mainvisual-lead">
-                            <span>{{ __('message.main_message') }}</span>
-                        </p>
-                        <div class="home-mainvisual-button">
+                        <div class="home-mainvisual-button" style="top: 88.5%;">
                             <a href="{{ route('services') }}"
                                 class="button -outline -light">{{ __('message.read_more') }}</a>
                         </div>
@@ -70,8 +67,7 @@
                                     <a href="#" class="card -media">
                                         <div class="card-pict">
                                             @if ($item->image_path)
-                                                <img src="{{ asset('storage/' . $item->image_path) }}"
-                                                    alt="{{ $item->title }}">
+                                                <img src="{{ asset('storage/' . $item->image_path) }}" alt="{{ $item->title }}">
                                             @else
                                                 <img src="path/to/placeholder-image.jpg" alt="Placeholder Image">
                                             @endif
