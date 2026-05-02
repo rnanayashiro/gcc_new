@@ -1062,3 +1062,97 @@ header.scroll-active {
         pointer-events: none;
     }
 }
+
+/* ============================================
+   TOPページ モダンレイアウト（Dentsu風）
+   ============================================ */
+
+/* --- コンテナ --- */
+.l-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* --- セクション共通余白 --- */
+.l-section {
+    padding: 60px 0;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .l-section {
+        padding: 100px 0;
+    }
+}
+
+/* --- ヒーローセクション --- */
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-section .l-container {
+    position: absolute;
+    top: 92%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.hero-section .home-mainvisual-button {
+    position: static;
+    text-align: center;
+}
+
+/* --- 領域バナー - l-container内配置 --- */
+.area-bnr-section {
+    width: 100%;
+    background: #fff;
+}
+.area-bnr-section .area-bnr {
+    padding: 0;
+}
+.area-bnr-section .area-bnr-list {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.area-bnr-section .area-bnr-list-item {
+    flex: 1;
+}
+
+/* --- サービス紹介セクション --- */
+.service-section {
+    background: #f8f9fa;
+    padding-bottom: 0;
+}
+
+/* --- Topics セクション --- */
+.topics-section {
+    background-color: #e9ecef;
+}
+.topics-section .l-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.topics-section .card-slider-list {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* --- ボタンブロック調整 --- */
+.l-section .button-block {
+    margin-top: 40px;
+    text-align: center;
+}
